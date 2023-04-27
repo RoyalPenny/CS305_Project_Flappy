@@ -93,89 +93,89 @@ Z23 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flapp
 l0
 L5
 Vom`HH3^L9>:PlA1<8F0EI0
-!s100 V8[RJWXfVH_a7U0<WXfOB1
 R9
 32
-!i10b 1
 Z24 !s108 1682558996.710000
 Z25 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd|
 Z26 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd|
 R13
 R14
+!s100 V8[RJWXfVH_a7U0<WXfOB1
+!i10b 1
 Atest
 R3
 R2
 R4
 R5
-Z27 DEx4 work 18 test_test_vga_sync 0 22 om`HH3^L9>:PlA1<8F0EI0
+DEx4 work 18 test_test_vga_sync 0 22 om`HH3^L9>:PlA1<8F0EI0
 l19
 L8
-Z28 V8mkN`OGMBGA9^4FFTMUF50
-Z29 !s100 cR1ZDcmR0aaWTP5WjFI483
+V8mkN`OGMBGA9^4FFTMUF50
 R9
 32
-!i10b 1
 R24
 R25
 R26
 R13
 R14
+!s100 cR1ZDcmR0aaWTP5WjFI483
+!i10b 1
 Etest_vga_sync
-Z30 w1682557608
+Z27 w1682560290
 R3
 R2
 R4
 R5
 R6
-Z31 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd
-Z32 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd
+Z28 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd
+Z29 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd
 l0
 L5
-VO569?T5OX>_efQX`hk3z:1
+VNMJZD]JE?E]A?Hm65VMcF3
+!s100 Kb0B54GfW9b^951gz>iLJ3
 R9
 32
-Z33 !s108 1682558994.464000
-Z34 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd|
-Z35 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd|
+!i10b 1
+Z30 !s108 1682560290.858000
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd|
+Z32 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd|
 R13
 R14
-!s100 :bLo2=Og8^JQPQ84Yh]E50
-!i10b 1
 Atest
 R3
 R2
 R4
 R5
-DEx4 work 13 test_vga_sync 0 22 O569?T5OX>_efQX`hk3z:1
-l35
-L11
-VnEegh?@T4bV2zH8ZiSA>j0
-!s100 _@8J61iUG2PhTA]:QZc891
+DEx4 work 13 test_vga_sync 0 22 NMJZD]JE?E]A?Hm65VMcF3
+l34
+L10
+Z33 V;=OHQ;<iEPzKAQAOKVo1Q2
+!s100 KdaIlj=LibDGHzXJMW46F0
 R9
 32
-R33
-R34
-R35
+!i10b 1
+R30
+R31
+R32
 R13
 R14
-!i10b 1
 Evga_sync
-Z36 w1682558977
+Z34 w1682558977
 R2
 R3
 R4
 R5
 R6
-Z37 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd
-Z38 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd
+Z35 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd
+Z36 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd
 l0
 L7
 VkN^=iinheN=5blnU=NdTQ2
 R9
 32
-Z39 !s108 1682558992.373000
-Z40 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd|
-Z41 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd|
+Z37 !s108 1682558992.373000
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd|
+Z39 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd|
 R13
 R14
 !s100 EzPbFIbmV;hg7RF`7Uc]00
@@ -191,9 +191,9 @@ L13
 V<jBc2V4IlU[>`k4Ed_O:T3
 R9
 32
+R37
+R38
 R39
-R40
-R41
 R13
 R14
 !s100 SM_WFWFDa5a`@cjMV4dVQ1
