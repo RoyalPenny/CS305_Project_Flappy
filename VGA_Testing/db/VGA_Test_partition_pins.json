@@ -26,6 +26,10 @@
 				{
 					"name" : "CLK",
 					"strict" : false
+				},
+				{
+					"name" : "pb1",
+					"strict" : false
 				}
 			]
 		}

@@ -2,100 +2,148 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'CLK'
-Slack : -3.880
-TNS   : -4.689
-
 Type  : Slow 1100mV 85C Model Setup 'Div:div_design|t_clkDiv'
-Slack : -3.508
-TNS   : -150.806
+Slack : -4.132
+TNS   : -162.187
 
-Type  : Slow 1100mV 85C Model Hold 'Div:div_design|t_clkDiv'
-Slack : 0.487
-TNS   : 0.000
+Type  : Slow 1100mV 85C Model Setup 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : -4.081
+TNS   : -122.468
+
+Type  : Slow 1100mV 85C Model Setup 'CLK'
+Slack : -2.532
+TNS   : -2.532
 
 Type  : Slow 1100mV 85C Model Hold 'CLK'
-Slack : 0.804
+Slack : 0.686
 TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Div:div_design|t_clkDiv'
+Slack : 0.713
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : 0.988
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.596
+TNS   : -1.134
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Div:div_design|t_clkDiv'
 Slack : -0.538
-TNS   : -44.472
+TNS   : -46.068
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA_SYNC:vga_design|vert_sync_out'
 Slack : -0.538
-TNS   : -2.064
-
-Type  : Slow 1100mV 0C Model Setup 'CLK'
-Slack : -3.830
-TNS   : -4.646
+TNS   : -28.494
 
 Type  : Slow 1100mV 0C Model Setup 'Div:div_design|t_clkDiv'
-Slack : -3.639
-TNS   : -148.474
+Slack : -4.254
+TNS   : -158.759
 
-Type  : Slow 1100mV 0C Model Hold 'Div:div_design|t_clkDiv'
-Slack : 0.478
-TNS   : 0.000
+Type  : Slow 1100mV 0C Model Setup 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : -4.195
+TNS   : -125.444
+
+Type  : Slow 1100mV 0C Model Setup 'CLK'
+Slack : -2.438
+TNS   : -2.438
 
 Type  : Slow 1100mV 0C Model Hold 'CLK'
-Slack : 0.775
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Div:div_design|t_clkDiv'
+Slack : 0.664
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : 0.962
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -0.542
-TNS   : -2.160
+Slack : -0.631
+TNS   : -1.169
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Div:div_design|t_clkDiv'
 Slack : -0.538
-TNS   : -44.347
+TNS   : -45.872
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : -0.538
+TNS   : -28.330
 
 Type  : Fast 1100mV 85C Model Setup 'CLK'
-Slack : -2.955
-TNS   : -3.008
+Slack : -2.099
+TNS   : -2.099
+
+Type  : Fast 1100mV 85C Model Setup 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : -1.653
+TNS   : -48.653
 
 Type  : Fast 1100mV 85C Model Setup 'Div:div_design|t_clkDiv'
-Slack : -1.339
-TNS   : -55.989
+Slack : -1.629
+TNS   : -59.779
 
 Type  : Fast 1100mV 85C Model Hold 'Div:div_design|t_clkDiv'
-Slack : 0.203
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : 0.423
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLK'
-Slack : 0.349
+Slack : 0.980
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK'
-Slack : -0.459
-TNS   : -1.134
+Slack : -0.539
+TNS   : -0.727
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Div:div_design|t_clkDiv'
-Slack : 0.109
+Slack : 0.084
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : 0.093
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'CLK'
-Slack : -2.543
-TNS   : -2.556
+Slack : -1.789
+TNS   : -1.789
 
 Type  : Fast 1100mV 0C Model Setup 'Div:div_design|t_clkDiv'
-Slack : -1.221
-TNS   : -48.168
+Slack : -1.500
+TNS   : -51.791
+
+Type  : Fast 1100mV 0C Model Setup 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : -1.467
+TNS   : -43.399
 
 Type  : Fast 1100mV 0C Model Hold 'Div:div_design|t_clkDiv'
-Slack : 0.178
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : 0.391
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'CLK'
-Slack : 0.312
+Slack : 0.748
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -0.457
-TNS   : -1.142
+Slack : -0.519
+TNS   : -0.696
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Div:div_design|t_clkDiv'
-Slack : 0.121
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA_SYNC:vga_design|vert_sync_out'
+Slack : 0.111
 TNS   : 0.000
 
 ------------------------------------------------------------

@@ -8,23 +8,12 @@ entity Div is
 end entity Div;
  
 architecture behaviour of Div is 
-
-  signal prescaler : std_logic_vector(1 downto 0) := "00";
   signal t_clkDiv : std_logic := '0';
-
+  
 begin
-  process(CLK)
-    begin  
-      if (rising_edge(CLK)) then
-        if prescaler = "01" then
-          prescaler <= (others => '0');
-          t_clkDiv <= not t_clkDiv;
-        else
-          prescaler <= prescaler + "1";
-        end if;
-      end if;
-    end process;
-    
-    clkDiv <= t_clkDiv;
+  
+  t_clkDiv <= not t_clkDiv when rising_edge(CLK);
+
+  clkDiv <= t_clkDiv;
     
 end architecture behaviour; 
