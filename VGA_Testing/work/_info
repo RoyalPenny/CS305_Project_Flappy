@@ -56,7 +56,7 @@ L7
 VKRO6i_3]BP?_DNha1:E=`2
 R9
 32
-Z19 !s108 1683083976.841000
+Z19 !s108 1683163756.357000
 Z20 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/bouncy_ball.vhd|
 Z21 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/bouncy_ball.vhd|
 R13
@@ -120,36 +120,36 @@ R13
 R14
 !s100 9YlQHAEhX[nUnCWo3jhQV3
 !i10b 1
-Etest_test_vga_sync
-Z28 w1682768412
-R3
+Epsudo_gen
+Z28 w1683177588
 R2
+R3
 R4
 R5
 R6
-Z29 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd
-Z30 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd
+Z29 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/Psudo_Gen.vhd
+Z30 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/Psudo_Gen.vhd
 l0
-L5
-Vom`HH3^L9>:PlA1<8F0EI0
+L6
+VFjblQCmUi8[]S?JE[hXgY1
 R9
 32
-Z31 !s108 1682844281.776000
-Z32 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd|
-Z33 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd|
+Z31 !s108 1683177588.229000
+Z32 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/Psudo_Gen.vhd|
+Z33 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/Psudo_Gen.vhd|
 R13
 R14
-!s100 V8[RJWXfVH_a7U0<WXfOB1
+!s100 lLDW>>TYKV:fB>S=YeMbK1
 !i10b 1
-Atest
-R3
+Abehaviour
 R2
+R3
 R4
 R5
-DEx4 work 18 test_test_vga_sync 0 22 om`HH3^L9>:PlA1<8F0EI0
-l17
-L8
-V_[ToUDIVVH[3oef<Dh2@W3
+DEx4 work 9 psudo_gen 0 22 FjblQCmUi8[]S?JE[hXgY1
+l22
+L13
+VcYc_fHG0VM7VhGG@8kM8P2
 R9
 32
 R31
@@ -157,27 +157,47 @@ R32
 R33
 R13
 R14
-!s100 M][eHZ:fmki9W5UnmSXQf1
+!s100 f=LiW:lJk_D16g6ZXZI=J3
 !i10b 1
-Etest_vga_sync
-Z34 w1682765758
+Anum
+Z34 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R2
+R3
+R4
+R5
+DEx4 work 9 psudo_gen 0 22 Qz=4z;A3_GD]MzIGfJVGF2
+l15
+L13
+VEX><bon1;IUWP1Aen3`j[1
+R9
+32
+R32
+R13
+R14
+w1683163529
+R33
+!s108 1683163529.840000
+!s100 ]PnkDX`CSf]SMzRX@;hjl0
+!i10b 1
+Etest_test_vga_sync
+Z35 w1682768412
 R3
 R2
 R4
 R5
 R6
-Z35 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd
-Z36 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd
+Z36 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd
+Z37 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd
 l0
 L5
-V6T_^B1ZiD9gGH@fBmO[XQ0
-!s100 kDf>@]=5VmMGiz>=QUGlL3
+Vom`HH3^L9>:PlA1<8F0EI0
+!s100 V8[RJWXfVH_a7U0<WXfOB1
 R9
 32
 !i10b 1
-Z37 !s108 1683083978.356000
-Z38 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd|
-Z39 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd|
+Z38 !s108 1683177591.559000
+Z39 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd|
+Z40 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_test_vga_sync.vhd|
 R13
 R14
 Atest
@@ -185,36 +205,75 @@ R3
 R2
 R4
 R5
-Z40 DEx4 work 13 test_vga_sync 0 22 6T_^B1ZiD9gGH@fBmO[XQ0
-l34
-L10
-Z41 VS7l3Y?kMce@3NfH1]N`:a0
-Z42 !s100 :TQL9o7K>m<9ch7JQfXO23
+Z41 DEx4 work 18 test_test_vga_sync 0 22 om`HH3^L9>:PlA1<8F0EI0
+l17
+L8
+Z42 V_[ToUDIVVH[3oef<Dh2@W3
+Z43 !s100 M][eHZ:fmki9W5UnmSXQf1
 R9
 32
 !i10b 1
-R37
 R38
 R39
+R40
 R13
 R14
+Etest_vga_sync
+Z44 w1683177590
+R3
+R2
+R4
+R5
+R6
+Z45 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd
+Z46 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd
+l0
+L5
+V6T_^B1ZiD9gGH@fBmO[XQ0
+R9
+32
+Z47 !s108 1683177590.659000
+Z48 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd|
+Z49 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd|
+R13
+R14
+!s100 kDf>@]=5VmMGiz>=QUGlL3
+!i10b 1
+Atest
+R3
+R2
+R4
+R5
+DEx4 work 13 test_vga_sync 0 22 6T_^B1ZiD9gGH@fBmO[XQ0
+l40
+L10
+VHG^LOkej`C=[XVDN]EAOE1
+R9
+32
+R47
+R48
+R49
+R13
+R14
+!s100 c<c?NASEz36F>1OZ9eQGb0
+!i10b 1
 Evga_sync
-Z43 w1682558977
+Z50 w1682558977
 R2
 R3
 R4
 R5
 R6
-Z44 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd
-Z45 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd
+Z51 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd
+Z52 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd
 l0
 L7
 VkN^=iinheN=5blnU=NdTQ2
 R9
 32
-Z46 !s108 1682986494.229000
-Z47 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd|
-Z48 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd|
+Z53 !s108 1682986494.229000
+Z54 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd|
+Z55 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd|
 R13
 R14
 !s100 EzPbFIbmV;hg7RF`7Uc]00
@@ -230,9 +289,9 @@ L13
 V<jBc2V4IlU[>`k4Ed_O:T3
 R9
 32
-R46
-R47
-R48
+R53
+R54
+R55
 R13
 R14
 !s100 SM_WFWFDa5a`@cjMV4dVQ1
