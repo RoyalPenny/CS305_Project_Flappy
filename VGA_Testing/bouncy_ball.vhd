@@ -49,15 +49,12 @@ begin
 	  end if;
 	  
 	  rst <= pb1;
-	  
-		-- Bounce off top or bottom of the screen
-		-- and '0' & ball_y_motion <= CONV_STD_LOGIC_VECTOR(0,10)
 		
 		
 		if(dir = '0') then	  
-			ball_y_motion <= - CONV_STD_LOGIC_VECTOR(16,10); 
+			ball_y_motion <= - CONV_STD_LOGIC_VECTOR(12,10); 
 			
-		elsif(ball_y_motion < CONV_STD_LOGIC_VECTOR(16,10) and ball_y_pos + CONV_STD_LOGIC_VECTOR(24,10) < CONV_STD_LOGIC_VECTOR(479,10)) then
+		elsif(ball_y_motion < CONV_STD_LOGIC_VECTOR(12,10) and ball_y_pos + CONV_STD_LOGIC_VECTOR(24,10) < CONV_STD_LOGIC_VECTOR(479,10)) then
 		  ball_y_motion <= ball_y_motion + CONV_STD_LOGIC_VECTOR(1,10); 
 		end if;
 		
@@ -71,32 +68,6 @@ begin
 			  m_rst <= '0';
 		end if;
 		
-		  
-		  
-		  
-	-- if(dir = '0') then	  
-	--	  if(ball_y_pos - CONV_STD_LOGIC_VECTOR(16,10) > CONV_STD_LOGIC_VECTOR(24,10)) then
-	--		  ball_y_motion <= - CONV_STD_LOGIC_VECTOR(16,10); 
-	--	end if;
-	--  
-	--	else
-	-- if(ball_y_pos + ball_y_motion >= CONV_STD_LOGIC_VECTOR(479,10) - CONV_STD_LOGIC_VECTOR(24,10)) then
-	   -- if(ball_y_motion /= CONV_STD_LOGIC_VECTOR(0,10)) then
-	--   ball_y_motion <= CONV_STD_LOGIC_VECTOR(479,10) - CONV_STD_LOGIC_VECTOR(24,10) - ball_y_pos;
-			 --  m_rst <= '0';
-			  --end if;
-			  
-	--		elsif(ball_y_motion < CONV_STD_LOGIC_VECTOR(24,10)) then
-		--	  ball_y_motion <= ball_y_motion + CONV_STD_LOGIC_VECTOR(1,10);
-			  
-		--  else
-		--	  ball_y_motion <= CONV_STD_LOGIC_VECTOR(24,10) - ball_y_pos;
-		--	  m_rst <= '0';
-			  
-		--	end if;
-	--	end if;
-		
-		-- Compute next ball Y position
 		ball_y_pos <= ball_y_pos + ball_y_motion;
 		
 		if(m_rst = '0') then
