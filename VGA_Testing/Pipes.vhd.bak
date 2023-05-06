@@ -14,18 +14,31 @@ end Pipes;
 Architecture behaviour of Pipes is
   
   SIGNAL dir, rst, m_rst					: std_logic := '1';
-  SIGNAL pipe_on					: std_logic;
   SIGNAL width : std_logic_vector(9 DOWNTO 0);  
-  SIGNAL pipe_y_pos				: std_logic_vector(9 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(0,10);
-  SIGNAL pipe_x_pos				: std_logic_vector(10 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(640,11);
+  SIGNAL pipe_1_on, pipe_2_on, pipe_3_on, pipe_on				: std_logic;
+  SIGNAL pipe_1_y_pos, pipe_2_y_pos, pipe_3_y_pos				: std_logic_vector(9 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(0,10);
+  SIGNAL pipe_1_x_pos			                             : std_logic_vector(10 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(107,11);
+  SIGNAL pipe_2_x_pos			                             : std_logic_vector(10 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(320,11);
+  SIGNAL pipe_3_x_pos				                            : std_logic_vector(10 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(533,11);
+  SIGNAL pipe_1_h, pipe_2_h, pipe_3_h                : std_logic_vector(9 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(0,10);
   SIGNAL timer : std_logic_vector(9 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(0,10);
   
   begin
     width <= CONV_STD_LOGIC_VECTOR(32,10);
   
-    pipe_on <= '1' when ( ('0' & pipe_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_x_pos + width) 	-- x_pos - size <= pixel_column <= x_pos + size
-		  and ('0' & pipe_y_pos <= pixel_row + pipe_h) and ('0' & pixel_row <= pipe_y_pos + pipe_h) )  else	-- y_pos - size <= pixel_row <= y_pos + size
+    pipe_1_on <= '1' when ( ('0' & pipe_1_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_1_x_pos + width) 	-- x_pos - size <= pixel_column <= x_pos + size
+		  and ('0' & pipe_1_y_pos <= pixel_row + pipe_1_h) and ('0' & pixel_row <= pipe_1_y_pos + pipe_1_h) )  else	-- y_pos - size <= pixel_row <= y_pos + size
 		  '0';
+		  
+		pipe_2_on <= '1' when ( ('0' & pipe_2_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_2_x_pos + width) 	-- x_pos - size <= pixel_column <= x_pos + size
+		  and ('0' & pipe_2_y_pos <= pixel_row + pipe_2_h) and ('0' & pixel_row <= pipe_2_y_pos + pipe_2_h) )  else	-- y_pos - size <= pixel_row <= y_pos + size
+		  '0';
+		  
+		pipe_3_on <= '1' when ( ('0' & pipe_3_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_3_x_pos + width) 	-- x_pos - size <= pixel_column <= x_pos + size
+		  and ('0' & pipe_3_y_pos <= pixel_row + pipe_3_h) and ('0' & pixel_row <= pipe_3_y_pos + pipe_3_h) )  else	-- y_pos - size <= pixel_row <= y_pos + size
+		  '0';
+  
+    pipe_on <= pipe_1_on or pipe_2_on or pipe_3_on;
   
     Red <= not pipe_on;
     Green <= '1';
@@ -36,10 +49,41 @@ Architecture behaviour of Pipes is
 	   -- Move ball once every vertical sync
 	    if (rising_edge(horiz_sync)) then
 	      if(timer = CONV_STD_LOGIC_VECTOR(320,11)) then
-	         if(pipe_x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
-	           pipe_x_pos	<= CONV_STD_LOGIC_VECTOR(640,11);
+	      
+	         if(pipe_1_x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
+	           pipe_1_x_pos	<= CONV_STD_LOGIC_VECTOR(640,11);
+	           pipe_1_h <= pipe_h;
+	           
+	           if(pipe_1_h > CONV_STD_LOGIC_VECTOR(400,10)) then
+	             pipe_1_h <= CONV_STD_LOGIC_VECTOR(400,10);
+	           end if;
+	           
 	         else
-	           pipe_x_pos <= pipe_x_pos - '1';
+	           pipe_1_x_pos <= pipe_1_x_pos - '1';
+	         end if;
+	         
+	         if(pipe_2_x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
+	           pipe_2_x_pos	<= CONV_STD_LOGIC_VECTOR(640,11);
+	           pipe_2_h <= pipe_h;
+	           
+	           if(pipe_2_h > CONV_STD_LOGIC_VECTOR(400,10)) then
+	             pipe_2_h <= CONV_STD_LOGIC_VECTOR(400,10);
+	           end if;
+	           
+	         else
+	           pipe_2_x_pos <= pipe_2_x_pos - '1';
+	         end if;
+	         
+	         if(pipe_3_x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
+	           pipe_3_x_pos	<= CONV_STD_LOGIC_VECTOR(640,11);
+	           pipe_3_h <= pipe_h;
+	           
+	           if(pipe_3_h > CONV_STD_LOGIC_VECTOR(400,10)) then
+	             pipe_3_h <= CONV_STD_LOGIC_VECTOR(400,10);
+	           end if;
+	           
+	         else
+	           pipe_3_x_pos <= pipe_3_x_pos - '1';
 	         end if;
 	         
 	         timer <= CONV_STD_LOGIC_VECTOR(0,10);

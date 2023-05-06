@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA_Test
-Sat May 06 18:54:54 2023
+Sun May 07 11:36:50 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,15 +13,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Port Connectivity Checks: "Pipes:pipes_design"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "Pipes:pipes_design"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -47,13 +46,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat May 06 18:54:54 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sun May 07 11:36:50 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; VGA_Test                                    ;
 ; Top-level Entity Name           ; TEST_VGA_SYNC                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 110                                         ;
+; Total registers                 ; 160                                         ;
 ; Total pins                      ; 8                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -167,7 +166,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -185,31 +185,31 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 156                     ;
-;                                             ;                         ;
-; Combinational ALUT usage for logic          ; 263                     ;
-;     -- 7 input functions                    ; 1                       ;
-;     -- 6 input functions                    ; 45                      ;
-;     -- 5 input functions                    ; 22                      ;
-;     -- 4 input functions                    ; 28                      ;
-;     -- <=3 input functions                  ; 167                     ;
-;                                             ;                         ;
-; Dedicated logic registers                   ; 110                     ;
-;                                             ;                         ;
-; I/O pins                                    ; 8                       ;
-;                                             ;                         ;
-; Total DSP Blocks                            ; 0                       ;
-;                                             ;                         ;
-; Maximum fan-out node                        ; Div:div_design|t_clkDiv ;
-; Maximum fan-out                             ; 66                      ;
-; Total fan-out                               ; 1194                    ;
-; Average fan-out                             ; 3.07                    ;
-+---------------------------------------------+-------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                      ;
++---------------------------------------------+------------------------------------+
+; Resource                                    ; Usage                              ;
++---------------------------------------------+------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 249                                ;
+;                                             ;                                    ;
+; Combinational ALUT usage for logic          ; 401                                ;
+;     -- 7 input functions                    ; 1                                  ;
+;     -- 6 input functions                    ; 93                                 ;
+;     -- 5 input functions                    ; 56                                 ;
+;     -- 4 input functions                    ; 64                                 ;
+;     -- <=3 input functions                  ; 187                                ;
+;                                             ;                                    ;
+; Dedicated logic registers                   ; 160                                ;
+;                                             ;                                    ;
+; I/O pins                                    ; 8                                  ;
+;                                             ;                                    ;
+; Total DSP Blocks                            ; 0                                  ;
+;                                             ;                                    ;
+; Maximum fan-out node                        ; VGA_SYNC:vga_design|horiz_sync_out ;
+; Maximum fan-out                             ; 71                                 ;
+; Total fan-out                               ; 1969                               ;
+; Average fan-out                             ; 3.41                               ;
++---------------------------------------------+------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -217,44 +217,27 @@ refer to the applicable agreement for further details.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name   ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+---------------+--------------+
-; |TEST_VGA_SYNC                   ; 263 (9)             ; 110 (0)                   ; 0                 ; 0          ; 8    ; 0            ; |TEST_VGA_SYNC                             ; TEST_VGA_SYNC ; work         ;
+; |TEST_VGA_SYNC                   ; 401 (0)             ; 160 (0)                   ; 0                 ; 0          ; 8    ; 0            ; |TEST_VGA_SYNC                             ; TEST_VGA_SYNC ; work         ;
 ;    |Div:div_design|              ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Div:div_design              ; Div           ; work         ;
-;    |Pipes:pipes_design|          ; 60 (60)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Pipes:pipes_design          ; Pipes         ; work         ;
-;    |Psudo_Gen:psudo_rand_design| ; 34 (34)             ; 17 (17)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Psudo_Gen:psudo_rand_design ; Psudo_Gen     ; work         ;
+;    |Pipes:pipes_design|          ; 198 (198)           ; 70 (70)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Pipes:pipes_design          ; Pipes         ; work         ;
+;    |Psudo_Gen:psudo_rand_design| ; 37 (37)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Psudo_Gen:psudo_rand_design ; Psudo_Gen     ; work         ;
 ;    |VGA_SYNC:vga_design|         ; 41 (41)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|VGA_SYNC:vga_design         ; VGA_SYNC      ; work         ;
-;    |bouncy_ball:ball_design|     ; 118 (118)           ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|bouncy_ball:ball_design     ; bouncy_ball   ; work         ;
+;    |bouncy_ball:ball_design|     ; 124 (124)           ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|bouncy_ball:ball_design     ; bouncy_ball   ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; t_pipe_h[8]                                        ; pb2                 ; yes                    ;
-; t_pipe_h[7]                                        ; pb2                 ; yes                    ;
-; t_pipe_h[6]                                        ; pb2                 ; yes                    ;
-; t_pipe_h[5]                                        ; pb2                 ; yes                    ;
-; t_pipe_h[4]                                        ; pb2                 ; yes                    ;
-; t_pipe_h[3]                                        ; pb2                 ; yes                    ;
-; t_pipe_h[2]                                        ; pb2                 ; yes                    ;
-; t_pipe_h[1]                                        ; pb2                 ; yes                    ;
-; t_pipe_h[0]                                        ; pb2                 ; yes                    ;
-; Number of user-specified and inferred latches = 9  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                             ;
-+-------------------------------------------------------+----------------------------------------+
-; Register name                                         ; Reason for Removal                     ;
-+-------------------------------------------------------+----------------------------------------+
-; VGA_SYNC:vga_design|pixel_row[9]                      ; Stuck at GND due to stuck port data_in ;
-; Psudo_Gen:psudo_rand_design|t_psudo_rand[8]~_emulated ; Lost fanout                            ;
-; Total Number of Removed Registers = 2                 ;                                        ;
-+-------------------------------------------------------+----------------------------------------+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; Pipes:pipes_design|pipe_3_h[9]        ; Stuck at GND due to stuck port data_in ;
+; Pipes:pipes_design|pipe_2_h[9]        ; Stuck at GND due to stuck port data_in ;
+; Pipes:pipes_design|pipe_1_h[9]        ; Stuck at GND due to stuck port data_in ;
+; VGA_SYNC:vga_design|pixel_row[9]      ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -262,12 +245,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 110   ;
-; Number of registers using Synchronous Clear  ; 49    ;
+; Total registers                              ; 160   ;
+; Number of registers using Synchronous Clear  ; 40    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 9     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 59    ;
+; Number of registers using Clock Enable       ; 108   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -277,19 +260,28 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; Pipes:pipes_design|pipe_x_pos[9]        ; 7       ;
-; Pipes:pipes_design|pipe_x_pos[7]        ; 9       ;
-; bouncy_ball:ball_design|ball_y_pos[3]   ; 8       ;
-; bouncy_ball:ball_design|ball_y_pos[2]   ; 6       ;
+; Pipes:pipes_design|pipe_1_x_pos[6]      ; 7       ;
+; Pipes:pipes_design|pipe_1_x_pos[5]      ; 18      ;
+; Pipes:pipes_design|pipe_1_x_pos[3]      ; 4       ;
+; Pipes:pipes_design|pipe_1_x_pos[1]      ; 4       ;
+; Pipes:pipes_design|pipe_1_x_pos[0]      ; 4       ;
+; Pipes:pipes_design|pipe_2_x_pos[8]      ; 7       ;
+; Pipes:pipes_design|pipe_2_x_pos[6]      ; 7       ;
+; Pipes:pipes_design|pipe_3_x_pos[9]      ; 8       ;
+; Pipes:pipes_design|pipe_3_x_pos[4]      ; 6       ;
+; Pipes:pipes_design|pipe_3_x_pos[2]      ; 5       ;
+; Pipes:pipes_design|pipe_3_x_pos[0]      ; 4       ;
 ; bouncy_ball:ball_design|ball_y_pos[1]   ; 6       ;
 ; bouncy_ball:ball_design|ball_y_pos[0]   ; 6       ;
+; bouncy_ball:ball_design|ball_y_pos[3]   ; 9       ;
+; bouncy_ball:ball_design|ball_y_pos[2]   ; 7       ;
 ; bouncy_ball:ball_design|ball_y_pos[7]   ; 7       ;
 ; bouncy_ball:ball_design|ball_y_pos[6]   ; 7       ;
 ; bouncy_ball:ball_design|ball_y_pos[5]   ; 7       ;
 ; bouncy_ball:ball_design|dir             ; 4       ;
 ; bouncy_ball:ball_design|m_rst           ; 12      ;
 ; bouncy_ball:ball_design|rst             ; 1       ;
-; Total number of inverted registers = 12 ;         ;
+; Total number of inverted registers = 21 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -298,7 +290,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |TEST_VGA_SYNC|VGA_SYNC:vga_design|v_count[9]           ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |TEST_VGA_SYNC|VGA_SYNC:vga_design|v_count[6]           ;
 ; 6:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |TEST_VGA_SYNC|bouncy_ball:ball_design|ball_y_motion[9] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 
@@ -317,30 +309,30 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 110                         ;
-;     CLR               ; 8                           ;
-;     ENA               ; 30                          ;
-;     ENA SCLR          ; 29                          ;
+; arriav_ff             ; 160                         ;
+;     CLR               ; 9                           ;
+;     ENA               ; 88                          ;
+;     ENA SCLR          ; 20                          ;
 ;     SCLR              ; 20                          ;
 ;     plain             ; 23                          ;
-; arriav_lcell_comb     ; 263                         ;
-;     arith             ; 113                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 99                          ;
+; arriav_lcell_comb     ; 401                         ;
+;     arith             ; 141                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 126                         ;
 ;         2 data inputs ; 13                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 149                         ;
-;         1 data inputs ; 12                          ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 28                          ;
-;         5 data inputs ; 22                          ;
-;         6 data inputs ; 45                          ;
+;     normal            ; 259                         ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 64                          ;
+;         5 data inputs ; 56                          ;
+;         6 data inputs ; 93                          ;
 ; boundary_port         ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.50                        ;
-; Average LUT depth     ; 3.01                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.30                        ;
 +-----------------------+-----------------------------+
 
 
@@ -349,7 +341,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -359,7 +351,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 06 18:54:43 2023
+    Info: Processing started: Sun May 07 11:36:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA_Test -c VGA_Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -367,16 +359,6 @@ Warning (12125): Using design file test_vga_sync.vhd, which is not specified as 
     Info (12022): Found design unit 1: TEST_VGA_SYNC-TEST File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 10
     Info (12023): Found entity 1: TEST_VGA_SYNC File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 5
 Info (12127): Elaborating entity "test_vga_sync" for the top level hierarchy
-Info (10041): Inferred latch for "t_pipe_h[0]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[1]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[2]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[3]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[4]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[5]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[6]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[7]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[8]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
-Info (10041): Inferred latch for "t_pipe_h[9]" at test_vga_sync.vhd(60) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 60
 Warning (12125): Using design file vga_sync.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: VGA_SYNC-a File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd Line: 13
     Info (12023): Found entity 1: VGA_SYNC File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/vga_sync.vhd Line: 7
@@ -398,7 +380,9 @@ Warning (12125): Using design file pipes.vhd, which is not specified as a design
     Info (12022): Found design unit 1: Pipes-behaviour File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 14
     Info (12023): Found entity 1: Pipes File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 6
 Info (12128): Elaborating entity "Pipes" for hierarchy "Pipes:pipes_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 72
-Warning (10540): VHDL Signal Declaration warning at pipes.vhd(19): used explicit default value for signal "pipe_y_pos" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 19
+Warning (10540): VHDL Signal Declaration warning at pipes.vhd(19): used explicit default value for signal "pipe_1_y_pos" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 19
+Warning (10540): VHDL Signal Declaration warning at pipes.vhd(19): used explicit default value for signal "pipe_2_y_pos" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 19
+Warning (10540): VHDL Signal Declaration warning at pipes.vhd(19): used explicit default value for signal "pipe_3_y_pos" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 19
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]~1" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]~5" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
@@ -410,7 +394,6 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[1]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[1]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[1]~29" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[0]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[0]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[0]~33" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_CV_Default -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE0_CV_Default -section_id Top was ignored
@@ -438,14 +421,14 @@ Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity do
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV_Default -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 297 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 435 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 289 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 4913 megabytes
-    Info: Processing ended: Sat May 06 18:54:54 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+    Info (21061): Implemented 427 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 4921 megabytes
+    Info: Processing ended: Sun May 07 11:36:50 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:23
 
 

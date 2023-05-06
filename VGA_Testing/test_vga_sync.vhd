@@ -57,7 +57,7 @@ architecture TEST of TEST_VGA_SYNC is
     t_green <= t_ball_green and t_pipe_green;
     t_blue <= t_ball_blue and t_pipe_blue;
     
-    t_pipe_h <= '0' & t_psudo_rand when pb2 = '0';
+    t_pipe_h <= '0' & t_psudo_rand;
     
     vga_design: VGA_SYNC port map (t_clkDiv, t_red, t_green, t_blue,
 		                              red_out, green_out, blue_out, t_horiz_sync_out, t_vert_sync_out,
