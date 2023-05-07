@@ -14,12 +14,26 @@ entity TEXT_PRINTER is
        multiplier : in std_logic_vector(2 downto 0);
        character : in std_logic_vector (5 downto 0);
        clk : in std_logic;
-       rom_mux_out : out std_logic);
+       rom_mux_output : out std_logic);
   
 end TEXT_PRINTER;
 
 architecture a of TEXT_PRINTER is
+  
+  signal s_font_row : std_logic_vector(2 downto 0);
+  signal s_font_col : std_logic_vector(2 downto 0);
+  
+  component CHAR_ROM is 
+    port (character_address	:	in std_logic_vector (5 downto 0);
+		      font_row, font_col	:	in std_logic_vector (2 downto 0);
+		      clock				: 	in std_logic ;
+		      rom_mux_output		:	out std_logic);
+	end component;
+  
 begin
+  
+  character_rom:CHAR_ROM port map (character_address => character, font_row => s_font_row, font_col => s_font_col,  clock => clk, rom_mux_output => rom_mux_output);
+    
   
 
 end a;
