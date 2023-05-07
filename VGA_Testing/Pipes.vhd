@@ -23,13 +23,32 @@ Architecture behaviour of Pipes is
   SIGNAL pipe_1_h, pipe_2_h, pipe_3_h                : std_logic_vector(9 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(0,10);
   SIGNAL timer : std_logic_vector(9 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(0,10);
   
-  function update_X (x_pos : std_logic_vector(10 DOWNTO 0)) return std_logic_vector is
+  type xy_pos is record
+    x_pos : std_logic_vector(10 DOWNTO 0);
+    y_pos : std_logic_vector(9 DOWNTO 0);
+  end record;
+  
+  function update_xy (x_pos : std_logic_vector(10 DOWNTO 0); 
+                      y_pos : std_logic_vector(9 DOWNTO 0); 
+                      pipe_h : std_logic_vector(9 DOWNTO 0)) return xy_pos is
+                      
+      variable xy : xy_pos;
     begin
       if(x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
-	      return CONV_STD_LOGIC_VECTOR(640,11);	           
+	      xy.x_pos := CONV_STD_LOGIC_VECTOR(640,11);	
+	      
+	      if(pipe_h > CONV_STD_LOGIC_VECTOR(400,10)) then
+	        xy.y_pos := CONV_STD_LOGIC_VECTOR(400,10);
+	      else 
+	        xy.y_pos := pipe_h;
+	      end if;
+	       
 	    else
-	      return x_pos - '1';
+	      xy.x_pos := x_pos - '1';
+	      xy.y_pos := y_pos;      
 	    end if;
+	    
+	    return xy;
 	end function;
 	    
   
@@ -54,26 +73,26 @@ Architecture behaviour of Pipes is
     Green <= '1';
     Blue <= not pipe_on;
     
-    Move_Pipe: process (horiz_sync)  	
+    Move_Pipe: process (horiz_sync)  
+    
+    variable pipe_xy : xy_pos;
+    	
     begin
 	   -- Move ball once every vertical sync
 	    if (rising_edge(horiz_sync)) then
 	      if(timer = CONV_STD_LOGIC_VECTOR(320,11)) then
 	      
-	         pipe_1_x_pos <= update_X(pipe_1_x_pos);
-	         if(pipe_1_x_pos = CONV_STD_LOGIC_VECTOR(640,11)) then
-	           pipe_1_h <= pipe_h;
-	         end if;
-	             
-	         pipe_2_x_pos <= update_X(pipe_2_x_pos);
-	         if(pipe_2_x_pos = CONV_STD_LOGIC_VECTOR(640,11)) then
-	           pipe_2_h <= pipe_h;
-	         end if;
+	         pipe_xy := update_xy(pipe_1_x_pos, pipe_1_h, pipe_h);
+	         pipe_1_x_pos <= pipe_xy.x_pos;
+	         pipe_1_h <= pipe_xy.y_pos;
 	         
-	         pipe_3_x_pos <= update_X(pipe_3_x_pos);
-	         if(pipe_3_x_pos = CONV_STD_LOGIC_VECTOR(640,11)) then
-	           pipe_3_h <= pipe_h;
-	         end if;
+	         pipe_xy := update_xy(pipe_2_x_pos, pipe_2_h, pipe_h);
+	         pipe_2_x_pos <= pipe_xy.x_pos;
+	         pipe_2_h <= pipe_xy.y_pos;
+	         
+	         pipe_xy := update_xy(pipe_3_x_pos, pipe_3_h, pipe_h);
+	         pipe_3_x_pos <= pipe_xy.x_pos;
+	         pipe_3_h <= pipe_xy.y_pos;
 	         
 	         timer <= CONV_STD_LOGIC_VECTOR(0,10);
 	         

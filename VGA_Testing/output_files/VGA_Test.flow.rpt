@@ -1,5 +1,5 @@
 Flow report for VGA_Test
-Sun May 07 12:08:54 2023
+Sun May 07 12:36:32 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,14 +40,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun May 07 12:08:48 2023       ;
+; Flow Status                     ; Successful - Sun May 07 12:36:26 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; VGA_Test                                    ;
 ; Top-level Entity Name           ; TEST_VGA_SYNC                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 223 / 18,480 ( 1 % )                        ;
+; Logic utilization (in ALMs)     ; 227 / 18,480 ( 1 % )                        ;
 ; Total registers                 ; 217                                         ;
 ; Total pins                      ; 8 / 224 ( 4 % )                             ;
 ; Total virtual pins              ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/07/2023 12:07:45 ;
+; Start date & time ; 05/07/2023 12:35:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGA_Test            ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 38917505025.168341806530972            ; --            ; --             ; --         ;
+; COMPILER_SIGNATURE_ID               ; 38917505025.168341972430300            ; --            ; --             ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --             ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --             ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE0_CV_Default ; Top        ;
@@ -100,10 +100,10 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4925 MB             ; 00:00:23                           ;
-; Fitter               ; 00:00:46     ; 1.1                     ; 7602 MB             ; 00:04:15                           ;
+; Fitter               ; 00:00:45     ; 1.1                     ; 7610 MB             ; 00:04:09                           ;
 ; Assembler            ; 00:00:04     ; 1.0                     ; 4813 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.6                     ; 5209 MB             ; 00:00:07                           ;
-; Total                ; 00:01:07     ; --                      ; --                  ; 00:04:48                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.7                     ; 5207 MB             ; 00:00:07                           ;
+; Total                ; 00:01:05     ; --                      ; --                  ; 00:04:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

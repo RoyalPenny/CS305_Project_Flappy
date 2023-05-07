@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun May 07 12:08:43 2023
+Fitter Status : Successful - Sun May 07 12:36:21 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : VGA_Test
 Top-level Entity Name : TEST_VGA_SYNC
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 223 / 18,480 ( 1 % )
+Logic utilization (in ALMs) : 227 / 18,480 ( 1 % )
 Total registers : 217
 Total pins : 8 / 224 ( 4 % )
 Total virtual pins : 0

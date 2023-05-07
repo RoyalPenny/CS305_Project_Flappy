@@ -24,11 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "pb2",
+					"name" : "CLK",
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "pb2",
 					"strict" : false
 				},
 				{
