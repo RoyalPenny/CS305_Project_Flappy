@@ -23,6 +23,16 @@ Architecture behaviour of Pipes is
   SIGNAL pipe_1_h, pipe_2_h, pipe_3_h                : std_logic_vector(9 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(0,10);
   SIGNAL timer : std_logic_vector(9 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(0,10);
   
+  function update_X (x_pos : std_logic_vector(10 DOWNTO 0)) return std_logic_vector is
+    begin
+      if(x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
+	      return CONV_STD_LOGIC_VECTOR(640,11);	           
+	    else
+	      return x_pos - '1';
+	    end if;
+	end function;
+	    
+  
   begin
     width <= CONV_STD_LOGIC_VECTOR(32,10);
   
@@ -50,40 +60,19 @@ Architecture behaviour of Pipes is
 	    if (rising_edge(horiz_sync)) then
 	      if(timer = CONV_STD_LOGIC_VECTOR(320,11)) then
 	      
-	         if(pipe_1_x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
-	           pipe_1_x_pos	<= CONV_STD_LOGIC_VECTOR(640,11);
+	         pipe_1_x_pos <= update_X(pipe_1_x_pos);
+	         if(pipe_1_x_pos = CONV_STD_LOGIC_VECTOR(640,11)) then
 	           pipe_1_h <= pipe_h;
-	           
-	           if(pipe_1_h > CONV_STD_LOGIC_VECTOR(400,10)) then
-	             pipe_1_h <= CONV_STD_LOGIC_VECTOR(400,10);
-	           end if;
-	           
-	         else
-	           pipe_1_x_pos <= pipe_1_x_pos - '1';
 	         end if;
-	         
-	         if(pipe_2_x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
-	           pipe_2_x_pos	<= CONV_STD_LOGIC_VECTOR(640,11);
+	             
+	         pipe_2_x_pos <= update_X(pipe_2_x_pos);
+	         if(pipe_2_x_pos = CONV_STD_LOGIC_VECTOR(640,11)) then
 	           pipe_2_h <= pipe_h;
-	           
-	           if(pipe_2_h > CONV_STD_LOGIC_VECTOR(400,10)) then
-	             pipe_2_h <= CONV_STD_LOGIC_VECTOR(400,10);
-	           end if;
-	           
-	         else
-	           pipe_2_x_pos <= pipe_2_x_pos - '1';
 	         end if;
 	         
-	         if(pipe_3_x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
-	           pipe_3_x_pos	<= CONV_STD_LOGIC_VECTOR(640,11);
+	         pipe_3_x_pos <= update_X(pipe_3_x_pos);
+	         if(pipe_3_x_pos = CONV_STD_LOGIC_VECTOR(640,11)) then
 	           pipe_3_h <= pipe_h;
-	           
-	           if(pipe_3_h > CONV_STD_LOGIC_VECTOR(400,10)) then
-	             pipe_3_h <= CONV_STD_LOGIC_VECTOR(400,10);
-	           end if;
-	           
-	         else
-	           pipe_3_x_pos <= pipe_3_x_pos - '1';
 	         end if;
 	         
 	         timer <= CONV_STD_LOGIC_VECTOR(0,10);
