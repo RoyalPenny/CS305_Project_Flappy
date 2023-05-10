@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA_Test
-Sun May 07 12:35:36 2023
+Mon May 08 14:14:57 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 07 12:35:36 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon May 08 14:14:57 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; VGA_Test                                    ;
 ; Top-level Entity Name           ; TEST_VGA_SYNC                               ;
@@ -166,7 +166,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -189,14 +190,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------+
 ; Resource                                    ; Usage                              ;
 +---------------------------------------------+------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 228                                ;
+; Estimate of Logic utilization (ALMs needed) ; 242                                ;
 ;                                             ;                                    ;
-; Combinational ALUT usage for logic          ; 379                                ;
+; Combinational ALUT usage for logic          ; 402                                ;
 ;     -- 7 input functions                    ; 1                                  ;
-;     -- 6 input functions                    ; 71                                 ;
-;     -- 5 input functions                    ; 54                                 ;
-;     -- 4 input functions                    ; 64                                 ;
-;     -- <=3 input functions                  ; 189                                ;
+;     -- 6 input functions                    ; 76                                 ;
+;     -- 5 input functions                    ; 60                                 ;
+;     -- 4 input functions                    ; 70                                 ;
+;     -- <=3 input functions                  ; 195                                ;
 ;                                             ;                                    ;
 ; Dedicated logic registers                   ; 160                                ;
 ;                                             ;                                    ;
@@ -206,8 +207,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                    ;
 ; Maximum fan-out node                        ; VGA_SYNC:vga_design|horiz_sync_out ;
 ; Maximum fan-out                             ; 71                                 ;
-; Total fan-out                               ; 1833                               ;
-; Average fan-out                             ; 3.30                               ;
+; Total fan-out                               ; 1935                               ;
+; Average fan-out                             ; 3.35                               ;
 +---------------------------------------------+------------------------------------+
 
 
@@ -216,9 +217,9 @@ refer to the applicable agreement for further details.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name   ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+---------------+--------------+
-; |TEST_VGA_SYNC                   ; 379 (0)             ; 160 (0)                   ; 0                 ; 0          ; 8    ; 0            ; |TEST_VGA_SYNC                             ; TEST_VGA_SYNC ; work         ;
+; |TEST_VGA_SYNC                   ; 402 (0)             ; 160 (0)                   ; 0                 ; 0          ; 8    ; 0            ; |TEST_VGA_SYNC                             ; TEST_VGA_SYNC ; work         ;
 ;    |Div:div_design|              ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Div:div_design              ; Div           ; work         ;
-;    |Pipes:pipes_design|          ; 176 (176)           ; 70 (70)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Pipes:pipes_design          ; Pipes         ; work         ;
+;    |Pipes:pipes_design|          ; 199 (199)           ; 70 (70)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Pipes:pipes_design          ; Pipes         ; work         ;
 ;    |Psudo_Gen:psudo_rand_design| ; 37 (37)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|Psudo_Gen:psudo_rand_design ; Psudo_Gen     ; work         ;
 ;    |VGA_SYNC:vga_design|         ; 41 (41)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|VGA_SYNC:vga_design         ; VGA_SYNC      ; work         ;
 ;    |bouncy_ball:ball_design|     ; 124 (124)           ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |TEST_VGA_SYNC|bouncy_ball:ball_design     ; bouncy_ball   ; work         ;
@@ -259,17 +260,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; Pipes:pipes_design|pipe_1_x_pos[6]      ; 7       ;
-; Pipes:pipes_design|pipe_1_x_pos[5]      ; 18      ;
+; Pipes:pipes_design|pipe_3_x_pos[2]      ; 5       ;
+; Pipes:pipes_design|pipe_3_x_pos[0]      ; 4       ;
+; Pipes:pipes_design|pipe_3_x_pos[4]      ; 6       ;
+; Pipes:pipes_design|pipe_3_x_pos[9]      ; 7       ;
+; Pipes:pipes_design|pipe_2_x_pos[6]      ; 7       ;
+; Pipes:pipes_design|pipe_2_x_pos[8]      ; 7       ;
 ; Pipes:pipes_design|pipe_1_x_pos[3]      ; 4       ;
 ; Pipes:pipes_design|pipe_1_x_pos[1]      ; 4       ;
 ; Pipes:pipes_design|pipe_1_x_pos[0]      ; 4       ;
-; Pipes:pipes_design|pipe_2_x_pos[8]      ; 7       ;
-; Pipes:pipes_design|pipe_2_x_pos[6]      ; 7       ;
-; Pipes:pipes_design|pipe_3_x_pos[9]      ; 8       ;
-; Pipes:pipes_design|pipe_3_x_pos[4]      ; 6       ;
-; Pipes:pipes_design|pipe_3_x_pos[2]      ; 5       ;
-; Pipes:pipes_design|pipe_3_x_pos[0]      ; 4       ;
+; Pipes:pipes_design|pipe_1_x_pos[5]      ; 18      ;
+; Pipes:pipes_design|pipe_1_x_pos[6]      ; 7       ;
 ; bouncy_ball:ball_design|ball_y_pos[1]   ; 6       ;
 ; bouncy_ball:ball_design|ball_y_pos[0]   ; 6       ;
 ; bouncy_ball:ball_design|ball_y_pos[3]   ; 9       ;
@@ -314,24 +315,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     ENA SCLR          ; 20                          ;
 ;     SCLR              ; 20                          ;
 ;     plain             ; 23                          ;
-; arriav_lcell_comb     ; 379                         ;
+; arriav_lcell_comb     ; 402                         ;
 ;     arith             ; 141                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 126                         ;
 ;         2 data inputs ; 13                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 237                         ;
+;     normal            ; 260                         ;
 ;         1 data inputs ; 11                          ;
 ;         2 data inputs ; 15                          ;
-;         3 data inputs ; 22                          ;
-;         4 data inputs ; 64                          ;
-;         5 data inputs ; 54                          ;
-;         6 data inputs ; 71                          ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 70                          ;
+;         5 data inputs ; 60                          ;
+;         6 data inputs ; 76                          ;
 ; boundary_port         ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.37                        ;
+; Average LUT depth     ; 3.43                        ;
 +-----------------------+-----------------------------+
 
 
@@ -340,7 +341,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -350,7 +351,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 07 12:35:24 2023
+    Info: Processing started: Mon May 08 14:14:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA_Test -c VGA_Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -379,14 +380,11 @@ Warning (12125): Using design file pipes.vhd, which is not specified as a design
     Info (12022): Found design unit 1: Pipes-behaviour File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 14
     Info (12023): Found entity 1: Pipes File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 6
 Info (12128): Elaborating entity "Pipes" for hierarchy "Pipes:pipes_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test_vga_sync.vhd Line: 72
-Warning (10540): VHDL Signal Declaration warning at pipes.vhd(19): used explicit default value for signal "pipe_1_y_pos" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 19
-Warning (10540): VHDL Signal Declaration warning at pipes.vhd(19): used explicit default value for signal "pipe_2_y_pos" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 19
-Warning (10540): VHDL Signal Declaration warning at pipes.vhd(19): used explicit default value for signal "pipe_3_y_pos" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/pipes.vhd Line: 19
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]~1" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]~5" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
-    Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[6]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[6]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[6]~9" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
-    Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[5]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[5]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[5]~13" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
+    Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[5]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[5]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[5]~9" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
+    Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[6]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[6]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[6]~13" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[4]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[4]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[4]~17" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[3]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[3]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[3]~21" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[2]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[2]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[2]~25" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/psudo_gen.vhd Line: 25
@@ -420,14 +418,14 @@ Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity do
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV_Default -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 440 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 463 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 432 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4925 megabytes
-    Info: Processing ended: Sun May 07 12:35:36 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:23
+    Info (21061): Implemented 455 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
+    Info: Peak virtual memory: 4924 megabytes
+    Info: Processing ended: Mon May 08 14:14:57 2023
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:39
 
 

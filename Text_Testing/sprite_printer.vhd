@@ -11,7 +11,11 @@ entity SPRITE_PRINTER is
   -- rom_mux_out : once character and position is set, it will send 1 or 0, according to current row and col pixel.
   
   port(pixel_row, pixel_col, anchor_row, anchor_col : in std_logic_vector(9 downto 0);
+<<<<<<< HEAD
        multiplier : in integer range 1 to 4;
+=======
+       multiplier : in std_logic_vector(2 downto 0);
+>>>>>>> a1b5eed5867566db24e740ce5031ba567b42023d
        address : in std_logic_vector (5 downto 0);
        enable, clk : in std_logic;
        rom_mux_output : out std_logic);
@@ -22,7 +26,10 @@ architecture a of SPRITE_PRINTER is
   
   signal s_font_row : std_logic_vector(2 downto 0) := "000"; --row 0 is the top row
   signal s_font_col : std_logic_vector(2 downto 0) := "000"; --col 0 is the far right col
+<<<<<<< HEAD
   --signal rom_mux_output : std_logic := '0';
+=======
+>>>>>>> a1b5eed5867566db24e740ce5031ba567b42023d
   
   component CHAR_ROM is 
     port (character_address	:	in std_logic_vector (5 downto 0);
@@ -35,6 +42,7 @@ begin
 
   SPRITE_ROM:CHAR_ROM port map (character_address => address, font_row => s_font_row, font_col => s_font_col,  clock => clk, rom_mux_output => rom_mux_output);
   
+<<<<<<< HEAD
   process (pixel_row, anchor_row, pixel_col, anchor_col)
     variable P : integer range 0 to 8 := 1;
     begin
@@ -59,5 +67,10 @@ begin
       
   end process;   
 
+=======
+  --s_font_row <= (pixel_row - anchor_row)(3) when pixel_row >= anchor_row and pixel_row <= anchor_row + 8;
+  --s_font_col <= pixel_row - anchor_row when pixel_col >= anchor_col and pixel_col <= anchor_col + 8;
+  
+>>>>>>> a1b5eed5867566db24e740ce5031ba567b42023d
 end a;
        
