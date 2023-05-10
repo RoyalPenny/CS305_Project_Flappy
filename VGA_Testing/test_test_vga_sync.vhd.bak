@@ -30,7 +30,7 @@ architecture test of test_test_vga_sync is
     begin
        t_pb1 <= '1';
        t_pb2 <= '0';
-       wait for 40 ns;
+       wait for 160 ns;
        t_pb1 <= '0';
        t_pb2 <= '1';
        wait for 3000 ns;
