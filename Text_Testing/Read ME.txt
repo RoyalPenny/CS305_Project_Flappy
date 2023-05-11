@@ -1,3 +1,5 @@
 # Andy Repo Testing - 8/5/2023
 
 # Lol Onedrive hates github
+
+# Sprite printing works, need to output RGB value now - 11/5/2023
