@@ -1,0 +1,35 @@
+library IEEE;
+use  IEEE.STD_LOGIC_1164.all;
+use  IEEE.STD_LOGIC_ARITH.all;
+use  IEEE.STD_LOGIC_UNSIGNED.all;
+
+ENTITY Psudo_Gen is
+  	PORT (
+		clk, rst : IN std_logic;
+		psudo_rand : OUT std_logic_vector(9 downto 0)
+	);	
+end Psudo_Gen;
+
+ARCHITECTURE Behaviour of Psudo_Gen is
+    function lfsr11(x : std_logic_vector(9 downto 0)) return std_logic_vector is
+    begin
+        return x(8 downto 0) & (x(0) xnor x(1) xnor x(5) xnor x(7));
+    end function;
+
+    signal seed : std_logic_vector(9 downto 0) := (others => '0');
+    signal t_psudo_rand : std_logic_vector(9 downto 0) := (others => '0');
+    
+begin
+    process(clk, rst)
+    begin
+        if rst = '0' then
+            t_psudo_rand <= seed;
+            
+        elsif rising_edge(clk) then
+            seed <= seed + 1;
+            t_psudo_rand <= lfsr11(t_psudo_rand);
+        end if;
+    end process;
+    
+    psudo_rand <= t_psudo_rand;
+end architecture;
