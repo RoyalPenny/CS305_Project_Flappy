@@ -52,29 +52,29 @@ Architecture behaviour of Pipes is
 	    
   
   begin
-    width <= CONV_STD_LOGIC_VECTOR(32,10);
+    width <= CONV_STD_LOGIC_VECTOR(64,10);
   
-    pipe_1_on <= '1' when ( ('0' & pipe_1_x_pos >= '0' & pixel_column) and ('0' & pixel_column >= '0' & pipe_1_x_pos - width) 	-- x_pos - size <= pixel_column <= x_pos + size
+    pipe_1_on <= '1' when ( ('0' & pipe_1_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_1_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
       and ('0' & pixel_row <= pipe_1_h) )  else	-- y_pos - size <= pixel_row <= y_pos + size
 		  '0';
 		  
-		pipe_2_on <= '1' when ( ('0' & pipe_2_x_pos >= '0' & pixel_column) and ('0' & pixel_column >= '0' & pipe_2_x_pos - width) 	-- x_pos - size <= pixel_column <= x_pos + size
+		pipe_2_on <= '1' when ( ('0' & pipe_2_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_2_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
 		  and ('0' & pixel_row <= pipe_2_h) )  else	-- y_pos - size <= pixel_row <= y_pos + size
 		  '0';
 		  
-		pipe_3_on <= '1' when ( ('0' & pipe_3_x_pos >= '0' & pixel_column) and ('0' & pixel_column >= '0' & pipe_3_x_pos - width) 	-- x_pos - size <= pixel_column <= x_pos + size
+		pipe_3_on <= '1' when ( ('0' & pipe_3_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_3_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
 		  and ('0' & pixel_row <= pipe_3_h) )  else	-- y_pos - size <= pixel_row <= y_pos + size
 		  '0';
 		
-		pipeB_1_on <= '1' when ( ('0' & pipe_1_x_pos >= '0' & pixel_column) and ('0' & pixel_column >= '0' & pipe_1_x_pos - width) 	-- x_pos - size <= pixel_column <= x_pos + size
+		pipeB_1_on <= '1' when ( ('0' & pipe_1_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_1_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
 		  and ('0' & pixel_row >= pipe_1_h + conv_std_logic_vector(96, 10)) )  else	-- y_pos - size <= pixel_row <= y_pos + size
 		  '0';
 		  
-		pipeB_2_on <= '1' when ( ('0' & pipe_2_x_pos >= '0' & pixel_column) and ('0' & pixel_column >= '0' & pipe_2_x_pos - width) 	-- x_pos - size <= pixel_column <= x_pos + size
+		pipeB_2_on <= '1' when ( ('0' & pipe_2_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_2_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
 		  and ('0' & pixel_row >= pipe_2_h + conv_std_logic_vector(96, 10)) )  else	-- y_pos - size <= pixel_row <= y_pos + size
 		  '0';
 		  
-		pipeB_3_on <= '1' when ( ('0' & pipe_3_x_pos >= '0' & pixel_column) and ('0' & pixel_column >= '0' & pipe_3_x_pos - width) 	-- x_pos - size <= pixel_column <= x_pos + size
+		pipeB_3_on <= '1' when ( ('0' & pipe_3_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_3_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
 		  and ('0' & pixel_row >= pipe_3_h + conv_std_logic_vector(96, 10)) ) else	-- y_pos - size <= pixel_row <= y_pos + size
 		  '0';
   
