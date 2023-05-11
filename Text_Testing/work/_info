@@ -2,24 +2,24 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\dngus\Documents\GitHub\CS305_Project_Flappy\Text_Testing
+Z0 dC:\Users\dngus\OneDrive\Documents\GitHub\CS305_Project_Flappy\Text_Testing
 Echar_rom
-Z1 w1683728684
+Z1 w1683765783
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z6 dC:\Users\dngus\Documents\GitHub\CS305_Project_Flappy\Text_Testing
-Z7 8C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/char_rom.vhd
-Z8 FC:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/char_rom.vhd
+Z6 dC:\Users\dngus\OneDrive\Documents\GitHub\CS305_Project_Flappy\Text_Testing
+Z7 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/char_rom.vhd
+Z8 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/char_rom.vhd
 l0
 L9
 V?^=h<aLNZ9S]N@?iCn`zi2
 Z9 OV;C;10.1d;51
 32
-Z10 !s108 1683740686.253000
-Z11 !s90 -reportprogress|300|-work|work|C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/char_rom.vhd|
-Z12 !s107 C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/char_rom.vhd|
+Z10 !s108 1683767461.251000
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/char_rom.vhd|
+Z12 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/char_rom.vhd|
 Z13 o-work work -O0
 Z14 tExplicit 1
 !s100 8BTe6g2GzRlieT`CE33Ub1
@@ -43,169 +43,36 @@ R14
 !s100 T?kBoHZao@A_Sd@:b0D5d2
 !i10b 1
 Esprite_printer
-Z15 w1683740683
+Z15 w1683767293
 R2
 R3
 R4
 R5
 R6
-<<<<<<< HEAD
-Z16 8C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/sprite_printer.vhd
-Z17 FC:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/sprite_printer.vhd
+Z16 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/sprite_printer.vhd
+Z17 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/sprite_printer.vhd
 l0
 L6
-ViLo5XNdS>9QA2dB84JFlT0
+VQ^:>I1PjWW5OBOB:HUS`82
 R9
 32
-Z18 !s108 1683740686.966000
-Z19 !s90 -reportprogress|300|-work|work|C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/sprite_printer.vhd|
-Z20 !s107 C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/sprite_printer.vhd|
+Z18 !s108 1683767461.960000
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/sprite_printer.vhd|
+Z20 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/sprite_printer.vhd|
 R13
 R14
-!s100 DO<]1nNB70i;lZmOAV9E21
-=======
-Z26 8C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/mouse.vhd
-Z27 FC:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/mouse.vhd
-l0
-L9
-Vz?T_ghe6jzTZjP;9RX:I^1
-R9
-32
-Z28 !s108 1683470188.460000
-Z29 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/mouse.vhd|
-Z30 !s107 C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/mouse.vhd|
-R13
-R14
-!s100 ]XHZZI:ABX]SP9GBRlUIc2
-!i10b 1
-Abehavior
-R2
-R3
-R4
-R5
-DEx4 work 5 mouse 0 22 z?T_ghe6jzTZjP;9RX:I^1
-l44
-L18
-VYnK^Jd9cBgUAYc_cPi]oA1
-R9
-32
-R28
-R29
-R30
-R13
-R14
-!s100 747ZknDDV[UmC2lK^FK<I2
-!i10b 1
-Esprite_printer
-Z31 w1683509800
-R2
-R3
-R4
-R5
-Z32 dC:\Users\dngus\OneDrive - The University of Auckland\Documents\COMPSYS305\CS305_Project_Flappy_(Laptop)\Text_Testing
-Z33 8C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy_(Laptop)/Text_Testing/sprite_printer.vhd
-Z34 FC:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy_(Laptop)/Text_Testing/sprite_printer.vhd
-l0
-L6
-VnABeHYh?>OK3iLQLX4L?P3
-R9
-32
-Z35 !s108 1683510113.661000
-Z36 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy_(Laptop)/Text_Testing/sprite_printer.vhd|
-Z37 !s107 C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy_(Laptop)/Text_Testing/sprite_printer.vhd|
-R13
-R14
-!s100 EKzga4o5BoJ3e<`d;4UYM2
+!s100 F7nfz4zzIY>380n[>3k940
 !i10b 1
 Aa
 R2
 R3
 R4
 R5
-DEx4 work 14 sprite_printer 0 22 nABeHYh?>OK3iLQLX4L?P3
-l33
-L21
-VOjGToXm13h]U@@ndFeb5o2
-R9
-32
-R35
-R36
-R37
-R13
-R14
-!s100 ghMT=X<hXB:Hj:`T8QH303
-!i10b 1
-Etest_sprite_printer
-Z38 w1683510777
-R2
-R3
-R4
-R5
-R32
-Z39 8C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy_(Laptop)/Text_Testing/test_sprite_printer.vhd
-Z40 FC:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy_(Laptop)/Text_Testing/test_sprite_printer.vhd
-l0
-L6
-V_gz4;cUE=z<TUFSj9D1c03
-!s100 [bG3e=^j<YTb835[Ji1Y52
-R9
-32
-!i10b 1
-Z41 !s108 1683510782.826000
-Z42 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy_(Laptop)/Text_Testing/test_sprite_printer.vhd|
-Z43 !s107 C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy_(Laptop)/Text_Testing/test_sprite_printer.vhd|
-R13
-R14
-Aa1
-R2
-R3
-R4
-R5
-Z44 DEx4 work 19 test_sprite_printer 0 22 _gz4;cUE=z<TUFSj9D1c03
-l25
-L9
-V>z9l3kid8LT8_83:dZb=U0
-!s100 _I@W^MB766AhTzH98eV1:0
-R9
-32
-!i10b 1
-R41
-R42
-R43
-R13
-R14
-Etext_printer
-Z45 w1683478417
-R2
-R3
-R4
-R5
-R6
-Z46 8C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/text_printer.vhd
-Z47 FC:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/text_printer.vhd
-l0
-L6
-Vk[Bc=XZ:>Z?aE8deR6egk3
-R9
-32
-Z48 !s108 1683478421.611000
-Z49 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/text_printer.vhd|
-Z50 !s107 C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/text_printer.vhd|
-R13
-R14
-!s100 VVV>zFV5n3Z1?ejjBcj@b2
->>>>>>> a1b5eed5867566db24e740ce5031ba567b42023d
-!i10b 1
-Aa
-R2
-R3
-R4
-R5
-DEx4 work 14 sprite_printer 0 22 iLo5XNdS>9QA2dB84JFlT0
-l34
-L21
-<<<<<<< HEAD
-VRPzYdSmolmWZjA5I5GS]U3
+DEx4 work 14 sprite_printer 0 22 Q^:>I1PjWW5OBOB:HUS`82
+l35
+L22
+VL:^e5Zgak`RQmm?WWj57K1
+!s100 H8ZzJOkH[BeTdV0eTn5U62
 R9
 32
 R18
@@ -213,52 +80,26 @@ R19
 R20
 R13
 R14
-!s100 ZU3]3ck5E9E_jOb=_BI:n0
 !i10b 1
 Etest_sprite_printer
-Z21 w1683739020
-=======
-V<YdGEmheSlM@<;JbME]hH1
-R9
-32
-R48
-R49
-R50
-R13
-R14
-!s100 =;G:hoi>B_``MPi1XUVE62
-!i10b 1
-Evga_sync
-R1
->>>>>>> a1b5eed5867566db24e740ce5031ba567b42023d
+Z21 w1683767439
 R2
 R3
 R4
 R5
 R6
-<<<<<<< HEAD
-Z22 8C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/test_sprite_printer.vhd
-Z23 FC:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/test_sprite_printer.vhd
-=======
-Z51 8C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/vga_sync.vhd
-Z52 FC:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/vga_sync.vhd
->>>>>>> a1b5eed5867566db24e740ce5031ba567b42023d
+Z22 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/test_sprite_printer.vhd
+Z23 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/test_sprite_printer.vhd
 l0
 L6
 V_gz4;cUE=z<TUFSj9D1c03
 !s100 [bG3e=^j<YTb835[Ji1Y52
 R9
 32
-<<<<<<< HEAD
 !i10b 1
-Z24 !s108 1683740687.828000
-Z25 !s90 -reportprogress|300|-work|work|C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/test_sprite_printer.vhd|
-Z26 !s107 C:/Users/dngus/Documents/GitHub/CS305_Project_Flappy/Text_Testing/test_sprite_printer.vhd|
-=======
-Z53 !s108 1683470187.716000
-Z54 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/vga_sync.vhd|
-Z55 !s107 C:/Users/dngus/OneDrive - The University of Auckland/Documents/COMPSYS305/CS305_Project_Flappy/Text_Testing/vga_sync.vhd|
->>>>>>> a1b5eed5867566db24e740ce5031ba567b42023d
+Z24 !s108 1683767462.998000
+Z25 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/test_sprite_printer.vhd|
+Z26 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/test_sprite_printer.vhd|
 R13
 R14
 Aa1
@@ -267,21 +108,54 @@ R3
 R4
 R5
 Z27 DEx4 work 19 test_sprite_printer 0 22 _gz4;cUE=z<TUFSj9D1c03
-l25
+l27
 L9
-Z28 Vn6O]B[VbKO0c7BD>J=IRd0
-Z29 !s100 L^]5JJL?_1Z6;m5Pz[7Xd2
+V^4Y4g7h71P_P>I<?h0;i]0
+!s100 Khhd5_oPQ2al0UWoDeQBB3
 R9
 32
-<<<<<<< HEAD
 !i10b 1
 R24
 R25
 R26
-=======
-R53
-R54
-R55
->>>>>>> a1b5eed5867566db24e740ce5031ba567b42023d
 R13
 R14
+Evga_sync
+R1
+R2
+R3
+R4
+R5
+R6
+Z28 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/vga_sync.vhd
+Z29 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/vga_sync.vhd
+l0
+L6
+VkN^=iinheN=5blnU=NdTQ2
+R9
+32
+Z30 !s108 1683766244.722000
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/vga_sync.vhd|
+Z32 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Text_Testing/vga_sync.vhd|
+R13
+R14
+!s100 8BR9TLRY[zf>PG[F3mb8A0
+!i10b 1
+Aa
+R2
+R3
+R4
+R5
+DEx4 work 8 vga_sync 0 22 kN^=iinheN=5blnU=NdTQ2
+l17
+L12
+VzLo62l<R]X8Mi=h>CiUYR0
+R9
+32
+R30
+R31
+R32
+R13
+R14
+!s100 5H[Ig865Na2f7KFXo]zHX2
+!i10b 1
