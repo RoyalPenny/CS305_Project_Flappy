@@ -78,8 +78,7 @@ Architecture behaviour of Pipes is
 		  and ('0' & pixel_row >= pipe_3_h + conv_std_logic_vector(96, 10)) ) else	-- y_pos - size <= pixel_row <= y_pos + size
 		  '0';
   
-    --pipe_on <= pipe_1_on or pipe_2_on or pipe_3_on or pipeB_1_on or pipeB_2_on or pipeB_3_on;
-    pipe_on <= pipeB_1_on or pipeB_2_on or pipeB_3_on;
+    pipe_on <= pipe_1_on or pipe_2_on or pipe_3_on or pipeB_1_on or pipeB_2_on or pipeB_3_on;
   
     Red <= not pipe_on;
     Green <= '1';

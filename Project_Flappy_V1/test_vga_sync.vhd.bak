@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 
-entity TEST_VGA_SYNC is
+entity Project_Flappy_V1 is
           port (CLK, pb1, pb2 : in std_logic;
           		  red_out, green_out, blue_out, horiz_sync_out, vert_sync_out	: OUT	STD_LOGIC);
-end entity TEST_VGA_SYNC;
+end entity Project_Flappy_V1;
 
 architecture TEST of TEST_VGA_SYNC is
     --signal init
@@ -75,8 +75,8 @@ architecture TEST of TEST_VGA_SYNC is
     horiz_sync_out <= t_horiz_sync_out;
     
     t_red <= t_ball_red and t_pipe_red and t_sprite_red_out;
-    t_green <= t_ball_green and t_pipe_green and t_sprite_greeb_out;
-    t_blue <= t_ball_blue and t_pipe_blue and t_sprite_red_out;
+    t_green <= t_ball_green and t_pipe_green and t_sprite_green_out;
+    t_blue <= t_ball_blue and t_pipe_blue and t_sprite_blue_out;
     
     t_pipe_h <= '0' & t_psudo_rand;
     
