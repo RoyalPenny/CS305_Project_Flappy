@@ -36,32 +36,30 @@ begin
 
   SPRITE_ROM:CHAR_ROM port map (character_address => address, font_row => s_font_row, font_col => s_font_col,  clock => clk, rom_mux_output => s_rom_mux_output);
   
-  process (pixel_row, anchor_row, pixel_col, anchor_col, s_rom_mux_output)
+  process (sprite_red, sprite_green, sprite_blue, pixel_row, anchor_row, pixel_col, anchor_col, s_rom_mux_output)
     variable P : integer range 0 to 8 := 1;
     begin
       
-      s_font_row <= "XXX";
-      s_font_col <= "XXX";
+      if(enable = '1')then      
+        case multiplier is
+          when 1 => P := 1;
+          when 2 => P := 2;
+          when 3 => P := 4;
+          when 4 => P := 8;
+         when others => P:= 0;
+       end case; 
       
-      case multiplier is
-        when 1 => P := 1;
-        when 2 => P := 2;
-        when 3 => P := 4;
-        when 4 => P := 8;
-        when others => P:= 0;
-      end case; 
-      
-      if((anchor_row <= pixel_row) and (pixel_row < (anchor_row + 8*P))) then
-        if((anchor_col <= pixel_col) and (pixel_col < (anchor_col + 8*P))) then
-          s_font_row <= (pixel_row(multiplier+1 downto multiplier-1) - anchor_row(multiplier+1 downto multiplier-1));
-          s_font_col <= (pixel_col(multiplier+1 downto multiplier-1) - anchor_col(multiplier+1 downto multiplier-1));
+        if((anchor_row <= pixel_row) and (pixel_row < (anchor_row + 8*P))) then
+          if((anchor_col <= pixel_col) and (pixel_col < (anchor_col + 8*P))) then
+            s_font_row <= (pixel_row(multiplier+1 downto multiplier-1) - anchor_row(multiplier+1 downto multiplier-1));
+            s_font_col <= (pixel_col(multiplier+1 downto multiplier-1) - anchor_col(multiplier+1 downto multiplier-1));
+          end if;
         end if;
+      
+        red_out <= not(sprite_red and s_rom_mux_output);
+        green_out <= not(sprite_green and s_rom_mux_output);
+        blue_out <= not(sprite_blue and s_rom_mux_output); 
       end if;
-      
-      red_out <= '0';
-      green_out <= s_rom_mux_output;
-      blue_out <= s_rom_mux_output; 
-      
   end process;   
 end a;
        
