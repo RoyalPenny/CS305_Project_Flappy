@@ -37,13 +37,9 @@ begin
   SPRITE_ROM:CHAR_ROM port map (character_address => address, font_row => s_font_row, font_col => s_font_col,  clock => clk, rom_mux_output => s_rom_mux_output);
   
   process (sprite_red, sprite_green, sprite_blue, pixel_row, anchor_row, pixel_col, anchor_col, s_rom_mux_output)
-    variable P : integer range 0 to 8 := 1;
+    variable P : integer range 0 to 8 := 0;
     begin
-      
-      red_out <= '1';
-      green_out <= '1';
-      blue_out <= '1';
-      
+
       if(enable = '1')then      
         case multiplier is
           when 1 => P := 1;
@@ -57,13 +53,26 @@ begin
           if((anchor_col <= pixel_col) and (pixel_col < (anchor_col + 8*P))) then
             s_font_row <= (pixel_row(multiplier+1 downto multiplier-1) - anchor_row(multiplier+1 downto multiplier-1));
             s_font_col <= (pixel_col(multiplier+1 downto multiplier-1) - anchor_col(multiplier+1 downto multiplier-1));
+          else
+            s_font_row <= "000";
+            s_font_col <= "000";
           end if;
+        else
+          s_font_row <= "000";
+          s_font_col <= "000";
         end if;
       
         red_out <= not(sprite_red and s_rom_mux_output);
         green_out <= not(sprite_green and s_rom_mux_output);
         blue_out <= not(sprite_blue and s_rom_mux_output); 
+        
+      else
+        red_out <= '1';
+        green_out <= '1';
+        blue_out <= '1';  
+        
       end if;
+      
   end process;   
 end a;
        
