@@ -36,9 +36,12 @@ begin
 
   SPRITE_ROM:CHAR_ROM port map (character_address => address, font_row => s_font_row, font_col => s_font_col,  clock => clk, rom_mux_output => s_rom_mux_output);
   
-  process (pixel_row, anchor_row, pixel_col, anchor_col, s_rom_mux_output)
+  process (sprite_red, sprite_green, sprite_blue, pixel_row, anchor_row, pixel_col, anchor_col, s_rom_mux_output)
     variable P : integer range 0 to 8 := 1;
     begin
+      
+      red_out <= '1';
+      green_out <= '1';
       
       if(enable = '1')then      
         case multiplier is

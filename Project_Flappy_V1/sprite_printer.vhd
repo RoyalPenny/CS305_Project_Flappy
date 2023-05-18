@@ -40,6 +40,10 @@ begin
     variable P : integer range 0 to 8 := 1;
     begin
       
+      red_out <= '1';
+      green_out <= '1';
+      blue_out <= '1';
+      
       if(enable = '1')then      
         case multiplier is
           when 1 => P := 1;
