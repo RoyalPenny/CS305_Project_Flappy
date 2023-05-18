@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "red_out",
+					"strict" : false
+				},
+				{
 					"name" : "green_out",
 					"strict" : false
 				},
@@ -20,7 +24,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "collision",
+					"strict" : false
+				},
+				{
 					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "pb3",
 					"strict" : false
 				},
 				{
