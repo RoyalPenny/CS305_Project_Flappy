@@ -459,9 +459,9 @@ set_location_assignment PIN_C2 -to HEX5[5]
 set_location_assignment PIN_W19 -to HEX5[6]
 set_location_assignment PIN_U7 -to pb1
 set_location_assignment PIN_W9 -to pb2
-set_location_assignment PIN_M7 -to KEY[2]
+set_location_assignment PIN_M7 -to pb3
 set_location_assignment PIN_M6 -to KEY[3]
-set_location_assignment PIN_AA2 -to LEDR[0]
+set_location_assignment PIN_AA2 -to collision
 set_location_assignment PIN_AA1 -to LEDR[1]
 set_location_assignment PIN_W2 -to LEDR[2]
 set_location_assignment PIN_Y3 -to LEDR[3]
