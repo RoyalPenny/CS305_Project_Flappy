@@ -76,13 +76,14 @@ Architecture behaviour of Pipes_V2 is
     	
     begin
 	   -- Move ball once every vertical sync
-	   	 if(reset = '1') then
-	        pipe_1_x_pos <= initial;
-	        pipe_1_h <= CONV_STD_LOGIC_VECTOR(700,10);
-	     end if;
 	         
 	     if (rising_edge(horiz_sync)) then
-	       if (enable = '1') then
+	       
+	       if(reset = '1') then
+	         pipe_1_x_pos <= initial;
+	         pipe_1_h <= CONV_STD_LOGIC_VECTOR(700,10);
+
+	       elsif (enable = '1') then
 
 	         if(timer = CONV_STD_LOGIC_VECTOR(320,11)) then
 	      

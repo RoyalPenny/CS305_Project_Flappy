@@ -16,7 +16,7 @@ architecture TEST of Project_Flappy_V1 is
            t_pipe_2_red, t_pipe_2_green, t_pipe_2_blue,
            t_pipe_3_red, t_pipe_3_green, t_pipe_3_blue,
            t_red, t_green, t_blue, t_reset,
-           t_clkDiv, t_vert_sync_out, t_horiz_sync_out : STD_LOGIC;
+           t_clkDiv, t_vert_sync_out, t_horiz_sync_out, t_ground_strike : STD_LOGIC;
     signal t_pipe_1_on, t_pipe_2_on, t_pipe_3_on, t_bouncy_ball_on : STD_LOGIC := '0';
     signal t_enable : STD_LOGIC := '1';
     signal t_pixel_row: STD_LOGIC_VECTOR(9 DOWNTO 0);
@@ -45,9 +45,9 @@ architecture TEST of Project_Flappy_V1 is
     end component;
     
     component bouncy_ball is
-		 PORT(pb1, enable, clk, vert_sync : IN std_logic;
+		 PORT(pb1, enable, clk, vert_sync, reset : IN std_logic;
           pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
-		      red, green, blue, ball_state 			: OUT std_logic);		
+		      red, green, blue, ball_state, ground_strike 			: OUT std_logic);		
     end component;
     
     component Div is
@@ -94,11 +94,15 @@ architecture TEST of Project_Flappy_V1 is
     t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and t_sprite_blue_out;
   
     
-    t_enable <= '0' when (t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1')) else
+    t_enable <= '0' when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1'))
+                or t_ground_strike = '0') 
+                else
                 '1' when (pb3 = '0');
                 
     t_reset <= '1' when (pb3 = '0') else
                '0';
+               
+    collision <= t_ground_strike;
                 
     --t_enable <= '0' when (t_pipe_blue = '0' and t_pipe_red = '0' and t_ball_blue = '0' and t_ball_green = '0') else
                 --'1' when (pb3 = '0');
@@ -109,7 +113,7 @@ architecture TEST of Project_Flappy_V1 is
 		                              red_out, green_out, blue_out, t_horiz_sync_out, t_vert_sync_out,
 			                            t_pixel_row, t_pixel_column);
 			                            
-	  ball_design: bouncy_ball port map (pb1, t_enable, t_clkDiv, t_vert_sync_out, t_pixel_row, t_pixel_column, t_ball_red, t_ball_green, t_ball_blue, t_bouncy_ball_on);   
+	  ball_design: bouncy_ball port map (pb1, t_enable, t_clkDiv, t_vert_sync_out, t_reset, t_pixel_row, t_pixel_column, t_ball_red, t_ball_green, t_ball_blue, t_bouncy_ball_on, t_ground_strike);   
 	  
 	  div_design: Div port map (CLK, t_clkDiv);
 	    

@@ -3,6 +3,7 @@ CLK => Div:div_design.CLK
 pb1 => bouncy_ball:ball_design.pb1
 pb2 => Psudo_Gen:psudo_rand_design.rst
 pb3 => t_enable.IN1
+pb3 => bouncy_ball:ball_design.reset
 pb3 => Pipes_V2:pipe1.reset
 pb3 => Pipes_V2:pipe2.reset
 pb3 => Pipes_V2:pipe3.reset
@@ -11,7 +12,7 @@ green_out << VGA_SYNC:vga_design.green_out
 blue_out << VGA_SYNC:vga_design.blue_out
 horiz_sync_out << VGA_SYNC:vga_design.horiz_sync_out
 vert_sync_out << VGA_SYNC:vga_design.vert_sync_out
-collision << comb.DB_MAX_OUTPUT_PORT_TYPE
+collision << bouncy_ball:ball_design.ground_strike
 
 
 |Project_Flappy_v1|VGA_SYNC:vga_design
@@ -97,30 +98,35 @@ pixel_column[9] <= pixel_column[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |Project_Flappy_v1|bouncy_ball:ball_design
 pb1 => Move_Ball.IN1
 pb1 => rst.DATAIN
-enable => ball_y_pos[3].ENA
-enable => ball_y_pos[2].ENA
-enable => ball_y_pos[1].ENA
-enable => ball_y_pos[0].ENA
-enable => ball_y_pos[4].ENA
-enable => ball_y_pos[5].ENA
-enable => ball_y_pos[6].ENA
-enable => ball_y_pos[7].ENA
-enable => ball_y_pos[8].ENA
-enable => ball_y_pos[9].ENA
-enable => m_rst.ENA
-enable => ball_y_motion[0].ENA
-enable => ball_y_motion[1].ENA
-enable => ball_y_motion[2].ENA
-enable => ball_y_motion[3].ENA
-enable => ball_y_motion[4].ENA
-enable => ball_y_motion[5].ENA
-enable => ball_y_motion[6].ENA
-enable => ball_y_motion[7].ENA
-enable => ball_y_motion[8].ENA
-enable => ball_y_motion[9].ENA
-enable => rst.ENA
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => ball_y_motion.OUTPUTSELECT
+enable => m_ground_strike.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
+enable => ball_y_pos.OUTPUTSELECT
 enable => dir.ENA
+enable => rst.ENA
+enable => m_rst.ENA
 clk => ~NO_FANOUT~
+vert_sync => ground_strike~reg0.CLK
+vert_sync => m_rst.CLK
+vert_sync => rst.CLK
+vert_sync => dir.CLK
 vert_sync => ball_y_pos[0].CLK
 vert_sync => ball_y_pos[1].CLK
 vert_sync => ball_y_pos[2].CLK
@@ -131,7 +137,6 @@ vert_sync => ball_y_pos[6].CLK
 vert_sync => ball_y_pos[7].CLK
 vert_sync => ball_y_pos[8].CLK
 vert_sync => ball_y_pos[9].CLK
-vert_sync => m_rst.CLK
 vert_sync => ball_y_motion[0].CLK
 vert_sync => ball_y_motion[1].CLK
 vert_sync => ball_y_motion[2].CLK
@@ -142,8 +147,28 @@ vert_sync => ball_y_motion[6].CLK
 vert_sync => ball_y_motion[7].CLK
 vert_sync => ball_y_motion[8].CLK
 vert_sync => ball_y_motion[9].CLK
-vert_sync => rst.CLK
-vert_sync => dir.CLK
+vert_sync => m_ground_strike.CLK
+reset => m_ground_strike.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_motion.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
+reset => ball_y_pos.OUTPUTSELECT
 pixel_row[0] => Add2.IN20
 pixel_row[0] => LessThan3.IN22
 pixel_row[1] => Add2.IN19
@@ -208,6 +233,7 @@ red <= <VCC>
 green <= ball_on.DB_MAX_OUTPUT_PORT_TYPE
 blue <= ball_on.DB_MAX_OUTPUT_PORT_TYPE
 ball_state <= ball_state.DB_MAX_OUTPUT_PORT_TYPE
+ground_strike <= ground_strike~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project_Flappy_v1|Div:div_design

@@ -24,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "collision",
+					"strict" : false
+				},
+				{
 					"name" : "pb3",
 					"strict" : false
 				},
