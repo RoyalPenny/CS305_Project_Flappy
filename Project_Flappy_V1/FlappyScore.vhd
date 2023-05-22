@@ -4,46 +4,36 @@ USE  IEEE.STD_LOGIC_ARITH.all;
 USE  IEEE.STD_LOGIC_UNSIGNED.all;
 
 ENTITY FlappyScore IS
-generic(COUNTER_BITS: natural := 15);  
-   PORT( Clk, reset, score, highet : IN std_logic;
-            data_in: in std_logic_vector(15 downto 0);
-                blank: in std_logic_vector(3 downto 0);
-            Anode_signal : out STD_LOGIC_VECTOR (3 downto 0));	
+
+   PORT( output, Clk : in std_logic;
+		pixel_row, pixel_column : in std_logic_vector(9 downto 0);
+		score		: out std_logic_vector(12 downto 0));
 END FlappyScore;
 
 architecture behaviour of FlappyScore is
-signal counter_value: std_logic_vector(COUNTER_BITS-1 downto 0) := (others=>'0'); 
-signal anode_select: std_logic_vector(1 downto 0);
-signal decode: std_logic_vector(3 downto 0);
-signal BCD_digit : STD_LOGIC_VECTOR (3 downto 0);
-signal SevenSeg_out: STD_logic_vector (6 downto 0);
+component pipe_score 
+port( x_pos: in std_logic_vector(10 downto 0);
+      vert_sync :in std_logic;
+      ones : OUT STD_LOGIC_VECTOR(3 downto 0);
+      tens : out std_logic_vector(3 downto 0);
+      hundreds : out std_logic_vector(3 downto 0));
+end component;
 
-COMPONENT BCD_to_SevenSeg is
-	PORT( BCD_digit : in STD_LOGIC_VECTOR (3 downto 0);
-            SevenSeg_out: out STD_logic_vector (6 downto 0));
-end COMPONENT;
+        SIGNAL t_ones : std_logic_vector(3 downto 0) := "0000";
+	SIGNAL t_tens : std_logic_vector(3 downto 0) := "0000";
+	SIGNAL t_hundreds : std_logic_vector(3 downto 0) := "0000";
+
 begin
-dut: BCD_to_SevenSeg PORT MAP(BCD_digit, SevenSeg_out);
+counter: up_counter_score port map (x_pos,vert_sync,ones => t_ones, tens => t_tens, hundreds => t_hundreds);
 
-process (Clk) 
+process (Clk,output,pixel_row,pixel_column) 
 begin
     if (rising_edge(Clk)) then
-          counter_value <= std_logic_vector(unsigned(counter_value) + 1);
+          if(input = '1') then
+
     end if;
+score <= t_ones & t_tens & t_hundreds;
 end process;
-anode_select <= counter_value(COUNTER_BITS-1 downto COUNTER_BITS-2);
-	
-	with anode_select select
-		an <=
-			"111" & blank(0) when "00",  --Determines when the display should be blank (1 is blank)
-			"11" & blank(1) & '1' when "01",
-			'1' & blank(2) & "11" when "10",
-			blank(3) & "111" when others;
-	
-	with anode_select select  --Determines which data set to send to the seven segment decoder
-		decode <=
-			data_in(3 downto 0) when "00",
-			data_in(7 downto 4) when "01",
-			data_in(11 downto 8) when "10",
-			data_in(15 downto 12) when others;
+
+
 end architecture behaviour;
