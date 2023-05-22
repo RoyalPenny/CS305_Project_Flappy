@@ -1,4 +1,4 @@
-Fitter Status : Successful - Thu May 18 14:11:07 2023
+Fitter Status : Successful - Mon May 22 16:35:02 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Project_Flappy_v1
 Top-level Entity Name : Project_Flappy_V1
@@ -6,7 +6,7 @@ Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
 Logic utilization (in ALMs) : 264 / 18,480 ( 1 % )
-Total registers : 213
+Total registers : 194
 Total pins : 10 / 224 ( 4 % )
 Total virtual pins : 0
 Total block memory bits : 64 / 3,153,920 ( < 1 % )

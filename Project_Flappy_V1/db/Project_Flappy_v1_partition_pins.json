@@ -24,15 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "collision",
+					"name" : "pb3",
 					"strict" : false
 				},
 				{
 					"name" : "CLK",
-					"strict" : false
-				},
-				{
-					"name" : "pb3",
 					"strict" : false
 				},
 				{
