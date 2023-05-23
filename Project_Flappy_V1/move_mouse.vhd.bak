@@ -9,7 +9,7 @@ ENTITY move_mouse IS
 		(clk : IN std_logic;
       pixel_row, pixel_column, mouse_row, mouse_column	: IN std_logic_vector(9 DOWNTO 0);
 		  red, green, blue 			: OUT std_logic);		
-END bouncy_ball;
+END move_mouse;
 
 architecture behavior of move_mouse is
 

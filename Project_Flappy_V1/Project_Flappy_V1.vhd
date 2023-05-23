@@ -4,8 +4,9 @@ USE  IEEE.STD_LOGIC_ARITH.all;
 USE  IEEE.STD_LOGIC_UNSIGNED.all;
 
 entity Project_Flappy_V1 is
-          port (CLK, pb1, pb2, pb3, pb4, mouse_data, mouse_clk : in std_logic;
-          		  red_out, green_out, blue_out, horiz_sync_out, vert_sync_out, collision	: OUT	STD_LOGIC);
+          port (CLK, pb1, pb2, pb3, pb4 : in std_logic;
+          		  red_out, green_out, blue_out, horiz_sync_out, vert_sync_out, collision	: OUT	STD_LOGIC;
+          		  mouse_data, mouse_clk : inout std_logic);
 end entity Project_Flappy_V1;
 
 architecture game of Project_Flappy_V1 is
@@ -16,7 +17,7 @@ architecture game of Project_Flappy_V1 is
            t_pipe_2_red, t_pipe_2_green, t_pipe_2_blue,
            t_pipe_3_red, t_pipe_3_green, t_pipe_3_blue,
            t_mouse_red, t_mouse_green, t_mouse_blue,
-           t_red, t_green, t_blue, t_reset,
+           t_red, t_green, t_blue, t_reset, t_reset_latch,
            t_clkDiv, t_vert_sync_out, t_horiz_sync_out, t_ground_strike,
            t_mouse_data, t_mouse_clk, t_left_button, t_right_button, 
            t_count, t_count_1, t_count_2, t_count_3 : STD_LOGIC;
@@ -100,17 +101,20 @@ architecture game of Project_Flappy_V1 is
     vert_sync_out <= t_vert_sync_out;
     horiz_sync_out <= t_horiz_sync_out;
     
-    t_red <= t_ball_red and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and t_sprite_red_out;
-    t_green <= t_ball_green and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and t_sprite_green_out;
-    t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and t_sprite_blue_out;
+    t_red <= t_ball_red and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and t_sprite_red_out and (t_mouse_red or t_enable);
+    t_green <= t_ball_green and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and t_sprite_green_out and (t_mouse_green or t_enable);
+    t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and t_sprite_blue_out and (t_mouse_blue or t_enable);
     
     t_count <= t_count_1 or t_count_2 or t_count_3;
   
     t_enable <= '0' when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1'))
                 or t_ground_strike = '0') 
                 else
-                '1' when (pb1 = '0' and t_enable = '0');
+                '1' when (t_left_button = '1' and t_reset_latch = '1');
                 
+    t_reset_latch <= '0' when (t_left_button = '1') else
+                     '1' when (t_reset = '1');
+    
     t_reset <= '1' when (pb3 = '0') else
                '0';
                
@@ -120,19 +124,19 @@ architecture game of Project_Flappy_V1 is
     
     t_pipe_h <= '0' & t_psudo_rand;
     
-    mouse_design: mouse port map (t_clkDiv, t_reset, t_mouse_data, t_mouse_clk, t_left_button, t_right_button, t_mouse_row, t_mouse_column);
+    mouse_design: mouse port map (t_clkDiv, t_reset, mouse_data, mouse_clk, t_left_button, t_right_button, t_mouse_row, t_mouse_column);
       
-    move_mouse_design: move_mouse port map (t_clkDiv, t_pixel_row, t_pixel_column, t_mouse_row, t_mouse_column, t_mouse_red, t_mouse_green, t_mouse_red);
+    move_mouse_design: move_mouse port map (t_clkDiv, t_pixel_row, t_pixel_column, t_mouse_row, t_mouse_column, t_mouse_red, t_mouse_green, t_mouse_blue);
     
     vga_design: VGA_SYNC port map (t_clkDiv, t_red, t_green, t_blue,
 		                              red_out, green_out, blue_out, t_horiz_sync_out, t_vert_sync_out,
 			                            t_pixel_row, t_pixel_column);
 			                            
-	  ball_design: bouncy_ball port map (pb1, t_enable, t_clkDiv, t_vert_sync_out, t_reset, t_pixel_row, t_pixel_column, t_ball_red, t_ball_green, t_ball_blue, t_bouncy_ball_on, t_ground_strike);   
+	  ball_design: bouncy_ball port map (t_left_button, t_enable, t_clkDiv, t_vert_sync_out, t_reset, t_pixel_row, t_pixel_column, t_ball_red, t_ball_green, t_ball_blue, t_bouncy_ball_on, t_ground_strike);   
 	  
 	  div_design: Div port map (CLK, t_clkDiv);
 	    
-	  psudo_rand_design: Psudo_Gen port map(t_clkDiv, pb2, t_psudo_rand);
+	  psudo_rand_design: Psudo_Gen port map(t_clkDiv, pb3, t_psudo_rand);
 
 	  pipe1: Pipes_V2 port map(t_clkDiv, t_horiz_sync_out, t_enable, t_reset, t_pipe_h, t_pixel_row, t_pixel_column, t_pipe_initial_1, t_pipe_1_red, t_pipe_1_green, t_pipe_1_blue, t_pipe_1_on, t_count_1);
 	  pipe2: Pipes_V2 port map(t_clkDiv, t_horiz_sync_out, t_enable, t_reset, t_pipe_h, t_pixel_row, t_pixel_column, t_pipe_initial_2, t_pipe_2_red, t_pipe_2_green, t_pipe_2_blue, t_pipe_2_on, t_count_2);

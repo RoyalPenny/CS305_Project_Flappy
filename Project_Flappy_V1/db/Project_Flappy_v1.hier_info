@@ -1,22 +1,23 @@
 |Project_Flappy_v1
 CLK => Div:div_design.CLK
-pb1 => bouncy_ball:ball_design.pb1
-pb1 => t_enable.IN1
-pb2 => Psudo_Gen:psudo_rand_design.rst
+pb1 => ~NO_FANOUT~
+pb2 => ~NO_FANOUT~
+pb3 => Psudo_Gen:psudo_rand_design.rst
+pb3 => t_reset_latch.IN1
 pb3 => mouse:mouse_design.reset
 pb3 => bouncy_ball:ball_design.reset
 pb3 => Pipes_V2:pipe1.reset
 pb3 => Pipes_V2:pipe2.reset
 pb3 => Pipes_V2:pipe3.reset
 pb4 => ~NO_FANOUT~
-mouse_data => ~NO_FANOUT~
-mouse_clk => ~NO_FANOUT~
 red_out <= VGA_SYNC:vga_design.red_out
 green_out <= VGA_SYNC:vga_design.green_out
 blue_out <= VGA_SYNC:vga_design.blue_out
 horiz_sync_out <= VGA_SYNC:vga_design.horiz_sync_out
 vert_sync_out <= VGA_SYNC:vga_design.vert_sync_out
 collision <= comb.DB_MAX_OUTPUT_PORT_TYPE
+mouse_data <> mouse:mouse_design.mouse_data
+mouse_clk <> mouse:mouse_design.mouse_clk
 
 
 |Project_Flappy_v1|mouse:mouse_design

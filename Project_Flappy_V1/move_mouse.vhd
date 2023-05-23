@@ -23,7 +23,7 @@ BEGIN
 mouse_y_pos <= mouse_row;
 mouse_x_pos <= mouse_column;
 
-size <= CONV_STD_LOGIC_VECTOR(8,10);
+size <= CONV_STD_LOGIC_VECTOR(4,10);
 -- ball_x_pos and ball_y_pos show the (x,y) for the centre of ball
 
 mouse_on <= '1' when ( ('0' & mouse_x_pos <= '0' & pixel_column + size) and ('0' & pixel_column <= '0' & mouse_x_pos + size) 	-- x_pos - size <= pixel_column <= x_pos + size

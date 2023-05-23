@@ -24,19 +24,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "mouse_data",
+					"strict" : false
+				},
+				{
+					"name" : "mouse_clk",
+					"strict" : false
+				},
+				{
 					"name" : "pb3",
 					"strict" : false
 				},
 				{
 					"name" : "CLK",
-					"strict" : false
-				},
-				{
-					"name" : "pb1",
-					"strict" : false
-				},
-				{
-					"name" : "pb2",
 					"strict" : false
 				}
 			]
