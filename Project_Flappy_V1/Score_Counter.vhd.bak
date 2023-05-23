@@ -8,4 +8,7 @@ entity Score_Counter is
          Red_out, Green_out, Blue_out : out std_logic);
 end entity Score_Counter;
 
-         
+architecture a1 of Score_Counter is
+  begin
+    
+    
