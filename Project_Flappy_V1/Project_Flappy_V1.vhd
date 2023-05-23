@@ -81,7 +81,7 @@ architecture TEST of Project_Flappy_V1 is
     t_blue <= t_ball_blue and t_pipe_blue and t_sprite_blue_out;
   
     
-    t_enable <= '0' when (t_bouncy_ball_on = '1' and t_pipe_on = '1') else
+    t_enable <= '0' when ((t_ball_green = '0' and t_ball_blue = '0') and (t_pipe_green = '0' and t_pipe_blue = '0')) else
                 '1' when (pb3 = '0');
           
     collision <= '1' when (t_bouncy_ball_on = '1' and t_pipe_on = '1') else
