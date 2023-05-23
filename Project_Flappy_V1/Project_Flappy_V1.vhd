@@ -31,8 +31,8 @@ architecture game of Project_Flappy_V1 is
     signal t_pipe_initial_3: std_logic_vector(10 downto 0) :=  conv_std_logic_vector(678, 11);
     
     -- Below for Sprite printer out   
-    signal t_sprite_anchor_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-    signal t_sprite_anchor_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(500, 10); 
+    signal t_sprite_anchor_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(8, 10);
+    signal t_sprite_anchor_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(600, 10); 
     signal t_sprite_red : std_logic := '0';
     signal t_sprite_green : std_logic := '1';
     signal t_sprite_blue : std_logic := '1';     
@@ -106,17 +106,12 @@ architecture game of Project_Flappy_V1 is
     
     t_count <= t_count_1 or t_count_2 or t_count_3;
   
-    
-<<<<<<< HEAD
-    t_enable <= '0' when ((t_ball_green = '0' and t_ball_blue = '0') and (t_pipe_green = '0' and t_pipe_blue = '0')) else
-=======
     t_enable <= '0' when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1'))
                 or t_ground_strike = '0') 
                 else
->>>>>>> 9ffec4533396de8eec6f9408587c868e6520b0c5
-                '1' when (pb3 = '0');
+                '1' when (pb1 = '0' and t_enable = '0');
                 
-    t_reset <= '1' when (pb4 = '0') else
+    t_reset <= '1' when (pb3 = '0') else
                '0';
                
     --collision <= t_ground_strike;

@@ -24,7 +24,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "pb4",
+					"name" : "pb3",
 					"strict" : false
 				},
 				{
@@ -32,15 +32,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "pb3",
+					"name" : "pb1",
 					"strict" : false
 				},
 				{
 					"name" : "pb2",
-					"strict" : false
-				},
-				{
-					"name" : "pb1",
 					"strict" : false
 				}
 			]

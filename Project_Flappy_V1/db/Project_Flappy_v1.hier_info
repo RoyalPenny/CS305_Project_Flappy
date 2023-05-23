@@ -1,13 +1,14 @@
 |Project_Flappy_v1
 CLK => Div:div_design.CLK
 pb1 => bouncy_ball:ball_design.pb1
+pb1 => t_enable.IN1
 pb2 => Psudo_Gen:psudo_rand_design.rst
-pb3 => t_enable.IN1
-pb4 => mouse:mouse_design.reset
-pb4 => bouncy_ball:ball_design.reset
-pb4 => Pipes_V2:pipe1.reset
-pb4 => Pipes_V2:pipe2.reset
-pb4 => Pipes_V2:pipe3.reset
+pb3 => mouse:mouse_design.reset
+pb3 => bouncy_ball:ball_design.reset
+pb3 => Pipes_V2:pipe1.reset
+pb3 => Pipes_V2:pipe2.reset
+pb3 => Pipes_V2:pipe3.reset
+pb4 => ~NO_FANOUT~
 mouse_data => ~NO_FANOUT~
 mouse_clk => ~NO_FANOUT~
 red_out <= VGA_SYNC:vga_design.red_out
@@ -726,6 +727,7 @@ red <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 green <= <VCC>
 blue <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
+count <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project_Flappy_v1|Pipes_V2:pipe2
@@ -918,6 +920,7 @@ red <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 green <= <VCC>
 blue <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
+count <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project_Flappy_v1|Pipes_V2:pipe3
@@ -1110,6 +1113,7 @@ red <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 green <= <VCC>
 blue <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
+count <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project_Flappy_v1|sprite_printer:sprite_design
