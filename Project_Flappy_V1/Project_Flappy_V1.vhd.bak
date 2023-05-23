@@ -107,6 +107,14 @@ architecture game of Project_Flappy_V1 is
     vert_sync_out <= t_vert_sync_out;
     horiz_sync_out <= t_horiz_sync_out;
     
+<<<<<<< HEAD
+    t_red <= t_ball_red and t_pipe_red and t_sprite_red_out;
+    t_green <= t_ball_green and t_pipe_green and t_sprite_green_out;
+    t_blue <= t_ball_blue and t_pipe_blue and t_sprite_blue_out;
+  
+    
+    t_enable <= '0' when ((t_ball_green = '0' and t_ball_blue = '0') and (t_pipe_green = '0' and t_piep_blue = '0')) else
+=======
     t_red <= t_ball_red and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and t_sprite_red_out;
     t_green <= t_ball_green and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and t_sprite_green_out;
     t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and t_sprite_blue_out;
@@ -117,6 +125,7 @@ architecture game of Project_Flappy_V1 is
     t_enable <= '0' when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1'))
                 or t_ground_strike = '0') 
                 else
+>>>>>>> 9ffec4533396de8eec6f9408587c868e6520b0c5
                 '1' when (pb3 = '0');
                 
     t_reset <= '1' when (pb4 = '0') else
