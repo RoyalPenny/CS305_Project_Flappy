@@ -28,11 +28,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "pb3",
 					"strict" : false
 				},
 				{
-					"name" : "pb3",
+					"name" : "CLK",
 					"strict" : false
 				},
 				{
