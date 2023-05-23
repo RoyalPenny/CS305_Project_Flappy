@@ -71,7 +71,7 @@ begin
 		
 		
 		    if(ball_y_pos + ball_y_motion + CONV_STD_LOGIC_VECTOR(8,10) > CONV_STD_LOGIC_VECTOR(479,10) and dir = '1') then
-	         ball_y_motion <= CONV_STD_LOGIC_VECTOR(479,10) - CONV_STD_LOGIC_VECTOR(8,10) - ball_y_pos;
+	         ball_y_motion <= CONV_STD_LOGIC_VECTOR(479,10) - CONV_STD_LOGIC_VECTOR(16,10) - ball_y_pos;
 	         m_rst <= '0';
 	         m_ground_strike <= '0';
 			   

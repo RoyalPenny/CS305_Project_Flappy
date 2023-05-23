@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon May 22 19:20:47 2023
+Analysis & Synthesis Status : Successful - Tue May 23 17:08:31 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Project_Flappy_v1
 Top-level Entity Name : Project_Flappy_V1
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 165
-Total pins : 10
+Total pins : 13
 Total virtual pins : 0
 Total block memory bits : 64
 Total DSP Blocks : 0

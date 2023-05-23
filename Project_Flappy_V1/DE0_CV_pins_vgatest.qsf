@@ -460,7 +460,7 @@ set_location_assignment PIN_W19 -to HEX5[6]
 set_location_assignment PIN_U7 -to pb1
 set_location_assignment PIN_W9 -to pb2
 set_location_assignment PIN_M7 -to pb3
-set_location_assignment PIN_M6 -to KEY[3]
+set_location_assignment PIN_M6 -to pb4
 set_location_assignment PIN_AA2 -to collision
 set_location_assignment PIN_AA1 -to LEDR[1]
 set_location_assignment PIN_W2 -to LEDR[2]
@@ -471,9 +471,9 @@ set_location_assignment PIN_U2 -to LEDR[6]
 set_location_assignment PIN_U1 -to LEDR[7]
 set_location_assignment PIN_L2 -to LEDR[8]
 set_location_assignment PIN_L1 -to LEDR[9]
-set_location_assignment PIN_D3 -to PS2_CLK
+set_location_assignment PIN_D3 -to mouse_clk
 set_location_assignment PIN_E2 -to PS2_CLK2
-set_location_assignment PIN_G2 -to PS2_DAT
+set_location_assignment PIN_G2 -to mouse_data
 set_location_assignment PIN_G1 -to PS2_DAT2
 set_location_assignment PIN_P22 -to RESET_N
 set_location_assignment PIN_H11 -to SD_CLK

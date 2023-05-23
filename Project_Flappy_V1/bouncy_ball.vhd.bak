@@ -49,7 +49,7 @@ begin
 	   if (reset = '1') then
 	     m_ground_strike <= '1';
 	     ball_y_motion <= CONV_STD_LOGIC_VECTOR(0,10);
-	     ball_y_pos <= CONV_STD_LOGIC_VECTOR(0,10);
+	     ball_y_pos <= CONV_STD_LOGIC_VECTOR(236,10);
 	   end if;
 	     
 	   if (enable = '1') then	 		

@@ -32,7 +32,7 @@ Architecture behaviour of Pipes_V2 is
       variable xy : xy_pos;
     begin
       if(x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
-	      xy.x_pos := CONV_STD_LOGIC_VECTOR(704,11);	
+	      xy.x_pos := CONV_STD_LOGIC_VECTOR(760,11);	
 	      
 	      if(pipe_h > CONV_STD_LOGIC_VECTOR(336,10)) then
 	        xy.y_pos := CONV_STD_LOGIC_VECTOR(336,10);

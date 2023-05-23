@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Project_Flappy_v1
-Mon May 22 19:20:47 2023
+Tue May 23 17:08:31 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,21 +14,25 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. User-Specified and Inferred Latches
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
- 15. Parameter Settings for User Entity Instance: sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
- 16. altsyncram Parameter Settings by Entity Instance
- 17. Port Connectivity Checks: "sprite_printer:sprite_design"
- 18. Port Connectivity Checks: "Pipes_V2:pipe3"
- 19. Port Connectivity Checks: "Pipes_V2:pipe2"
- 20. Port Connectivity Checks: "Pipes_V2:pipe1"
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+  9. State Machine - |Project_Flappy_V1|MOUSE:mouse_design|mouse_state
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+ 17. Parameter Settings for User Entity Instance: sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
+ 18. altsyncram Parameter Settings by Entity Instance
+ 19. Port Connectivity Checks: "sprite_printer:sprite_design"
+ 20. Port Connectivity Checks: "Pipes_V2:pipe3"
+ 21. Port Connectivity Checks: "Pipes_V2:pipe2"
+ 22. Port Connectivity Checks: "Pipes_V2:pipe1"
+ 23. Port Connectivity Checks: "move_mouse:move_mouse_design"
+ 24. Port Connectivity Checks: "mouse:mouse_design"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -54,14 +58,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon May 22 19:20:47 2023       ;
+; Analysis & Synthesis Status     ; Successful - Tue May 23 17:08:31 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Project_Flappy_v1                           ;
 ; Top-level Entity Name           ; Project_Flappy_V1                           ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 165                                         ;
-; Total pins                      ; 10                                          ;
+; Total pins                      ; 13                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 64                                          ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -174,8 +178,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-16        ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -185,6 +188,8 @@ refer to the applicable agreement for further details.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                                               ; Library ;
 +----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Project_Flappy_V1.vhd            ; yes             ; User VHDL File                         ; C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd  ;         ;
+; mouse.vhd                        ; yes             ; Auto-Found VHDL File                   ; C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd              ;         ;
+; move_mouse.vhd                   ; yes             ; Auto-Found VHDL File                   ; C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd         ;         ;
 ; vga_sync.vhd                     ; yes             ; Auto-Found VHDL File                   ; C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd           ;         ;
 ; bouncy_ball.vhd                  ; yes             ; Auto-Found VHDL File                   ; C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd        ;         ;
 ; div.vhd                          ; yes             ; Auto-Found VHDL File                   ; C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/div.vhd                ;         ;
@@ -211,18 +216,18 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 262                     ;
+; Estimate of Logic utilization (ALMs needed) ; 260                     ;
 ;                                             ;                         ;
-; Combinational ALUT usage for logic          ; 420                     ;
-;     -- 7 input functions                    ; 4                       ;
-;     -- 6 input functions                    ; 94                      ;
+; Combinational ALUT usage for logic          ; 417                     ;
+;     -- 7 input functions                    ; 6                       ;
+;     -- 6 input functions                    ; 92                      ;
 ;     -- 5 input functions                    ; 51                      ;
-;     -- 4 input functions                    ; 88                      ;
-;     -- <=3 input functions                  ; 183                     ;
+;     -- 4 input functions                    ; 90                      ;
+;     -- <=3 input functions                  ; 178                     ;
 ;                                             ;                         ;
 ; Dedicated logic registers                   ; 165                     ;
 ;                                             ;                         ;
-; I/O pins                                    ; 10                      ;
+; I/O pins                                    ; 13                      ;
 ; Total MLAB memory bits                      ; 0                       ;
 ; Total block memory bits                     ; 64                      ;
 ;                                             ;                         ;
@@ -230,8 +235,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                         ;
 ; Maximum fan-out node                        ; Div:div_design|t_clkDiv ;
 ; Maximum fan-out                             ; 75                      ;
-; Total fan-out                               ; 2157                    ;
-; Average fan-out                             ; 3.52                    ;
+; Total fan-out                               ; 2162                    ;
+; Average fan-out                             ; 3.51                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -240,7 +245,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Entity Name       ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |Project_Flappy_V1                           ; 420 (4)             ; 165 (0)                   ; 64                ; 0          ; 10   ; 0            ; |Project_Flappy_V1                                                                                                                 ; Project_Flappy_V1 ; work         ;
+; |Project_Flappy_V1                           ; 417 (4)             ; 165 (0)                   ; 64                ; 0          ; 13   ; 0            ; |Project_Flappy_V1                                                                                                                 ; Project_Flappy_V1 ; work         ;
 ;    |Div:div_design|                          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Project_Flappy_V1|Div:div_design                                                                                                  ; Div               ; work         ;
 ;    |Pipes_V2:pipe1|                          ; 69 (69)             ; 31 (31)                   ; 0                 ; 0          ; 0    ; 0            ; |Project_Flappy_V1|Pipes_V2:pipe1                                                                                                  ; Pipes_V2          ; work         ;
 ;    |Pipes_V2:pipe2|                          ; 63 (63)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |Project_Flappy_V1|Pipes_V2:pipe2                                                                                                  ; Pipes_V2          ; work         ;
@@ -251,7 +256,7 @@ refer to the applicable agreement for further details.
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 64                ; 0          ; 0    ; 0            ; |Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
 ;             |altsyncram_d5g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 64                ; 0          ; 0    ; 0            ; |Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated ; altsyncram_d5g1   ; work         ;
 ;    |VGA_SYNC:vga_design|                     ; 41 (41)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |Project_Flappy_V1|VGA_SYNC:vga_design                                                                                             ; VGA_SYNC          ; work         ;
-;    |bouncy_ball:ball_design|                 ; 120 (120)           ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |Project_Flappy_V1|bouncy_ball:ball_design                                                                                         ; bouncy_ball       ; work         ;
+;    |bouncy_ball:ball_design|                 ; 117 (117)           ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |Project_Flappy_V1|bouncy_ball:ball_design                                                                                         ; bouncy_ball       ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -265,6 +270,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------+
 
 
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Project_Flappy_V1|MOUSE:mouse_design|mouse_state                                                                                                                                       ;
++-------------------------------+---------------------------+--------------------------+-------------------------------+---------------------------+--------------------------+---------------------------+
+; Name                          ; mouse_state.INPUT_PACKETS ; mouse_state.WAIT_CMD_ACK ; mouse_state.WAIT_OUTPUT_READY ; mouse_state.LOAD_COMMAND2 ; mouse_state.LOAD_COMMAND ; mouse_state.INHIBIT_TRANS ;
++-------------------------------+---------------------------+--------------------------+-------------------------------+---------------------------+--------------------------+---------------------------+
+; mouse_state.INHIBIT_TRANS     ; 0                         ; 0                        ; 0                             ; 0                         ; 0                        ; 0                         ;
+; mouse_state.LOAD_COMMAND      ; 0                         ; 0                        ; 0                             ; 0                         ; 1                        ; 1                         ;
+; mouse_state.LOAD_COMMAND2     ; 0                         ; 0                        ; 0                             ; 1                         ; 0                        ; 1                         ;
+; mouse_state.WAIT_OUTPUT_READY ; 0                         ; 0                        ; 1                             ; 0                         ; 0                        ; 1                         ;
+; mouse_state.WAIT_CMD_ACK      ; 0                         ; 1                        ; 0                             ; 0                         ; 0                        ; 1                         ;
+; mouse_state.INPUT_PACKETS     ; 1                         ; 0                        ; 0                             ; 0                         ; 0                        ; 1                         ;
++-------------------------------+---------------------------+--------------------------+-------------------------------+---------------------------+--------------------------+---------------------------+
+
+
 +---------------------------------------------------------------------------------------------------+
 ; User-Specified and Inferred Latches                                                               ;
 +----------------------------------------------------+---------------------+------------------------+
@@ -276,34 +296,90 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; Pipes_V2:pipe2|timer[9]                ; Merged with Pipes_V2:pipe1|timer[9]    ;
-; Pipes_V2:pipe3|timer[9]                ; Merged with Pipes_V2:pipe1|timer[9]    ;
-; Pipes_V2:pipe2|timer[8]                ; Merged with Pipes_V2:pipe1|timer[8]    ;
-; Pipes_V2:pipe3|timer[8]                ; Merged with Pipes_V2:pipe1|timer[8]    ;
-; Pipes_V2:pipe2|timer[7]                ; Merged with Pipes_V2:pipe1|timer[7]    ;
-; Pipes_V2:pipe3|timer[7]                ; Merged with Pipes_V2:pipe1|timer[7]    ;
-; Pipes_V2:pipe2|timer[6]                ; Merged with Pipes_V2:pipe1|timer[6]    ;
-; Pipes_V2:pipe3|timer[6]                ; Merged with Pipes_V2:pipe1|timer[6]    ;
-; Pipes_V2:pipe2|timer[5]                ; Merged with Pipes_V2:pipe1|timer[5]    ;
-; Pipes_V2:pipe3|timer[5]                ; Merged with Pipes_V2:pipe1|timer[5]    ;
-; Pipes_V2:pipe2|timer[4]                ; Merged with Pipes_V2:pipe1|timer[4]    ;
-; Pipes_V2:pipe3|timer[4]                ; Merged with Pipes_V2:pipe1|timer[4]    ;
-; Pipes_V2:pipe2|timer[3]                ; Merged with Pipes_V2:pipe1|timer[3]    ;
-; Pipes_V2:pipe3|timer[3]                ; Merged with Pipes_V2:pipe1|timer[3]    ;
-; Pipes_V2:pipe2|timer[2]                ; Merged with Pipes_V2:pipe1|timer[2]    ;
-; Pipes_V2:pipe3|timer[2]                ; Merged with Pipes_V2:pipe1|timer[2]    ;
-; Pipes_V2:pipe2|timer[1]                ; Merged with Pipes_V2:pipe1|timer[1]    ;
-; Pipes_V2:pipe3|timer[1]                ; Merged with Pipes_V2:pipe1|timer[1]    ;
-; Pipes_V2:pipe2|timer[0]                ; Merged with Pipes_V2:pipe1|timer[0]    ;
-; Pipes_V2:pipe3|timer[0]                ; Merged with Pipes_V2:pipe1|timer[0]    ;
-; VGA_SYNC:vga_design|pixel_row[9]       ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 21 ;                                        ;
-+----------------------------------------+----------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                        ;
++--------------------------------------------------+----------------------------------------+
+; Register name                                    ; Reason for Removal                     ;
++--------------------------------------------------+----------------------------------------+
+; MOUSE:mouse_design|CHAROUT[4..7]                 ; Stuck at VCC due to stuck port data_in ;
+; MOUSE:mouse_design|CHAROUT[3]                    ; Stuck at GND due to stuck port data_in ;
+; MOUSE:mouse_design|CHAROUT[2]                    ; Stuck at VCC due to stuck port data_in ;
+; MOUSE:mouse_design|CHAROUT[0,1]                  ; Stuck at GND due to stuck port data_in ;
+; MOUSE:mouse_design|SHIFTOUT[10]                  ; Stuck at VCC due to stuck port data_in ;
+; Pipes_V2:pipe2|timer[9]                          ; Merged with Pipes_V2:pipe1|timer[9]    ;
+; Pipes_V2:pipe3|timer[9]                          ; Merged with Pipes_V2:pipe1|timer[9]    ;
+; Pipes_V2:pipe2|timer[8]                          ; Merged with Pipes_V2:pipe1|timer[8]    ;
+; Pipes_V2:pipe3|timer[8]                          ; Merged with Pipes_V2:pipe1|timer[8]    ;
+; Pipes_V2:pipe2|timer[7]                          ; Merged with Pipes_V2:pipe1|timer[7]    ;
+; Pipes_V2:pipe3|timer[7]                          ; Merged with Pipes_V2:pipe1|timer[7]    ;
+; Pipes_V2:pipe2|timer[6]                          ; Merged with Pipes_V2:pipe1|timer[6]    ;
+; Pipes_V2:pipe3|timer[6]                          ; Merged with Pipes_V2:pipe1|timer[6]    ;
+; Pipes_V2:pipe2|timer[5]                          ; Merged with Pipes_V2:pipe1|timer[5]    ;
+; Pipes_V2:pipe3|timer[5]                          ; Merged with Pipes_V2:pipe1|timer[5]    ;
+; Pipes_V2:pipe2|timer[4]                          ; Merged with Pipes_V2:pipe1|timer[4]    ;
+; Pipes_V2:pipe3|timer[4]                          ; Merged with Pipes_V2:pipe1|timer[4]    ;
+; Pipes_V2:pipe2|timer[3]                          ; Merged with Pipes_V2:pipe1|timer[3]    ;
+; Pipes_V2:pipe3|timer[3]                          ; Merged with Pipes_V2:pipe1|timer[3]    ;
+; Pipes_V2:pipe2|timer[2]                          ; Merged with Pipes_V2:pipe1|timer[2]    ;
+; Pipes_V2:pipe3|timer[2]                          ; Merged with Pipes_V2:pipe1|timer[2]    ;
+; Pipes_V2:pipe2|timer[1]                          ; Merged with Pipes_V2:pipe1|timer[1]    ;
+; Pipes_V2:pipe3|timer[1]                          ; Merged with Pipes_V2:pipe1|timer[1]    ;
+; Pipes_V2:pipe2|timer[0]                          ; Merged with Pipes_V2:pipe1|timer[0]    ;
+; Pipes_V2:pipe3|timer[0]                          ; Merged with Pipes_V2:pipe1|timer[0]    ;
+; VGA_SYNC:vga_design|pixel_row[9]                 ; Stuck at GND due to stuck port data_in ;
+; MOUSE:mouse_design|inhibit_wait_count[10,11]     ; Lost fanout                            ;
+; MOUSE:mouse_design|output_ready                  ; Lost fanout                            ;
+; MOUSE:mouse_design|iready_set                    ; Lost fanout                            ;
+; MOUSE:mouse_design|inhibit_wait_count[0..9]      ; Lost fanout                            ;
+; MOUSE:mouse_design|OUTCNT[1..3]                  ; Lost fanout                            ;
+; MOUSE:mouse_design|MOUSE_CLK_FILTER              ; Lost fanout                            ;
+; MOUSE:mouse_design|send_data                     ; Lost fanout                            ;
+; MOUSE:mouse_design|send_char                     ; Lost fanout                            ;
+; MOUSE:mouse_design|INCNT[0..3]                   ; Lost fanout                            ;
+; MOUSE:mouse_design|READ_CHAR                     ; Lost fanout                            ;
+; MOUSE:mouse_design|MOUSE_DATA_BUF                ; Lost fanout                            ;
+; MOUSE:mouse_design|OUTCNT[0]                     ; Lost fanout                            ;
+; MOUSE:mouse_design|filter[0..7]                  ; Lost fanout                            ;
+; MOUSE:mouse_design|SHIFTOUT[1..9]                ; Lost fanout                            ;
+; MOUSE:mouse_design|mouse_state.INHIBIT_TRANS     ; Lost fanout                            ;
+; MOUSE:mouse_design|mouse_state.LOAD_COMMAND      ; Lost fanout                            ;
+; MOUSE:mouse_design|mouse_state.LOAD_COMMAND2     ; Lost fanout                            ;
+; MOUSE:mouse_design|mouse_state.WAIT_OUTPUT_READY ; Lost fanout                            ;
+; MOUSE:mouse_design|mouse_state.WAIT_CMD_ACK      ; Lost fanout                            ;
+; MOUSE:mouse_design|mouse_state.INPUT_PACKETS     ; Lost fanout                            ;
+; Total Number of Removed Registers = 80           ;                                        ;
++--------------------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                 ;
++-------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                             ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++-------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; MOUSE:mouse_design|SHIFTOUT[10]           ; Stuck at VCC              ; MOUSE:mouse_design|output_ready, MOUSE:mouse_design|OUTCNT[3],                      ;
+;                                           ; due to stuck port data_in ; MOUSE:mouse_design|OUTCNT[2], MOUSE:mouse_design|OUTCNT[1],                         ;
+;                                           ;                           ; MOUSE:mouse_design|MOUSE_CLK_FILTER, MOUSE:mouse_design|send_data,                  ;
+;                                           ;                           ; MOUSE:mouse_design|send_char, MOUSE:mouse_design|OUTCNT[0],                         ;
+;                                           ;                           ; MOUSE:mouse_design|filter[0], MOUSE:mouse_design|filter[1],                         ;
+;                                           ;                           ; MOUSE:mouse_design|filter[2], MOUSE:mouse_design|filter[3],                         ;
+;                                           ;                           ; MOUSE:mouse_design|filter[4], MOUSE:mouse_design|filter[5],                         ;
+;                                           ;                           ; MOUSE:mouse_design|mouse_state.LOAD_COMMAND,                                        ;
+;                                           ;                           ; MOUSE:mouse_design|mouse_state.LOAD_COMMAND2,                                       ;
+;                                           ;                           ; MOUSE:mouse_design|mouse_state.WAIT_OUTPUT_READY,                                   ;
+;                                           ;                           ; MOUSE:mouse_design|mouse_state.INPUT_PACKETS                                        ;
+; MOUSE:mouse_design|iready_set             ; Lost Fanouts              ; MOUSE:mouse_design|INCNT[3], MOUSE:mouse_design|INCNT[2],                           ;
+;                                           ;                           ; MOUSE:mouse_design|INCNT[1], MOUSE:mouse_design|INCNT[0],                           ;
+;                                           ;                           ; MOUSE:mouse_design|READ_CHAR, MOUSE:mouse_design|MOUSE_DATA_BUF,                    ;
+;                                           ;                           ; MOUSE:mouse_design|SHIFTOUT[1], MOUSE:mouse_design|SHIFTOUT[2],                     ;
+;                                           ;                           ; MOUSE:mouse_design|SHIFTOUT[3], MOUSE:mouse_design|SHIFTOUT[4],                     ;
+;                                           ;                           ; MOUSE:mouse_design|SHIFTOUT[5], MOUSE:mouse_design|SHIFTOUT[6],                     ;
+;                                           ;                           ; MOUSE:mouse_design|SHIFTOUT[7], MOUSE:mouse_design|SHIFTOUT[8],                     ;
+;                                           ;                           ; MOUSE:mouse_design|SHIFTOUT[9]                                                      ;
+; MOUSE:mouse_design|inhibit_wait_count[11] ; Lost Fanouts              ; MOUSE:mouse_design|inhibit_wait_count[0], MOUSE:mouse_design|inhibit_wait_count[1], ;
+;                                           ;                           ; MOUSE:mouse_design|inhibit_wait_count[2], MOUSE:mouse_design|inhibit_wait_count[3], ;
+;                                           ;                           ; MOUSE:mouse_design|inhibit_wait_count[4], MOUSE:mouse_design|inhibit_wait_count[5], ;
+;                                           ;                           ; MOUSE:mouse_design|mouse_state.INHIBIT_TRANS                                        ;
++-------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -328,8 +404,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------+---------+
 ; bouncy_ball:ball_design|m_ground_strike ; 2       ;
 ; bouncy_ball:ball_design|dir             ; 15      ;
-; bouncy_ball:ball_design|rst             ; 1       ;
 ; bouncy_ball:ball_design|m_rst           ; 3       ;
+; bouncy_ball:ball_design|rst             ; 1       ;
 ; Total number of inverted registers = 4  ;         ;
 +-----------------------------------------+---------+
 
@@ -340,20 +416,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe3|pipe_1_h[8]               ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe3|pipe_1_h[4]               ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe2|pipe_1_h[8]               ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe3|pipe_1_h[7]               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe2|pipe_1_h[6]               ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe2|pipe_1_h[7]               ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe1|pipe_1_h[0]               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe1|pipe_1_h[8]               ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe1|pipe_1_h[3]               ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |Project_Flappy_V1|VGA_SYNC:vga_design|v_count[2]           ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |Project_Flappy_V1|VGA_SYNC:vga_design|v_count[6]           ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Project_Flappy_V1|bouncy_ball:ball_design|ball_y_pos[6]    ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe3|pipe_1_x_pos[10]          ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe3|pipe_1_x_pos[9]           ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe2|pipe_1_x_pos[10]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe2|pipe_1_x_pos[8]           ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe3|pipe_1_x_pos[3]           ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe3|pipe_1_x_pos[1]           ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe2|pipe_1_x_pos[3]           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe2|pipe_1_x_pos[7]           ;
 ; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe1|pipe_1_x_pos[2]           ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Project_Flappy_V1|Pipes_V2:pipe1|pipe_1_x_pos[1]           ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Project_Flappy_V1|bouncy_ball:ball_design|ball_y_motion[4] ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Project_Flappy_V1|bouncy_ball:ball_design|ball_y_motion[1] ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Project_Flappy_V1|SPRITE_PRINTER:sprite_design|s_font_row  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
@@ -524,6 +600,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------+--------------+
 
 
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "move_mouse:move_mouse_design"                                                        ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; red   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; green ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; blue  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mouse:mouse_design"                                                                         ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; mouse_data   ; Bidir  ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; mouse_clk    ; Bidir  ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; left_button  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; right_button ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -537,26 +636,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 10                          ;
 ;     SLD               ; 3                           ;
 ;     plain             ; 12                          ;
-; arriav_lcell_comb     ; 420                         ;
-;     arith             ; 135                         ;
+; arriav_lcell_comb     ; 417                         ;
+;     arith             ; 128                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 121                         ;
+;         1 data inputs ; 114                         ;
 ;         2 data inputs ; 13                          ;
-;     extend            ; 4                           ;
-;         7 data inputs ; 4                           ;
-;     normal            ; 281                         ;
+;     extend            ; 6                           ;
+;         7 data inputs ; 6                           ;
+;     normal            ; 283                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 18                          ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 88                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 90                          ;
 ;         5 data inputs ; 51                          ;
-;         6 data inputs ; 94                          ;
-; boundary_port         ; 10                          ;
+;         6 data inputs ; 92                          ;
+; boundary_port         ; 13                          ;
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.30                        ;
-; Average LUT depth     ; 3.67                        ;
+; Average LUT depth     ; 3.69                        ;
 +-----------------------+-----------------------------+
 
 
@@ -575,51 +674,69 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon May 22 19:20:35 2023
+    Info: Processing started: Tue May 23 17:08:19 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project_Flappy_v1 -c Project_Flappy_v1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file project_flappy_v1.vhd
-    Info (12022): Found design unit 1: Project_Flappy_V1-TEST File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 11
+    Info (12022): Found design unit 1: Project_Flappy_V1-game File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 11
     Info (12023): Found entity 1: Project_Flappy_V1 File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 6
 Info (12127): Elaborating entity "Project_Flappy_v1" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(26): used explicit default value for signal "t_pipe_initial_1" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 26
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(27): used explicit default value for signal "t_pipe_initial_2" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 27
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(28): used explicit default value for signal "t_pipe_initial_3" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 28
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(31): used explicit default value for signal "t_sprite_anchor_row" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 31
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(32): used explicit default value for signal "t_sprite_anchor_col" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 32
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(33): used explicit default value for signal "t_sprite_red" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 33
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(34): used explicit default value for signal "t_sprite_green" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 34
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(35): used explicit default value for signal "t_sprite_blue" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 35
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(36): used explicit default value for signal "t_sprite_multiplier" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 36
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(37): used explicit default value for signal "t_sprite_address" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 37
-Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(38): used explicit default value for signal "t_sprite_enable" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 38
-Info (10041): Inferred latch for "t_enable" at Project_Flappy_V1.vhd(97) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 97
+Warning (10541): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(8): used implicit default value for signal "collision" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 8
+Warning (10036): Verilog HDL or VHDL warning at Project_Flappy_V1.vhd(18): object "t_mouse_red" assigned a value but never read File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 18
+Warning (10036): Verilog HDL or VHDL warning at Project_Flappy_V1.vhd(18): object "t_mouse_green" assigned a value but never read File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 18
+Warning (10036): Verilog HDL or VHDL warning at Project_Flappy_V1.vhd(21): object "t_left_button" assigned a value but never read File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 21
+Warning (10036): Verilog HDL or VHDL warning at Project_Flappy_V1.vhd(21): object "t_right_button" assigned a value but never read File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 21
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(28): used explicit default value for signal "t_pipe_initial_1" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 28
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(29): used explicit default value for signal "t_pipe_initial_2" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 29
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(30): used explicit default value for signal "t_pipe_initial_3" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 30
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(33): used explicit default value for signal "t_sprite_anchor_row" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 33
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(34): used explicit default value for signal "t_sprite_anchor_col" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 34
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(35): used explicit default value for signal "t_sprite_red" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 35
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(36): used explicit default value for signal "t_sprite_green" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 36
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(37): used explicit default value for signal "t_sprite_blue" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 37
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(38): used explicit default value for signal "t_sprite_multiplier" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 38
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(39): used explicit default value for signal "t_sprite_address" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 39
+Warning (10540): VHDL Signal Declaration warning at Project_Flappy_V1.vhd(40): used explicit default value for signal "t_sprite_enable" because signal was never assigned a value File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 40
+Info (10041): Inferred latch for "t_enable" at Project_Flappy_V1.vhd(114) File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 114
+Warning (12125): Using design file mouse.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: MOUSE-behavior File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 18
+    Info (12023): Found entity 1: MOUSE File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 9
+Info (12128): Elaborating entity "mouse" for hierarchy "mouse:mouse_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 128
+Warning (10036): Verilog HDL or VHDL warning at mouse.vhd(25): object "CHARIN" assigned a value but never read File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at mouse.vhd(151): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 151
+Warning (10492): VHDL Process Statement warning at mouse.vhd(155): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 155
+Warning (10492): VHDL Process Statement warning at mouse.vhd(156): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 156
+Warning (10492): VHDL Process Statement warning at mouse.vhd(157): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 157
+Warning (12125): Using design file move_mouse.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: move_mouse-behavior File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd Line: 14
+    Info (12023): Found entity 1: move_mouse File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd Line: 7
+Info (12128): Elaborating entity "move_mouse" for hierarchy "move_mouse:move_mouse_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 130
 Warning (12125): Using design file vga_sync.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: VGA_SYNC-a File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd Line: 13
     Info (12023): Found entity 1: VGA_SYNC File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd Line: 7
-Info (12128): Elaborating entity "VGA_SYNC" for hierarchy "VGA_SYNC:vga_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 112
+Info (12128): Elaborating entity "VGA_SYNC" for hierarchy "VGA_SYNC:vga_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 132
 Warning (12125): Using design file bouncy_ball.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: bouncy_ball-behavior File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd Line: 14
     Info (12023): Found entity 1: bouncy_ball File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd Line: 7
-Info (12128): Elaborating entity "bouncy_ball" for hierarchy "bouncy_ball:ball_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 116
+Info (12128): Elaborating entity "bouncy_ball" for hierarchy "bouncy_ball:ball_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 136
 Warning (12125): Using design file div.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Div-behaviour File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/div.vhd Line: 10
     Info (12023): Found entity 1: Div File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/div.vhd Line: 5
-Info (12128): Elaborating entity "Div" for hierarchy "Div:div_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 118
+Info (12128): Elaborating entity "Div" for hierarchy "Div:div_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 138
 Warning (12125): Using design file psudo_gen.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Psudo_Gen-Behaviour File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/psudo_gen.vhd Line: 13
     Info (12023): Found entity 1: Psudo_Gen File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/psudo_gen.vhd Line: 6
-Info (12128): Elaborating entity "Psudo_Gen" for hierarchy "Psudo_Gen:psudo_rand_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 120
+Info (12128): Elaborating entity "Psudo_Gen" for hierarchy "Psudo_Gen:psudo_rand_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 140
 Warning (10492): VHDL Process Statement warning at psudo_gen.vhd(26): signal "seed" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/psudo_gen.vhd Line: 26
 Warning (12125): Using design file pipes_v2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Pipes_V2-behaviour File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_v2.vhd Line: 15
     Info (12023): Found entity 1: Pipes_V2 File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_v2.vhd Line: 6
-Info (12128): Elaborating entity "Pipes_V2" for hierarchy "Pipes_V2:pipe1" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 123
+Info (12128): Elaborating entity "Pipes_V2" for hierarchy "Pipes_V2:pipe1" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 142
 Warning (12125): Using design file sprite_printer.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: SPRITE_PRINTER-a File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd Line: 22
     Info (12023): Found entity 1: SPRITE_PRINTER File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd Line: 6
-Info (12128): Elaborating entity "sprite_printer" for hierarchy "sprite_printer:sprite_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 127
+Info (12128): Elaborating entity "sprite_printer" for hierarchy "sprite_printer:sprite_design" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 146
 Warning (10492): VHDL Process Statement warning at sprite_printer.vhd(43): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd Line: 43
 Warning (10492): VHDL Process Statement warning at sprite_printer.vhd(44): signal "multiplier" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd Line: 44
 Warning (10492): VHDL Process Statement warning at sprite_printer.vhd(54): signal "multiplier" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd Line: 54
@@ -662,6 +779,10 @@ Warning (14026): LATCH primitive "SPRITE_PRINTER:sprite_design|s_font_col[2]" is
 Warning (14026): LATCH primitive "SPRITE_PRINTER:sprite_design|s_font_col[1]" is permanently enabled File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd Line: 39
 Warning (14026): LATCH primitive "SPRITE_PRINTER:sprite_design|s_font_col[0]" is permanently enabled File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd Line: 39
 Warning (14026): LATCH primitive "SPRITE_PRINTER:sprite_design|s_font_row[2]" is permanently enabled File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd Line: 39
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "MOUSE:mouse_design|mouse_clk~synth" feeding internal logic into a wire File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 12
+    Warning (13049): Converted tri-state buffer "MOUSE:mouse_design|mouse_data~synth" feeding internal logic into a wire File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd Line: 11
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[8]~1" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[7]~5" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/psudo_gen.vhd Line: 25
@@ -672,7 +793,10 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[2]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[2]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[2]~25" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[1]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[1]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[1]~29" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/psudo_gen.vhd Line: 25
     Warning (13310): Register "Psudo_Gen:psudo_rand_design|t_psudo_rand[0]" is converted into an equivalent circuit using register "Psudo_Gen:psudo_rand_design|t_psudo_rand[0]~_emulated" and latch "Psudo_Gen:psudo_rand_design|t_psudo_rand[0]~33" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/psudo_gen.vhd Line: 25
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "collision" is stuck at GND File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 8
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 50 registers lost all their fanouts during netlist optimizations.
 Info (17036): Removed 6 MSB VCC or GND address nodes from RAM block "SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/db/altsyncram_d5g1.tdf Line: 31
 Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_CV_Default -section_id Top was ignored
@@ -701,15 +825,18 @@ Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity do
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV_Default -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "mouse_data" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 7
+    Warning (15610): No output dependent on input pin "mouse_clk" File: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd Line: 7
 Info (21057): Implemented 495 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+    Info (21058): Implemented 7 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 477 logic cells
+    Info (21061): Implemented 474 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 67 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 88 warnings
     Info: Peak virtual memory: 4925 megabytes
-    Info: Processing ended: Mon May 22 19:20:47 2023
+    Info: Processing ended: Tue May 23 17:08:31 2023
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Total CPU time (on all processors): 00:00:25
 
 
