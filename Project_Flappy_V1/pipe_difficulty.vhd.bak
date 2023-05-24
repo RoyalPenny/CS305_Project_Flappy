@@ -5,7 +5,7 @@ use  IEEE.STD_LOGIC_UNSIGNED.all;
 
 ENTITY pipe_difficulty is
   	PORT (
-		rst, mode, level : IN std_logic;
+		clk, rst, mode, level : IN std_logic;
 		speed : OUT std_logic_vector(8 downto 0)
 	);	
 end pipe_difficulty;
@@ -13,26 +13,34 @@ end pipe_difficulty;
 ARCHITECTURE Behaviour of pipe_difficulty is
   
     signal t_speed : std_logic_vector(8 downto 0) := (others => '0');
-    signal t_mode : std_logic_vector(8 downto 0) := (others => '0');
     signal count : std_logic_vector(3 DOWNTO 0) := (others => '0');
+    signal level_latch : std_logic;
+
     
 begin
   
     process(level, rst)
     begin
-        
-        if(rst = '1') then
-          t_speed <= conv_std_logic_vector(200, 9);
-        end if;
       
-        if (rising_edge(level)) then
-          if(mode = '1') then
-            if(count = conv_std_logic_vector(8, 4)) then
-              t_speed <= t_speed + conv_std_logic_vector(30, 9);
-              count <= conv_std_logic_vector(0, 9);
+        if (rising_edge(clk)) then
+          
+          if(rst = '1') then
+            t_speed <= conv_std_logic_vector(300, 9);
+          end if;
+          
+          if(mode = '1' and level = '1' and t_speed > conv_std_logic_vector(0, 9)) then
+          
+            level_latch <= '0';
+            
+            if(count = conv_std_logic_vector(5, 4)) then
+              t_speed <= t_speed - conv_std_logic_vector(30, 9);
+              count <= conv_std_logic_vector(0, 4);
             else
               count <= count + '1';
             end if;
+            
+          elsif(level = '0') then
+            level_latch <= '1';
           end if;
         end if;     
     end process;

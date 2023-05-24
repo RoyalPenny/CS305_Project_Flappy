@@ -9,6 +9,7 @@ Entity Pipes_V2 is
 		      pipe_h : IN std_logic_vector(9 downto 0);
           pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
           initial : IN std_logic_vector(10 DOWNTO 0);
+          speed : IN std_logic_vector(8 downto 0);
 		  red, green, blue, pipe_state, count		: OUT std_logic);		
 end Pipes_V2;
 
@@ -51,7 +52,7 @@ Architecture behaviour of Pipes_V2 is
   
   begin
     width <= CONV_STD_LOGIC_VECTOR(80,10);
-    count <= '1' when pipe_1_x_pos = conv_std_logic_vector(311, 10) else
+    count <= '1' when pipe_1_x_pos = conv_std_logic_vector(311, 10) and pipe_1_h < CONV_STD_LOGIC_VECTOR(700,10) else
     '0';
   
     pipe_1_on <= '1' when ( ('0' & pipe_1_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_1_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
@@ -87,7 +88,7 @@ Architecture behaviour of Pipes_V2 is
 
 	       elsif (enable = '1') then
 
-	         if(timer = CONV_STD_LOGIC_VECTOR(320,11)) then
+	         if(timer = speed) then
 	      
 	           pipe_xy := update_xy(pipe_1_x_pos, pipe_1_h, pipe_h);
 	           pipe_1_x_pos <= pipe_xy.x_pos;

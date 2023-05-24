@@ -264,7 +264,21 @@ set_global_assignment -name PARTITION_COLOR 16764057 -entity DE0_CV_Default -sec
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_CV_Default -section_id Top
 set_location_assignment PIN_AA2 -to collision
 set_location_assignment PIN_M7 -to pb3
-set_location_assignment PIN_E2 -to mouse_clk
-set_location_assignment PIN_G1 -to mouse_data
+set_location_assignment PIN_D3 -to mouse_clk
+set_location_assignment PIN_G2 -to mouse_data
 set_location_assignment PIN_M6 -to pb4
+set_location_assignment PIN_U21 -to display1[0]
+set_location_assignment PIN_V21 -to display1[1]
+set_location_assignment PIN_W22 -to display1[2]
+set_location_assignment PIN_W21 -to display1[3]
+set_location_assignment PIN_Y22 -to display1[4]
+set_location_assignment PIN_Y21 -to display1[5]
+set_location_assignment PIN_AA22 -to display1[6]
+set_location_assignment PIN_AA20 -to display2[0]
+set_location_assignment PIN_AB20 -to display2[1]
+set_location_assignment PIN_AA19 -to display2[2]
+set_location_assignment PIN_AA18 -to display2[3]
+set_location_assignment PIN_AB18 -to display2[4]
+set_location_assignment PIN_AA17 -to display2[5]
+set_location_assignment PIN_U22 -to display2[6]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

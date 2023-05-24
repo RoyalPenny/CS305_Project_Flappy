@@ -9,13 +9,30 @@ pb3 => bouncy_ball:ball_design.reset
 pb3 => Pipes_V2:pipe1.reset
 pb3 => Pipes_V2:pipe2.reset
 pb3 => Pipes_V2:pipe3.reset
+pb3 => pipe_difficulty:difficulty.rst
+pb3 => Two_Digit_Counter:seg.Init
 pb4 => ~NO_FANOUT~
-red_out <= VGA_SYNC:vga_design.red_out
-green_out <= VGA_SYNC:vga_design.green_out
-blue_out <= VGA_SYNC:vga_design.blue_out
-horiz_sync_out <= VGA_SYNC:vga_design.horiz_sync_out
-vert_sync_out <= VGA_SYNC:vga_design.vert_sync_out
-collision <= comb.DB_MAX_OUTPUT_PORT_TYPE
+mode_switch => pipe_difficulty:difficulty.mode
+red_out << VGA_SYNC:vga_design.red_out
+green_out << VGA_SYNC:vga_design.green_out
+blue_out << VGA_SYNC:vga_design.blue_out
+horiz_sync_out << VGA_SYNC:vga_design.horiz_sync_out
+vert_sync_out << VGA_SYNC:vga_design.vert_sync_out
+collision << comb.DB_MAX_OUTPUT_PORT_TYPE
+display1[0] << Two_Digit_Counter:seg.display1[0]
+display1[1] << Two_Digit_Counter:seg.display1[1]
+display1[2] << Two_Digit_Counter:seg.display1[2]
+display1[3] << Two_Digit_Counter:seg.display1[3]
+display1[4] << Two_Digit_Counter:seg.display1[4]
+display1[5] << Two_Digit_Counter:seg.display1[5]
+display1[6] << Two_Digit_Counter:seg.display1[6]
+display2[0] << Two_Digit_Counter:seg.display2[0]
+display2[1] << Two_Digit_Counter:seg.display2[1]
+display2[2] << Two_Digit_Counter:seg.display2[2]
+display2[3] << Two_Digit_Counter:seg.display2[3]
+display2[4] << Two_Digit_Counter:seg.display2[4]
+display2[5] << Two_Digit_Counter:seg.display2[5]
+display2[6] << Two_Digit_Counter:seg.display2[6]
 mouse_data <> mouse:mouse_design.mouse_data
 mouse_clk <> mouse:mouse_design.mouse_clk
 
@@ -724,11 +741,20 @@ initial[7] => pipe_1_x_pos.DATAB
 initial[8] => pipe_1_x_pos.DATAB
 initial[9] => pipe_1_x_pos.DATAB
 initial[10] => pipe_1_x_pos.DATAB
+speed[0] => Equal1.IN9
+speed[1] => Equal1.IN8
+speed[2] => Equal1.IN7
+speed[3] => Equal1.IN6
+speed[4] => Equal1.IN5
+speed[5] => Equal1.IN4
+speed[6] => Equal1.IN3
+speed[7] => Equal1.IN2
+speed[8] => Equal1.IN1
 red <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 green <= <VCC>
 blue <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
-count <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+count <= count.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project_Flappy_v1|Pipes_V2:pipe2
@@ -917,11 +943,20 @@ initial[7] => pipe_1_x_pos.DATAB
 initial[8] => pipe_1_x_pos.DATAB
 initial[9] => pipe_1_x_pos.DATAB
 initial[10] => pipe_1_x_pos.DATAB
+speed[0] => Equal1.IN9
+speed[1] => Equal1.IN8
+speed[2] => Equal1.IN7
+speed[3] => Equal1.IN6
+speed[4] => Equal1.IN5
+speed[5] => Equal1.IN4
+speed[6] => Equal1.IN3
+speed[7] => Equal1.IN2
+speed[8] => Equal1.IN1
 red <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 green <= <VCC>
 blue <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
-count <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+count <= count.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project_Flappy_v1|Pipes_V2:pipe3
@@ -1110,11 +1145,245 @@ initial[7] => pipe_1_x_pos.DATAB
 initial[8] => pipe_1_x_pos.DATAB
 initial[9] => pipe_1_x_pos.DATAB
 initial[10] => pipe_1_x_pos.DATAB
+speed[0] => Equal1.IN9
+speed[1] => Equal1.IN8
+speed[2] => Equal1.IN7
+speed[3] => Equal1.IN6
+speed[4] => Equal1.IN5
+speed[5] => Equal1.IN4
+speed[6] => Equal1.IN3
+speed[7] => Equal1.IN2
+speed[8] => Equal1.IN1
 red <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 green <= <VCC>
 blue <= pipe_on.DB_MAX_OUTPUT_PORT_TYPE
 pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
-count <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+count <= count.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project_Flappy_v1|pipe_difficulty:difficulty
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => t_speed[0].CLK
+clk => t_speed[1].CLK
+clk => t_speed[2].CLK
+clk => t_speed[3].CLK
+clk => t_speed[4].CLK
+clk => t_speed[5].CLK
+clk => t_speed[6].CLK
+clk => t_speed[7].CLK
+clk => t_speed[8].CLK
+rst => t_speed.OUTPUTSELECT
+rst => t_speed.OUTPUTSELECT
+rst => t_speed.OUTPUTSELECT
+rst => t_speed.OUTPUTSELECT
+rst => t_speed.OUTPUTSELECT
+rst => t_speed.OUTPUTSELECT
+rst => t_speed.OUTPUTSELECT
+rst => t_speed.OUTPUTSELECT
+rst => t_speed.OUTPUTSELECT
+mode => process_0.IN0
+level => process_0.IN1
+speed[0] <= t_speed[0].DB_MAX_OUTPUT_PORT_TYPE
+speed[1] <= t_speed[1].DB_MAX_OUTPUT_PORT_TYPE
+speed[2] <= t_speed[2].DB_MAX_OUTPUT_PORT_TYPE
+speed[3] <= t_speed[3].DB_MAX_OUTPUT_PORT_TYPE
+speed[4] <= t_speed[4].DB_MAX_OUTPUT_PORT_TYPE
+speed[5] <= t_speed[5].DB_MAX_OUTPUT_PORT_TYPE
+speed[6] <= t_speed[6].DB_MAX_OUTPUT_PORT_TYPE
+speed[7] <= t_speed[7].DB_MAX_OUTPUT_PORT_TYPE
+speed[8] <= t_speed[8].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project_Flappy_v1|Two_Digit_Counter:seg
+clk => Four_bit_Counter:tenth_counter.clk
+clk => t_tenth_enable.CLK
+clk => t_first_enable.CLK
+clk => Four_bit_Counter:first_counter.clk
+Init => Four_bit_Counter:tenth_counter.Init
+Init => Four_bit_Counter:first_counter.Init
+Enable => t_tenth_enable.OUTPUTSELECT
+Enable => t_first_enable.DATAIN
+tenth_out[0] <= Four_bit_Counter:tenth_counter.Q_out[0]
+tenth_out[1] <= Four_bit_Counter:tenth_counter.Q_out[1]
+tenth_out[2] <= Four_bit_Counter:tenth_counter.Q_out[2]
+tenth_out[3] <= Four_bit_Counter:tenth_counter.Q_out[3]
+first_out[0] <= Four_bit_Counter:first_counter.Q_out[0]
+first_out[1] <= Four_bit_Counter:first_counter.Q_out[1]
+first_out[2] <= Four_bit_Counter:first_counter.Q_out[2]
+first_out[3] <= Four_bit_Counter:first_counter.Q_out[3]
+display1[0] <= BCD_to_7Seg:d_1.SevenSeg_out[0]
+display1[1] <= BCD_to_7Seg:d_1.SevenSeg_out[1]
+display1[2] <= BCD_to_7Seg:d_1.SevenSeg_out[2]
+display1[3] <= BCD_to_7Seg:d_1.SevenSeg_out[3]
+display1[4] <= BCD_to_7Seg:d_1.SevenSeg_out[4]
+display1[5] <= BCD_to_7Seg:d_1.SevenSeg_out[5]
+display1[6] <= BCD_to_7Seg:d_1.SevenSeg_out[6]
+display2[0] <= BCD_to_7Seg:d_2.SevenSeg_out[0]
+display2[1] <= BCD_to_7Seg:d_2.SevenSeg_out[1]
+display2[2] <= BCD_to_7Seg:d_2.SevenSeg_out[2]
+display2[3] <= BCD_to_7Seg:d_2.SevenSeg_out[3]
+display2[4] <= BCD_to_7Seg:d_2.SevenSeg_out[4]
+display2[5] <= BCD_to_7Seg:d_2.SevenSeg_out[5]
+display2[6] <= BCD_to_7Seg:d_2.SevenSeg_out[6]
+
+
+|Project_Flappy_v1|Two_Digit_Counter:seg|Four_bit_Counter:tenth_counter
+clk => Q_out[0]~reg0.CLK
+clk => Q_out[1]~reg0.CLK
+clk => Q_out[2]~reg0.CLK
+clk => Q_out[3]~reg0.CLK
+clk => enable_latch.CLK
+clk => v_Q[0].CLK
+clk => v_Q[1].CLK
+clk => v_Q[2].CLK
+clk => v_Q[3].CLK
+Direction => v_Q.OUTPUTSELECT
+Direction => v_Q.OUTPUTSELECT
+Direction => v_Q.OUTPUTSELECT
+Direction => v_Q.OUTPUTSELECT
+Direction => v_Q.DATAB
+Direction => v_Q.DATAB
+Init => v_Q.OUTPUTSELECT
+Init => v_Q.OUTPUTSELECT
+Init => v_Q.OUTPUTSELECT
+Init => v_Q.OUTPUTSELECT
+Enable => process_0.IN1
+Enable => enable_latch.OUTPUTSELECT
+Q_out[0] <= Q_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[1] <= Q_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[2] <= Q_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[3] <= Q_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project_Flappy_v1|Two_Digit_Counter:seg|Four_bit_Counter:first_counter
+clk => Q_out[0]~reg0.CLK
+clk => Q_out[1]~reg0.CLK
+clk => Q_out[2]~reg0.CLK
+clk => Q_out[3]~reg0.CLK
+clk => enable_latch.CLK
+clk => v_Q[0].CLK
+clk => v_Q[1].CLK
+clk => v_Q[2].CLK
+clk => v_Q[3].CLK
+Direction => v_Q.OUTPUTSELECT
+Direction => v_Q.OUTPUTSELECT
+Direction => v_Q.OUTPUTSELECT
+Direction => v_Q.OUTPUTSELECT
+Direction => v_Q.DATAB
+Direction => v_Q.DATAB
+Init => v_Q.OUTPUTSELECT
+Init => v_Q.OUTPUTSELECT
+Init => v_Q.OUTPUTSELECT
+Init => v_Q.OUTPUTSELECT
+Enable => process_0.IN1
+Enable => enable_latch.OUTPUTSELECT
+Q_out[0] <= Q_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[1] <= Q_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[2] <= Q_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q_out[3] <= Q_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project_Flappy_v1|Two_Digit_Counter:seg|BCD_to_7Seg:d_1
+BCD_digit[0] => Equal0.IN3
+BCD_digit[0] => Equal1.IN3
+BCD_digit[0] => Equal2.IN2
+BCD_digit[0] => Equal3.IN3
+BCD_digit[0] => Equal4.IN1
+BCD_digit[0] => Equal5.IN3
+BCD_digit[0] => Equal6.IN2
+BCD_digit[0] => Equal7.IN3
+BCD_digit[0] => Equal8.IN2
+BCD_digit[0] => Equal9.IN3
+BCD_digit[1] => Equal0.IN2
+BCD_digit[1] => Equal1.IN1
+BCD_digit[1] => Equal2.IN1
+BCD_digit[1] => Equal3.IN2
+BCD_digit[1] => Equal4.IN3
+BCD_digit[1] => Equal5.IN1
+BCD_digit[1] => Equal6.IN1
+BCD_digit[1] => Equal7.IN2
+BCD_digit[1] => Equal8.IN3
+BCD_digit[1] => Equal9.IN2
+BCD_digit[2] => Equal0.IN1
+BCD_digit[2] => Equal1.IN0
+BCD_digit[2] => Equal2.IN0
+BCD_digit[2] => Equal3.IN1
+BCD_digit[2] => Equal4.IN2
+BCD_digit[2] => Equal5.IN2
+BCD_digit[2] => Equal6.IN3
+BCD_digit[2] => Equal7.IN1
+BCD_digit[2] => Equal8.IN1
+BCD_digit[2] => Equal9.IN1
+BCD_digit[3] => Equal0.IN0
+BCD_digit[3] => Equal1.IN2
+BCD_digit[3] => Equal2.IN3
+BCD_digit[3] => Equal3.IN0
+BCD_digit[3] => Equal4.IN0
+BCD_digit[3] => Equal5.IN0
+BCD_digit[3] => Equal6.IN0
+BCD_digit[3] => Equal7.IN0
+BCD_digit[3] => Equal8.IN0
+BCD_digit[3] => Equal9.IN0
+SevenSeg_out[0] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[1] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[2] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[3] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[4] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[5] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[6] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project_Flappy_v1|Two_Digit_Counter:seg|BCD_to_7Seg:d_2
+BCD_digit[0] => Equal0.IN3
+BCD_digit[0] => Equal1.IN3
+BCD_digit[0] => Equal2.IN2
+BCD_digit[0] => Equal3.IN3
+BCD_digit[0] => Equal4.IN1
+BCD_digit[0] => Equal5.IN3
+BCD_digit[0] => Equal6.IN2
+BCD_digit[0] => Equal7.IN3
+BCD_digit[0] => Equal8.IN2
+BCD_digit[0] => Equal9.IN3
+BCD_digit[1] => Equal0.IN2
+BCD_digit[1] => Equal1.IN1
+BCD_digit[1] => Equal2.IN1
+BCD_digit[1] => Equal3.IN2
+BCD_digit[1] => Equal4.IN3
+BCD_digit[1] => Equal5.IN1
+BCD_digit[1] => Equal6.IN1
+BCD_digit[1] => Equal7.IN2
+BCD_digit[1] => Equal8.IN3
+BCD_digit[1] => Equal9.IN2
+BCD_digit[2] => Equal0.IN1
+BCD_digit[2] => Equal1.IN0
+BCD_digit[2] => Equal2.IN0
+BCD_digit[2] => Equal3.IN1
+BCD_digit[2] => Equal4.IN2
+BCD_digit[2] => Equal5.IN2
+BCD_digit[2] => Equal6.IN3
+BCD_digit[2] => Equal7.IN1
+BCD_digit[2] => Equal8.IN1
+BCD_digit[2] => Equal9.IN1
+BCD_digit[3] => Equal0.IN0
+BCD_digit[3] => Equal1.IN2
+BCD_digit[3] => Equal2.IN3
+BCD_digit[3] => Equal3.IN0
+BCD_digit[3] => Equal4.IN0
+BCD_digit[3] => Equal5.IN0
+BCD_digit[3] => Equal6.IN0
+BCD_digit[3] => Equal7.IN0
+BCD_digit[3] => Equal8.IN0
+BCD_digit[3] => Equal9.IN0
+SevenSeg_out[0] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[1] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[2] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[3] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[4] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[5] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
+SevenSeg_out[6] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Project_Flappy_v1|sprite_printer:sprite_design
