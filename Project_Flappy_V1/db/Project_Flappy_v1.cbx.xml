@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
-	<PROJECT NAME="Project_Flappy_v1">
+	<PROJECT NAME="Project_Flappy_V1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_d5g1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -11,4 +11,5 @@ end entity welcome;
 
 architecture a1 of welcome is 
 begin
+end architecture;  
   

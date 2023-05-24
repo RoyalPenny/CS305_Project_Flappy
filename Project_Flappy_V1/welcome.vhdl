@@ -10,6 +10,17 @@ entity welcome is
 end entity welcome;
 
 architecture a1 of welcome is 
-begin
+  signal s_font_row : std_logic_vector(2 downto 0) := "000"; --row 0 is the top row
+  signal s_font_col : std_logic_vector(2 downto 0) := "000"; --col 0 is the far right col
+  signal s_rom_mux_output : std_logic;
   
+  component CHAR_ROM is 
+    port (character_address	:	in std_logic_vector (5 downto 0);
+		      font_row, font_col	:	in std_logic_vector (2 downto 0);
+		      clock				: 	in std_logic ;
+		      rom_mux_output		:	out std_logic);
+	end component;
+
+begin
+end architecture;  
   

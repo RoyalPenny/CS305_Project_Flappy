@@ -1,4 +1,4 @@
-|Project_Flappy_v1
+|Project_Flappy_V1
 CLK => Div:div_design.CLK
 pb1 => ~NO_FANOUT~
 pb2 => ~NO_FANOUT~
@@ -13,31 +13,31 @@ pb3 => pipe_difficulty:difficulty.rst
 pb3 => Two_Digit_Counter:seg.Init
 pb4 => ~NO_FANOUT~
 mode_switch => pipe_difficulty:difficulty.mode
-red_out << VGA_SYNC:vga_design.red_out
-green_out << VGA_SYNC:vga_design.green_out
-blue_out << VGA_SYNC:vga_design.blue_out
-horiz_sync_out << VGA_SYNC:vga_design.horiz_sync_out
-vert_sync_out << VGA_SYNC:vga_design.vert_sync_out
-collision << comb.DB_MAX_OUTPUT_PORT_TYPE
-display1[0] << Two_Digit_Counter:seg.display1[0]
-display1[1] << Two_Digit_Counter:seg.display1[1]
-display1[2] << Two_Digit_Counter:seg.display1[2]
-display1[3] << Two_Digit_Counter:seg.display1[3]
-display1[4] << Two_Digit_Counter:seg.display1[4]
-display1[5] << Two_Digit_Counter:seg.display1[5]
-display1[6] << Two_Digit_Counter:seg.display1[6]
-display2[0] << Two_Digit_Counter:seg.display2[0]
-display2[1] << Two_Digit_Counter:seg.display2[1]
-display2[2] << Two_Digit_Counter:seg.display2[2]
-display2[3] << Two_Digit_Counter:seg.display2[3]
-display2[4] << Two_Digit_Counter:seg.display2[4]
-display2[5] << Two_Digit_Counter:seg.display2[5]
-display2[6] << Two_Digit_Counter:seg.display2[6]
+red_out <= VGA_SYNC:vga_design.red_out
+green_out <= VGA_SYNC:vga_design.green_out
+blue_out <= VGA_SYNC:vga_design.blue_out
+horiz_sync_out <= VGA_SYNC:vga_design.horiz_sync_out
+vert_sync_out <= VGA_SYNC:vga_design.vert_sync_out
+collision <= comb.DB_MAX_OUTPUT_PORT_TYPE
+display1[0] <= Two_Digit_Counter:seg.display1[0]
+display1[1] <= Two_Digit_Counter:seg.display1[1]
+display1[2] <= Two_Digit_Counter:seg.display1[2]
+display1[3] <= Two_Digit_Counter:seg.display1[3]
+display1[4] <= Two_Digit_Counter:seg.display1[4]
+display1[5] <= Two_Digit_Counter:seg.display1[5]
+display1[6] <= Two_Digit_Counter:seg.display1[6]
+display2[0] <= Two_Digit_Counter:seg.display2[0]
+display2[1] <= Two_Digit_Counter:seg.display2[1]
+display2[2] <= Two_Digit_Counter:seg.display2[2]
+display2[3] <= Two_Digit_Counter:seg.display2[3]
+display2[4] <= Two_Digit_Counter:seg.display2[4]
+display2[5] <= Two_Digit_Counter:seg.display2[5]
+display2[6] <= Two_Digit_Counter:seg.display2[6]
 mouse_data <> mouse:mouse_design.mouse_data
 mouse_clk <> mouse:mouse_design.mouse_clk
 
 
-|Project_Flappy_v1|mouse:mouse_design
+|Project_Flappy_V1|MOUSE:mouse_design
 clock_25Mhz => MOUSE_CLK_FILTER.CLK
 clock_25Mhz => filter[0].CLK
 clock_25Mhz => filter[1].CLK
@@ -194,7 +194,7 @@ mouse_cursor_column[8] <= cursor_column[8].DB_MAX_OUTPUT_PORT_TYPE
 mouse_cursor_column[9] <= cursor_column[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|move_mouse:move_mouse_design
+|Project_Flappy_V1|move_mouse:move_mouse_design
 clk => ~NO_FANOUT~
 pixel_row[0] => Add2.IN20
 pixel_row[0] => LessThan3.IN22
@@ -281,7 +281,7 @@ green <= mouse_on.DB_MAX_OUTPUT_PORT_TYPE
 blue <= <VCC>
 
 
-|Project_Flappy_v1|VGA_SYNC:vga_design
+|Project_Flappy_V1|VGA_SYNC:vga_design
 clock_25Mhz => vert_sync_out~reg0.CLK
 clock_25Mhz => horiz_sync_out~reg0.CLK
 clock_25Mhz => blue_out~reg0.CLK
@@ -361,7 +361,7 @@ pixel_column[8] <= pixel_column[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pixel_column[9] <= pixel_column[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|bouncy_ball:ball_design
+|Project_Flappy_V1|bouncy_ball:ball_design
 pb1 => Move_Ball.IN1
 pb1 => rst.DATAIN
 enable => ball_y_motion.OUTPUTSELECT
@@ -502,12 +502,12 @@ ball_state <= ball_state.DB_MAX_OUTPUT_PORT_TYPE
 ground_strike <= ground_strike~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Div:div_design
+|Project_Flappy_V1|Div:div_design
 CLK => t_clkDiv.CLK
 clkDiv <= t_clkDiv.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Psudo_Gen:psudo_rand_design
+|Project_Flappy_V1|Psudo_Gen:psudo_rand_design
 clk => seed[0].CLK
 clk => seed[1].CLK
 clk => seed[2].CLK
@@ -555,7 +555,7 @@ psudo_rand[7] <= t_psudo_rand[7].DB_MAX_OUTPUT_PORT_TYPE
 psudo_rand[8] <= t_psudo_rand[8].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Pipes_V2:pipe1
+|Project_Flappy_V1|Pipes_V2:pipe1
 clk => ~NO_FANOUT~
 horiz_sync => timer[0].CLK
 horiz_sync => timer[1].CLK
@@ -757,7 +757,7 @@ pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
 count <= count.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Pipes_V2:pipe2
+|Project_Flappy_V1|Pipes_V2:pipe2
 clk => ~NO_FANOUT~
 horiz_sync => timer[0].CLK
 horiz_sync => timer[1].CLK
@@ -959,7 +959,7 @@ pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
 count <= count.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Pipes_V2:pipe3
+|Project_Flappy_V1|Pipes_V2:pipe3
 clk => ~NO_FANOUT~
 horiz_sync => timer[0].CLK
 horiz_sync => timer[1].CLK
@@ -1161,7 +1161,7 @@ pipe_state <= pipe_state.DB_MAX_OUTPUT_PORT_TYPE
 count <= count.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|pipe_difficulty:difficulty
+|Project_Flappy_V1|pipe_difficulty:difficulty
 clk => count[0].CLK
 clk => count[1].CLK
 clk => count[2].CLK
@@ -1197,7 +1197,7 @@ speed[7] <= t_speed[7].DB_MAX_OUTPUT_PORT_TYPE
 speed[8] <= t_speed[8].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Two_Digit_Counter:seg
+|Project_Flappy_V1|Two_Digit_Counter:seg
 clk => Four_bit_Counter:tenth_counter.clk
 clk => t_tenth_enable.CLK
 clk => t_first_enable.CLK
@@ -1230,7 +1230,7 @@ display2[5] <= BCD_to_7Seg:d_2.SevenSeg_out[5]
 display2[6] <= BCD_to_7Seg:d_2.SevenSeg_out[6]
 
 
-|Project_Flappy_v1|Two_Digit_Counter:seg|Four_bit_Counter:tenth_counter
+|Project_Flappy_V1|Two_Digit_Counter:seg|Four_bit_Counter:tenth_counter
 clk => Q_out[0]~reg0.CLK
 clk => Q_out[1]~reg0.CLK
 clk => Q_out[2]~reg0.CLK
@@ -1258,7 +1258,7 @@ Q_out[2] <= Q_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q_out[3] <= Q_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Two_Digit_Counter:seg|Four_bit_Counter:first_counter
+|Project_Flappy_V1|Two_Digit_Counter:seg|Four_bit_Counter:first_counter
 clk => Q_out[0]~reg0.CLK
 clk => Q_out[1]~reg0.CLK
 clk => Q_out[2]~reg0.CLK
@@ -1286,7 +1286,7 @@ Q_out[2] <= Q_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q_out[3] <= Q_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Two_Digit_Counter:seg|BCD_to_7Seg:d_1
+|Project_Flappy_V1|Two_Digit_Counter:seg|BCD_to_7Seg:d_1
 BCD_digit[0] => Equal0.IN3
 BCD_digit[0] => Equal1.IN3
 BCD_digit[0] => Equal2.IN2
@@ -1336,7 +1336,7 @@ SevenSeg_out[5] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
 SevenSeg_out[6] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|Two_Digit_Counter:seg|BCD_to_7Seg:d_2
+|Project_Flappy_V1|Two_Digit_Counter:seg|BCD_to_7Seg:d_2
 BCD_digit[0] => Equal0.IN3
 BCD_digit[0] => Equal1.IN3
 BCD_digit[0] => Equal2.IN2
@@ -1386,7 +1386,7 @@ SevenSeg_out[5] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
 SevenSeg_out[6] <= SevenSeg_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|sprite_printer:sprite_design
+|Project_Flappy_V1|SPRITE_PRINTER:sprite_design
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -1598,7 +1598,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM
+|Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -1615,7 +1615,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_v1|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -1665,7 +1665,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_v1|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
