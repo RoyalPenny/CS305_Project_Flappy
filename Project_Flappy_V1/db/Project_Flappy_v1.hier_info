@@ -13,26 +13,26 @@ pb3 => pipe_difficulty:difficulty.rst
 pb3 => Two_Digit_Counter:seg.Init
 pb4 => ~NO_FANOUT~
 mode_switch => pipe_difficulty:difficulty.mode
-red_out << VGA_SYNC:vga_design.red_out
-green_out << VGA_SYNC:vga_design.green_out
-blue_out << VGA_SYNC:vga_design.blue_out
-horiz_sync_out << VGA_SYNC:vga_design.horiz_sync_out
-vert_sync_out << VGA_SYNC:vga_design.vert_sync_out
-collision << comb.DB_MAX_OUTPUT_PORT_TYPE
-display1[0] << Two_Digit_Counter:seg.display1[0]
-display1[1] << Two_Digit_Counter:seg.display1[1]
-display1[2] << Two_Digit_Counter:seg.display1[2]
-display1[3] << Two_Digit_Counter:seg.display1[3]
-display1[4] << Two_Digit_Counter:seg.display1[4]
-display1[5] << Two_Digit_Counter:seg.display1[5]
-display1[6] << Two_Digit_Counter:seg.display1[6]
-display2[0] << Two_Digit_Counter:seg.display2[0]
-display2[1] << Two_Digit_Counter:seg.display2[1]
-display2[2] << Two_Digit_Counter:seg.display2[2]
-display2[3] << Two_Digit_Counter:seg.display2[3]
-display2[4] << Two_Digit_Counter:seg.display2[4]
-display2[5] << Two_Digit_Counter:seg.display2[5]
-display2[6] << Two_Digit_Counter:seg.display2[6]
+red_out <= VGA_SYNC:vga_design.red_out
+green_out <= VGA_SYNC:vga_design.green_out
+blue_out <= VGA_SYNC:vga_design.blue_out
+horiz_sync_out <= VGA_SYNC:vga_design.horiz_sync_out
+vert_sync_out <= VGA_SYNC:vga_design.vert_sync_out
+collision <= comb.DB_MAX_OUTPUT_PORT_TYPE
+display1[0] <= Two_Digit_Counter:seg.display1[0]
+display1[1] <= Two_Digit_Counter:seg.display1[1]
+display1[2] <= Two_Digit_Counter:seg.display1[2]
+display1[3] <= Two_Digit_Counter:seg.display1[3]
+display1[4] <= Two_Digit_Counter:seg.display1[4]
+display1[5] <= Two_Digit_Counter:seg.display1[5]
+display1[6] <= Two_Digit_Counter:seg.display1[6]
+display2[0] <= Two_Digit_Counter:seg.display2[0]
+display2[1] <= Two_Digit_Counter:seg.display2[1]
+display2[2] <= Two_Digit_Counter:seg.display2[2]
+display2[3] <= Two_Digit_Counter:seg.display2[3]
+display2[4] <= Two_Digit_Counter:seg.display2[4]
+display2[5] <= Two_Digit_Counter:seg.display2[5]
+display2[6] <= Two_Digit_Counter:seg.display2[6]
 mouse_data <> mouse:mouse_design.mouse_data
 mouse_clk <> mouse:mouse_design.mouse_clk
 
@@ -1166,6 +1166,7 @@ clk => count[0].CLK
 clk => count[1].CLK
 clk => count[2].CLK
 clk => count[3].CLK
+clk => level_latch.CLK
 clk => t_speed[0].CLK
 clk => t_speed[1].CLK
 clk => t_speed[2].CLK
@@ -1184,8 +1185,14 @@ rst => t_speed.OUTPUTSELECT
 rst => t_speed.OUTPUTSELECT
 rst => t_speed.OUTPUTSELECT
 rst => t_speed.OUTPUTSELECT
-mode => process_0.IN0
+rst => level_latch.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+mode => process_0.IN1
 level => process_0.IN1
+level => level_latch.OUTPUTSELECT
 speed[0] <= t_speed[0].DB_MAX_OUTPUT_PORT_TYPE
 speed[1] <= t_speed[1].DB_MAX_OUTPUT_PORT_TYPE
 speed[2] <= t_speed[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -1199,6 +1206,7 @@ speed[8] <= t_speed[8].DB_MAX_OUTPUT_PORT_TYPE
 
 |Project_Flappy_v1|Two_Digit_Counter:seg
 clk => Four_bit_Counter:tenth_counter.clk
+clk => t_tenth_latch.CLK
 clk => t_tenth_enable.CLK
 clk => t_first_enable.CLK
 clk => Four_bit_Counter:first_counter.clk
@@ -1206,6 +1214,7 @@ Init => Four_bit_Counter:tenth_counter.Init
 Init => Four_bit_Counter:first_counter.Init
 Enable => t_tenth_enable.OUTPUTSELECT
 Enable => t_first_enable.DATAIN
+Enable => t_tenth_latch.ENA
 tenth_out[0] <= Four_bit_Counter:tenth_counter.Q_out[0]
 tenth_out[1] <= Four_bit_Counter:tenth_counter.Q_out[1]
 tenth_out[2] <= Four_bit_Counter:tenth_counter.Q_out[2]

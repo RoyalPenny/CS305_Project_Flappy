@@ -20,9 +20,9 @@ architecture game of Project_Flappy_V1 is
            t_mouse_red, t_mouse_green, t_mouse_blue,
            t_red, t_green, t_blue, t_reset, t_reset_latch,
            t_clkDiv, t_vert_sync_out, t_horiz_sync_out, t_ground_strike,
-           t_mouse_data, t_mouse_clk, t_left_button, t_right_button, 
-           t_count, t_count_1, t_count_2, t_count_3 : STD_LOGIC;
-    signal t_pipe_1_on, t_pipe_2_on, t_pipe_3_on, t_bouncy_ball_on : STD_LOGIC := '0';
+           t_mouse_data, t_mouse_clk, t_left_button, t_right_button : STD_LOGIC;
+    signal t_pipe_1_on, t_pipe_2_on, t_pipe_3_on, t_bouncy_ball_on,
+           t_count, t_count_1, t_count_2, t_count_3  : STD_LOGIC := '0';
     signal t_tenth_out, t_first_out : std_logic_vector(3 downto 0);
     signal t_speed : std_logic_vector(8 downto 0);
     signal t_enable : STD_LOGIC := '1';
@@ -118,9 +118,9 @@ architecture game of Project_Flappy_V1 is
     vert_sync_out <= t_vert_sync_out;
     horiz_sync_out <= t_horiz_sync_out;
     
-    t_red <= t_ball_red and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and (t_mouse_red or t_enable); --and t_sprite_red_out 
-    t_green <= t_ball_green and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and (t_mouse_green or t_enable); -- and t_sprite_green_out
-    t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and (t_mouse_blue or t_enable); --and t_sprite_blue_out
+    t_red <= t_ball_red and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and (t_mouse_red or t_enable) and t_sprite_red_out;
+    t_green <= t_ball_green and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and (t_mouse_green or t_enable) and t_sprite_green_out;
+    t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and (t_mouse_blue or t_enable) and t_sprite_blue_out;
     
     t_count <= t_count_1 or t_count_2 or t_count_3;
   
