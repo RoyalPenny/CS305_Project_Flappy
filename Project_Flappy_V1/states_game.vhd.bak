@@ -16,24 +16,20 @@ end entity states_game;
 
 architecture FSM of states_game is 
 	type state_type is (s_welcome, s_game, s_training, s_endgame);
-	signal state, next_state : state_type := s_game;
+	signal state, next_state 
+        variable state_type := s_game;
 
 begin
 	process
 	begin 
 		wait until rising_edge(clk);
-		state<=next_state;
+		state_game<=next_state;
 		
 		case state is 
 			when s_welcome =>
 				if left_button ='1' then 
-					if mouse_x_pos >= std_logic_vector(to_unsigned(224,10)) and mouse_x_pos < std_logic_vector(to_unsigned(416,10))
-							and mouse_y_pos >= std_logic_vector(to_unsigned(224,10)) and mouse_y_pos < std_logic_vector(to_unsigned(256,10)) then 
-						next_state<=s_game;
-					elsif mouse_x_pos >= std_logic_vector(to_unsigned(192,10)) and mouse_x_pos < std_logic_vector(to_unsigned(488,10))
-							and mouse_y_pos >= std_logic_vector(to_unsigned(288,10)) and mouse_y_pos < std_logic_vector(to_unsigned(320,10)) then 
+
 						next_state<=s_training;
-					end if;
 				else
 					next_state<=s_welcome;
 				end if;
@@ -51,12 +47,7 @@ begin
 				end if;
 			when s_endgame=>
 				if left_button = '1' then 
-					if mouse_x_pos >= std_logic_vector(to_unsigned(192,10)) and mouse_x_pos < std_logic_vector(to_unsigned(488,10))
-							and mouse_y_pos >= std_logic_vector(to_unsigned(192,10)) and mouse_y_pos < std_logic_vector(to_unsigned(224,10)) then 
 						next_state<=s_welcome;
-					else 
-						next_state<=s_endgame;
-					end if;
 				else 
 					next_state<=s_endgame;
 				end if ;
@@ -65,7 +56,7 @@ begin
 	
 	 process
 	begin 
-		wait until clk'event and clk='1';
+		wait until rising_edge(clk);
 			case state is 
 				when s_welcome =>
 					enable<='0';
