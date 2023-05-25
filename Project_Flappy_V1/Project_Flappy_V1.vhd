@@ -13,7 +13,7 @@ end entity Project_Flappy_V1;
 architecture game of Project_Flappy_V1 is
     --signal init
     --resolution 640x480
-    signal t_ball_red, t_ball_green, t_ball_blue,
+    signal t_game_end_out, t_welcome_out, t_ball_red, t_ball_green, t_ball_blue,
            t_pipe_1_red, t_pipe_1_green, t_pipe_1_blue,
            t_pipe_2_red, t_pipe_2_green, t_pipe_2_blue,
            t_pipe_3_red, t_pipe_3_green, t_pipe_3_blue,
@@ -112,6 +112,19 @@ architecture game of Project_Flappy_V1 is
           tenth_out, first_out : out std_logic_vector(3 downto 0);
           display1, display2 : out std_logic_vector(6 downto 0));
     end component;
+
+
+    component welcome is
+      port (pixel_row, pixel_col : in std_logic_vector(9 downto 0);
+        Enable, CLK : in std_logic;
+        welcome_out: out std_logic);
+    end component;
+
+    component game_end is
+      port (pixel_row, pixel_col : in std_logic_vector(9 downto 0);
+        Enable, CLK : in std_logic;
+        game_end_out: out std_logic);
+    end component;
     
     begin   
     -- generate signals:
@@ -134,6 +147,7 @@ architecture game of Project_Flappy_V1 is
     
     t_reset <= '1' when (pb3 = '0') else
                '0';
+
                
     --collision <= t_ground_strike;
                 
@@ -169,5 +183,8 @@ architecture game of Project_Flappy_V1 is
                                            t_sprite_multiplier, t_sprite_address,
                                            t_sprite_enable, t_clkDiv,                           
                                            t_sprite_red_out, t_sprite_green_out, t_sprite_blue_out);   
+
+            welcome_text: welcome port map(t_pixel_row,t_pixel_column,t_enable,t_clkDiv,t_welcome_out);
+            end_text: game_end port map(t_pixel_row,t_pixel_column,t_enable,t_clkDiv,t_game_end_out);
 	     
   end architecture;

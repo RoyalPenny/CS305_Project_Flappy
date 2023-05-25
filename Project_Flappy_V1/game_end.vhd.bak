@@ -15,7 +15,7 @@ architecture a1 of game_end is
   signal font_col : std_logic_vector(2 downto 0) := "000"; --col 0 is the far right col
   signal cr_out,init : std_logic;
   signal tenth_out,first_out : std_logic_vector(3 downto 0);
-signal display1,display2 :std_logic_vector(6 downto 0);
+  signal display1,display2 :std_logic_vector(6 downto 0);
   signal character_address : std_logic_vector(5 downto 0);
   
   component CHAR_ROM is 
@@ -38,7 +38,7 @@ begin
   
   process (clk)
     begin
-         if(rising_edge(clk) and Enable = '1') then
+         if(rising_edge(clk) and Enable = '0') then
              if (pixel_row >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_row < CONV_STD_LOGIC_VECTOR(192,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
              character_address <= "010111"; -- S
@@ -67,11 +67,11 @@ begin
 
          elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(320,10) and pixel_row < CONV_STD_LOGIC_VECTOR(352,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
-             character_address <= display1+"111100"; -- displays the data using the mif table 0 to 9;
+             character_address <= "111100"; -- displays the data using the mif table 0 to 9;
              cr_out <= '1';
          elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(352,10) and pixel_row < CONV_STD_LOGIC_VECTOR(388,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
-             character_address <= display2+"111100"; -- e.g if display is 5 then character address is 60 + 5 = 65 or character 5
+             character_address <= "111100"; -- e.g if display is 5 then character address is 60 + 5 = 65 or character 5
              cr_out <= '1';
 
 --- bottom line

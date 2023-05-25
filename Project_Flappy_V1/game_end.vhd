@@ -38,126 +38,125 @@ begin
   
   process (clk)
     begin
-         if(rising_edge(clk) and Enable = '1') then
+         if(rising_edge(clk) and Enable = '0') then
              if (pixel_row >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_row < CONV_STD_LOGIC_VECTOR(192,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
              character_address <= "010111"; -- S
-             cr_out <= '1';
+             game_end_out <= cr_out;
           
           elsif( pixel_row >=  CONV_STD_LOGIC_VECTOR(192,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(224,10) 
 	   and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
               character_address <="000011"; -- C
-              cr_out <= '1';
+              game_end_out <= cr_out;
   
 
           elsif( pixel_row >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(256,10) 
 	    and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
               character_address <="010001"; -- 0
-              cr_out <= '1';
+              game_end_out <= cr_out;
  
          elsif( pixel_row >=  CONV_STD_LOGIC_VECTOR(256,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(288,10) 
 	   and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
               character_address <="010010"; -- R
-              cr_out <= '1';
+              game_end_out <= cr_out;
 
          elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(288,10) and pixel_row < CONV_STD_LOGIC_VECTOR(320,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
              character_address <= "000101"; -- E
-             cr_out <= '1';
+            game_end_out <= cr_out;
 
          elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(320,10) and pixel_row < CONV_STD_LOGIC_VECTOR(352,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
-             character_address <= display1+"111100"; -- displays the data using the mif table 0 to 9;
-             cr_out <= '1';
+             character_address <= "111100"; -- displays the data using the mif table 0 to 9;
+             game_end_out <= cr_out;
          elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(352,10) and pixel_row < CONV_STD_LOGIC_VECTOR(388,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
-             character_address <= display2+"111100"; -- e.g if display is 5 then character address is 60 + 5 = 65 or character 5
-             cr_out <= '1';
+             character_address <= "111100"; -- e.g if display is 5 then character address is 60 + 5 = 65 or character 5
+            game_end_out <= cr_out;
 
 --- bottom line
 
         elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(96,10) and pixel_row < CONV_STD_LOGIC_VECTOR(128,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_col < CONV_STD_LOGIC_VECTOR(224,10)) then 
              character_address <= "000011"; -- c
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
         elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(128,10) and pixel_row < CONV_STD_LOGIC_VECTOR(160,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_col < CONV_STD_LOGIC_VECTOR(224,10)) then 
              character_address <= "001110"; -- l
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
         elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_row < CONV_STD_LOGIC_VECTOR(192,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_col < CONV_STD_LOGIC_VECTOR(224,10)) then 
              character_address <= "001011"; -- i
-             cr_out <= '1';
+             game_end_out <= cr_out;
 elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_row < CONV_STD_LOGIC_VECTOR(224,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_col < CONV_STD_LOGIC_VECTOR(224,10)) then 
              character_address <= "000011"; -- c
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
 
        elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_row < CONV_STD_LOGIC_VECTOR(256,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_col < CONV_STD_LOGIC_VECTOR(224,10)) then 
              character_address <= "001101"; -- k
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
       elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(256,10) and pixel_row < CONV_STD_LOGIC_VECTOR(288,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_col < CONV_STD_LOGIC_VECTOR(224,10)) then 
              character_address <= "101000"; -- " "
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
        elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(288,10) and pixel_row < CONV_STD_LOGIC_VECTOR(320,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_col < CONV_STD_LOGIC_VECTOR(224,10)) then 
              character_address <= "011000"; -- t
-             cr_out <= '1';
+     game_end_out <= cr_out;
 
       elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(320,10) and pixel_row < CONV_STD_LOGIC_VECTOR(352,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_col < CONV_STD_LOGIC_VECTOR(224,10)) then 
              character_address <= "010001"; -- o
-             cr_out <= '1';
+            game_end_out <= cr_out;
 
       elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(96,10) and pixel_row < CONV_STD_LOGIC_VECTOR(128,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_col < CONV_STD_LOGIC_VECTOR(192,10)) then 
              character_address <= "010010"; -- r
-             cr_out <= '1';
+            game_end_out <= cr_out;
 
        elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(128,10) and pixel_row < CONV_STD_LOGIC_VECTOR(160,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_col < CONV_STD_LOGIC_VECTOR(192,10)) then 
              character_address <= "000101"; -- e
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
        elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_row < CONV_STD_LOGIC_VECTOR(192,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_col < CONV_STD_LOGIC_VECTOR(192,10)) then 
              character_address <= "010011"; -- s
-             cr_out <= '1';
+            game_end_out <= cr_out;
 
        elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(192,10) and pixel_row < CONV_STD_LOGIC_VECTOR(224,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_col < CONV_STD_LOGIC_VECTOR(192,10)) then 
              character_address <= "010100"; -- t
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
       elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_row < CONV_STD_LOGIC_VECTOR(256,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_col < CONV_STD_LOGIC_VECTOR(192,10)) then 
              character_address <= "000001"; -- a
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
        elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(256,10) and pixel_row < CONV_STD_LOGIC_VECTOR(288,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_col < CONV_STD_LOGIC_VECTOR(192,10)) then 
              character_address <= "010010"; -- r
-             cr_out <= '1';
+            game_end_out <= cr_out;
 
        elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(288,10) and pixel_row < CONV_STD_LOGIC_VECTOR(320,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_col < CONV_STD_LOGIC_VECTOR(192,10)) then 
              character_address <= "010100"; -- t
-             cr_out <= '1';
+             game_end_out <= cr_out;
 
           else 
-            cr_out <= '0';
+            game_end_out <= '0';
           end if; 
          end if;
       
   end process;
         font_row<=pixel_row(4 downto 2);
 	font_col<=pixel_col(4 downto 2); 
-        game_end_out<=cr_out;
 end architecture; 

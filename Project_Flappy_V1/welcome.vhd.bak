@@ -24,7 +24,7 @@ architecture a1 of welcome is
 	end component;
 
 begin
-  SPRITE_ROM:CHAR_ROM port map (character_address => character_address, font_row => font_row, font_col => font_col,  clock => clk, rom_mux_output => cr_out);
+  SPRITE_ROM:CHAR_ROM port map (character_address, font_row, font_col,  clk, rom_mux_output=>cr_out);
   
   process (clk)
     begin
@@ -32,47 +32,45 @@ begin
              if (pixel_row >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_row < CONV_STD_LOGIC_VECTOR(192,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
              character_address <= "011011"; -- W
-             cr_out <= '1';
+             welcome_out <= cr_out;
           
           elsif( pixel_row >=  CONV_STD_LOGIC_VECTOR(192,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(224,10) 
 	   and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
               character_address <="000101"; -- E
-              cr_out <= '1';
+              welcome_out <= cr_out;
   
-
           elsif( pixel_row >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(256,10) 
 	    and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
               character_address <="000101"; -- L
-              cr_out <= '1';
+              welcome_out <= cr_out;
  
          elsif( pixel_row >=  CONV_STD_LOGIC_VECTOR(256,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(288,10) 
 	   and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
               character_address <="000011"; -- C
-              cr_out <= '1';
+              welcome_out <= cr_out;
 
          elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(288,10) and pixel_row < CONV_STD_LOGIC_VECTOR(320,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
              character_address <= "010001"; -- 0
-             cr_out <= '1';
+             welcome_out <= cr_out;
 
 
           elsif( pixel_row >=  CONV_STD_LOGIC_VECTOR(320,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(352,10) 
 	   and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
               character_address <="001111"; -- M
-              cr_out <= '1';
+              welcome_out <= cr_out;
 
           elsif( pixel_row >=  CONV_STD_LOGIC_VECTOR(352,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(384,10) 
 	   and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
               character_address <="000101"; -- E
-              cr_out <= '1';';
+              welcome_out <= cr_out;
           else 
-            cr_out <= '0';
+            welcome_out <= 0;
           end if; 
          end if;
       
   end process;
         font_row<=pixel_row(4 downto 2);
 	font_col<=pixel_col(4 downto 2); 
-        welcome_out<=cr_out;
 end architecture;  
   

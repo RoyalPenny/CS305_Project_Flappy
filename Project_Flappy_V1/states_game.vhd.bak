@@ -50,6 +50,7 @@ begin
 						next_state<=s_welcome;
 				else 
 					next_state<=s_endgame;
+
 				end if ;
 		end case;
 	end process;

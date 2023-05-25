@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-Analysis & Synthesis Status : Successful - Thu May 25 09:36:54 2023
+Analysis & Synthesis Status : Successful - Thu May 25 16:56:43 2023
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : Project_Flappy_V1
-=======
-Analysis & Synthesis Status : Successful - Thu May 25 11:15:56 2023
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-Revision Name : Project_Flappy_v1
->>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
 Top-level Entity Name : Project_Flappy_V1
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
