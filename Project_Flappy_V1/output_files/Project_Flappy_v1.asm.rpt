@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 Assembler report for Project_Flappy_V1
 Thu May 25 09:18:48 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+=======
+Assembler report for Project_Flappy_v1
+Thu May 25 11:17:13 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
 
 
 ---------------------
@@ -37,8 +43,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Thu May 25 09:18:48 2023 ;
 ; Revision Name         ; Project_Flappy_V1                     ;
+=======
+; Assembler Status      ; Successful - Thu May 25 11:17:13 2023 ;
+; Revision Name         ; Project_Flappy_v1                     ;
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
 ; Top-level Entity Name ; Project_Flappy_V1                     ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CEFA4F23C7                           ;
@@ -86,6 +97,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Assembler Device Options: C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/output_files/Project_Flappy_V1.sof ;
 +----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +107,23 @@ applicable agreement for further details.
 ; JTAG usercode  ; 0x005BEBE8                                                                                                                                                 ;
 ; Checksum       ; 0x005BEBE8                                                                                                                                                 ;
 +----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+=======
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/output_files/Project_Flappy_v1.sof ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                                         ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0061D95B                                                                                                                                                      ;
+; Checksum       ; 0x0061D95B                                                                                                                                                      ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
 
 
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
+<<<<<<< HEAD
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
     Info: Processing started: Thu May 25 09:18:44 2023
@@ -109,6 +132,17 @@ Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4711 megabytes
     Info: Processing ended: Thu May 25 09:18:48 2023
+=======
+Info: Running Quartus Prime Assembler
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu May 25 11:17:10 2023
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Project_Flappy_v1 -c Project_Flappy_v1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4817 megabytes
+    Info: Processing ended: Thu May 25 11:17:14 2023
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
