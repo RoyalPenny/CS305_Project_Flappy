@@ -137,10 +137,8 @@ architecture game of Project_Flappy_V1 is
     
     t_count <= t_count_1 or t_count_2 or t_count_3;
   
-    t_enable <= '0' when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1'))
-                or t_ground_strike = '0') 
-                else
-                '1' when (t_left_button = '1' and t_reset_latch = '1');
+    t_enable <= '0' when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1')) or t_ground_strike = '0') else
+                '1' when (t_left_button = '1' and t_reset_latch = '1' and (t_mouse_row >= CONV_STD_LOGIC_VECTOR(160,10)) and t_mouse_row < CONV_STD_LOGIC_VECTOR(384,10) and t_mouse_column >= CONV_STD_LOGIC_VECTOR(224,10) and t_mouse_column < CONV_STD_LOGIC_VECTOR(256,10));
                 
     t_reset_latch <= '0' when (t_left_button = '1') else
                      '1' when (t_reset = '1');

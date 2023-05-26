@@ -36,7 +36,7 @@ begin
   SPRITE_ROM:CHAR_ROM port map (character_address => character_address, font_row => font_row, font_col => font_col,  clock => clk, rom_mux_output => cr_out);
   digit_rom: Two_Digit_Counter port map(clk=>clk,Init=>Init,Enable=>Enable,tenth_out=>tenth_out,first_out=>first_out,display1=>display1,display2=>display2);
   
-  process (clk)
+  process (clk,Enable)
     begin
          if(rising_edge(clk) and Enable = '0') then
              if (pixel_row >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_row < CONV_STD_LOGIC_VECTOR(192,10)
@@ -67,11 +67,11 @@ begin
 
          elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(320,10) and pixel_row < CONV_STD_LOGIC_VECTOR(352,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
-             character_address <= "111100"; -- displays the data using the mif table 0 to 9;
+             character_address <= first_out+"101001"; -- displays the data using the mif table 0 to 9;
              game_end_out <= cr_out;
          elsif (pixel_row >= CONV_STD_LOGIC_VECTOR(352,10) and pixel_row < CONV_STD_LOGIC_VECTOR(388,10)
 	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
-             character_address <= "111100"; -- e.g if display is 5 then character address is 60 + 5 = 65 or character 5
+             character_address <= tenth_out+"101001"; -- e.g if display is 5 then character address is 41 + 5 = 46 or character 5
             game_end_out <= cr_out;
 
 --- bottom line

@@ -65,7 +65,7 @@ begin
               character_address <="000101"; -- E
               welcome_out <= cr_out;
           else 
-            welcome_out <= 0;
+            welcome_out <= '0';
           end if; 
          end if;
       
