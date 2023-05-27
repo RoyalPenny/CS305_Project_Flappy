@@ -22,7 +22,7 @@ begin
 		  if (init = '1') then
 			 case Direction is
 					 when '0' =>	
-						  v_Q := "1001";	--Reset to 9
+						  v_Q := "0011";	--Reset to 3
 					 when '1' =>
 						  v_Q := "0000";
 					 when others => null;

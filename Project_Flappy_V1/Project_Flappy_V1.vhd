@@ -17,10 +17,14 @@ architecture game of Project_Flappy_V1 is
            t_pipe_1_red, t_pipe_1_green, t_pipe_1_blue,
            t_pipe_2_red, t_pipe_2_green, t_pipe_2_blue,
            t_pipe_3_red, t_pipe_3_green, t_pipe_3_blue,
+           t_initialized_1, t_initialized_2, t_initialized_3,
            t_mouse_red, t_mouse_green, t_mouse_blue,
-           t_red, t_green, t_blue, t_reset, t_reset_latch,
+           t_lives_red, t_lives_green, t_lives_blue, t_lives_dir, t_input,
+           t_score_red, t_score_green, t_score_blue,
+           t_red, t_green, t_blue, t_reset, t_reset_latch, t_pipe_ball_reset,
            t_clkDiv, t_vert_sync_out, t_horiz_sync_out, t_ground_strike,
-           t_mouse_data, t_mouse_clk, t_left_button, t_right_button : STD_LOGIC;
+           t_mouse_data, t_mouse_clk, t_left_button, t_right_button,
+           t_end : STD_LOGIC;
     signal t_pipe_1_on, t_pipe_2_on, t_pipe_3_on, t_bouncy_ball_on,
            t_count, t_count_1, t_count_2, t_count_3  : STD_LOGIC := '0';
     signal t_tenth_out, t_first_out : std_logic_vector(3 downto 0);
@@ -88,7 +92,7 @@ architecture game of Project_Flappy_V1 is
             pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
             initial : IN std_logic_vector(10 DOWNTO 0);
 		        speed : IN std_logic_vector(8 downto 0);	
-		        red, green, blue, pipe_state, count 			: OUT std_logic);		
+		        red, green, blue, pipe_state, count, initialized 			: OUT std_logic);		
 		   end component;
 		   
 		component pipe_difficulty is
@@ -126,20 +130,54 @@ architecture game of Project_Flappy_V1 is
         game_end_out: out std_logic);
     end component;
     
+    component life_counter is
+  	   PORT (
+		      clk, rst, dir, input : IN std_logic;
+		      pixel_row, pixel_col : IN std_logic_vector(9 downto 0);
+		      red, green, blue, over : OUT std_logic
+	    );	
+    end component;
+    
+    component Score_Counter is
+      port(pixel_row, pixel_col : in std_logic_vector(9 downto 0);
+         tenth, first : in std_logic_vector(3 downto 0);
+	       Clk : in std_logic;
+         Red_out, Green_out, Blue_out : out std_logic);
+    end component;
+    
+    component coll_detect is
+  	   PORT (
+		  clk, bouncy_ball_on, pipe_1_on, pipe_2_on, pipe_3_on, ground_strike, rst, disable : IN std_logic;
+		  input : OUT std_logic
+	   );	
+    end component;
+    
     begin   
     -- generate signals:
     vert_sync_out <= t_vert_sync_out;
     horiz_sync_out <= t_horiz_sync_out;
     
-    t_red <= t_ball_red and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and (t_mouse_red or t_enable) and t_sprite_red_out;
-    t_green <= t_ball_green and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and (t_mouse_green or t_enable) and t_sprite_green_out;
-    t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and (t_mouse_blue or t_enable) and t_sprite_blue_out;
+    t_red <= t_ball_red and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and (t_mouse_red or t_enable) and t_lives_red and t_score_red; -- and t_sprite_red_out;
+    t_green <= t_ball_green and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and (t_mouse_green or t_enable) and t_lives_green and t_score_green; -- and t_sprite_green_out;
+    t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and (t_mouse_blue or t_enable) and t_lives_blue and t_score_blue; -- and t_sprite_blue_out;
     
     t_count <= t_count_1 or t_count_2 or t_count_3;
-  
-    t_enable <= '0' when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1')) or t_ground_strike = '0') else
-                '1' when (t_left_button = '1' and t_reset_latch = '1' and (t_mouse_row >= CONV_STD_LOGIC_VECTOR(160,10)) and t_mouse_row < CONV_STD_LOGIC_VECTOR(384,10) and t_mouse_column >= CONV_STD_LOGIC_VECTOR(224,10) and t_mouse_column < CONV_STD_LOGIC_VECTOR(256,10));
+    
+    t_lives_dir <= '0'; -- when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1'))
+                      --or t_ground_strike = '0') else
+                   --'1' when (t_enable = '1');
+                   
+    --t_input <= '1' when ((t_bouncy_ball_on = '1' and (t_pipe_1_on = '1' or t_pipe_2_on = '1' or t_pipe_3_on = '1'))
+                      --or t_ground_strike = '0') else
+               --'0';
+
+    
+    t_pipe_ball_reset <= '1' when (t_reset = '1' or (t_input = '1' and t_left_button = '1')) else
+                         '0' when (t_initialized_1 = '1' and t_initialized_2 = '1' and t_initialized_3 = '1');
                 
+    t_enable <= '0' when (t_input = '1' or pb1 = '0' or t_end = '1' or t_reset_latch = '1') else 
+                '1' when (t_left_button = '1' and t_reset_latch = '0');
+               
     t_reset_latch <= '0' when (t_left_button = '1') else
                      '1' when (t_reset = '1');
     
@@ -147,7 +185,7 @@ architecture game of Project_Flappy_V1 is
                '0';
 
                
-    --collision <= t_ground_strike;
+    collision <= t_score_red;
                 
 
     
@@ -161,20 +199,26 @@ architecture game of Project_Flappy_V1 is
 		                              red_out, green_out, blue_out, t_horiz_sync_out, t_vert_sync_out,
 			                            t_pixel_row, t_pixel_column);
 			                            
-	  ball_design: bouncy_ball port map (t_left_button, t_enable, t_clkDiv, t_vert_sync_out, t_reset, t_pixel_row, t_pixel_column, t_ball_red, t_ball_green, t_ball_blue, t_bouncy_ball_on, t_ground_strike);   
+	  ball_design: bouncy_ball port map (t_left_button, t_enable, t_clkDiv, t_vert_sync_out, t_pipe_ball_reset, t_pixel_row, t_pixel_column, t_ball_red, t_ball_green, t_ball_blue, t_bouncy_ball_on, t_ground_strike);   
 	  
 	  div_design: Div port map (CLK, t_clkDiv);
 	    
 	  psudo_rand_design: Psudo_Gen port map(t_clkDiv, pb3, t_psudo_rand);
 
-	  pipe1: Pipes_V2 port map(t_clkDiv, t_horiz_sync_out, t_enable, t_reset, t_pipe_h, t_pixel_row, t_pixel_column, t_pipe_initial_1, t_speed, t_pipe_1_red, t_pipe_1_green, t_pipe_1_blue, t_pipe_1_on, t_count_1);
-	  pipe2: Pipes_V2 port map(t_clkDiv, t_horiz_sync_out, t_enable, t_reset, t_pipe_h, t_pixel_row, t_pixel_column, t_pipe_initial_2, t_speed, t_pipe_2_red, t_pipe_2_green, t_pipe_2_blue, t_pipe_2_on, t_count_2);
-	  pipe3: Pipes_V2 port map(t_clkDiv, t_horiz_sync_out, t_enable, t_reset, t_pipe_h, t_pixel_row, t_pixel_column, t_pipe_initial_3, t_speed, t_pipe_3_red, t_pipe_3_green, t_pipe_3_blue, t_pipe_3_on, t_count_3);
-	   
+	  pipe1: Pipes_V2 port map(t_clkDiv, t_horiz_sync_out, t_enable, t_pipe_ball_reset, t_pipe_h, t_pixel_row, t_pixel_column, t_pipe_initial_1, t_speed, t_pipe_1_red, t_pipe_1_green, t_pipe_1_blue, t_pipe_1_on, t_count_1, t_initialized_1);
+	  pipe2: Pipes_V2 port map(t_clkDiv, t_horiz_sync_out, t_enable, t_pipe_ball_reset, t_pipe_h, t_pixel_row, t_pixel_column, t_pipe_initial_2, t_speed, t_pipe_2_red, t_pipe_2_green, t_pipe_2_blue, t_pipe_2_on, t_count_2, t_initialized_2);
+	  pipe3: Pipes_V2 port map(t_clkDiv, t_horiz_sync_out, t_enable, t_pipe_ball_reset, t_pipe_h, t_pixel_row, t_pixel_column, t_pipe_initial_3, t_speed, t_pipe_3_red, t_pipe_3_green, t_pipe_3_blue, t_pipe_3_on, t_count_3, t_initialized_3);
+	  
+	  lives: life_counter port map(t_clkDiv, t_reset, t_lives_dir, t_pipe_ball_reset, t_pixel_row, t_pixel_column, t_lives_red, t_lives_green, t_lives_blue, t_end);
+	  
+	  collision_detect: coll_detect port map(t_clkDiv, t_bouncy_ball_on, t_pipe_1_on, t_pipe_2_on, t_pipe_3_on, t_ground_strike, t_enable, t_pipe_ball_reset, t_input);
+	  
 	  difficulty: pipe_difficulty port map(t_clkDiv, t_reset, mode_switch, t_count, t_speed);
 	   
 	  seg: Two_Digit_Counter port map(t_clkDiv, t_reset, t_count, t_tenth_out, t_first_out, display1, display2);   
-	    
+	  
+	  score: Score_Counter port map(t_pixel_row, t_pixel_column, t_tenth_out, t_first_out, t_clkDiv, t_score_red, t_score_green, t_score_blue);
+	  
 	  sprite_design: sprite_printer port map(t_pixel_row, t_pixel_column, 
                                            t_sprite_anchor_row, t_sprite_anchor_col,
                                            t_sprite_red, t_sprite_green, t_sprite_blue,

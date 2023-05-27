@@ -483,7 +483,7 @@ set_location_assignment PIN_D12 -to SD_DATA[1]
 set_location_assignment PIN_E12 -to SD_DATA[2]
 set_location_assignment PIN_C11 -to SD_DATA[3]
 set_location_assignment PIN_U13 -to mode_switch
-set_location_assignment PIN_V13 -to SW[1]
+set_location_assignment PIN_V13 -to sw1
 set_location_assignment PIN_T13 -to SW[2]
 set_location_assignment PIN_T12 -to SW[3]
 set_location_assignment PIN_AA15 -to SW[4]

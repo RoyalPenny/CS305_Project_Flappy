@@ -1,19 +1,17 @@
-Analysis & Synthesis Status : Successful - Fri May 26 12:03:06 2023
-Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Analysis & Synthesis Status : Successful - Sat May 27 23:10:55 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Project_Flappy_V1
 Top-level Entity Name : Project_Flappy_V1
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 309
+Total registers : 318
 Total pins : 28
 Total virtual pins : 0
-Total block memory bits : 64
+Total block memory bits : 3,392
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
-Total HSSI PMA RX ATT Deserializers : 0
 Total HSSI TX PCSs : 0
 Total HSSI PMA TX Serializers : 0
-Total HSSI PMA TX ATT Serializers : 0
 Total PLLs : 0
 Total DLLs : 0

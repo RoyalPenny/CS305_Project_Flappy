@@ -13,7 +13,7 @@ architecture behaviour of Two_Digit_Counter is
 
 signal f_direction : std_logic := '1';
 signal tenth_enable, first_enable : std_logic := '0';
-signal t_tenth_enable, t_first_enable, t_tenth_latch : std_logic := '0';
+signal t_tenth_enable, t_first_enable, t_tenth_latch, tenths_start : std_logic := '0';
 signal s_tenth_out : std_logic_vector(3 downto 0) := "0000";
 signal s_first_out : std_logic_vector(3 downto 0) := "0000";
 
@@ -42,13 +42,17 @@ begin
       if(enable = '1') then
         t_first_enable <= '1';
         
-        if(s_first_out = "0001" and t_tenth_enable <= '0' and t_tenth_latch <= '0') then
+        if(s_first_out = "0000" and t_tenth_enable <= '0' and t_tenth_latch <= '0' and tenths_start = '1') then
           t_tenth_enable <= '1';
           t_tenth_latch <= '1';
         end if;
         
-        if(s_first_out = "0010" and t_tenth_latch <= '1') then
+        if(s_first_out = "0001" and t_tenth_latch <= '1') then
           t_tenth_latch <= '0';
+        end if;
+        
+        if(s_first_out = "1001") then
+          tenths_start <= '1';
         end if;
         
       else

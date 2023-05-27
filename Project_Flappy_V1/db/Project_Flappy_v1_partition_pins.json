@@ -92,6 +92,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "pb1",
+					"strict" : false
+				},
+				{
 					"name" : "CLK",
 					"strict" : false
 				},
