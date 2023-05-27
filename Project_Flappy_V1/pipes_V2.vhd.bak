@@ -9,7 +9,12 @@ Entity Pipes_V2 is
 		      pipe_h : IN std_logic_vector(9 downto 0);
           pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
           initial : IN std_logic_vector(10 DOWNTO 0);
+<<<<<<< HEAD
 		  red, green, blue, pipe_state, count		: OUT std_logic);		
+=======
+          speed : IN std_logic_vector(8 downto 0);
+		  red, green, blue, pipe_state, count, initalized	: OUT std_logic);		
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
 end Pipes_V2;
 
 Architecture behaviour of Pipes_V2 is
@@ -51,7 +56,11 @@ Architecture behaviour of Pipes_V2 is
   
   begin
     width <= CONV_STD_LOGIC_VECTOR(80,10);
+<<<<<<< HEAD
     count <= '1' when pipe_1_x_pos = conv_std_logic_vector(311, 10) else -- When pipe passes the ball (or bird) will be used as trigger for score_counter
+=======
+    count <= '1' when pipe_1_x_pos = conv_std_logic_vector(311, 10) and pipe_1_h < CONV_STD_LOGIC_VECTOR(700,10) else
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
     '0';
   
     pipe_1_on <= '1' when ( ('0' & pipe_1_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_1_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
@@ -82,10 +91,12 @@ Architecture behaviour of Pipes_V2 is
 	       if(reset = '1') then
 	         pipe_1_x_pos <= initial;
 	         pipe_1_h <= CONV_STD_LOGIC_VECTOR(700,10);
+	         initialized <= '1';
 
 	       elsif (enable = '1') then
-
-	         if(timer = CONV_STD_LOGIC_VECTOR(320,11)) then
+           
+           initialized <= '0';
+	         if(timer = speed) then
 	      
 	           pipe_xy := update_xy(pipe_1_x_pos, pipe_1_h, pipe_h);
 	           pipe_1_x_pos <= pipe_xy.x_pos;

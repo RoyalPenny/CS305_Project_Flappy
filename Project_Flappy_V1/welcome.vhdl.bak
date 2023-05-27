@@ -3,12 +3,45 @@ USE ieee.std_logic_1164.all;
 USE IEEE.STD_LOGIC_ARITH.all;
 USE IEEE.STD_LOGIC_UNSIGNED.all;
 
+
 entity welcome is
   port (pixel_row, pixel_col : in std_logic_vector(9 downto 0);
         Enable, CLK : in std_logic;
-        Red_Out, Green_Out, Blue_Out: out std_logic);
+        cr_out: out std_logic);
 end entity welcome;
 
 architecture a1 of welcome is 
+  signal font_row : std_logic_vector(2 downto 0) := "000"; --row 0 is the top row
+  signal font_col : std_logic_vector(2 downto 0) := "000"; --col 0 is the far right col
+  signal rom_mux_output : std_logic;
+  signal character_address : std_logic_vector(5 downto 0);
+  
+  component CHAR_ROM is 
+    port (character_address	:	in std_logic_vector (5 downto 0);
+		      font_row, font_col	:	in std_logic_vector (2 downto 0);
+		      clock				: 	in std_logic ;
+		      rom_mux_output		:	out std_logic);
+	end component;
+
 begin
+  SPRITE_ROM:CHAR_ROM port map (character_address => character_address, font_row => font_row, font_col => font_col,  clock => clk, rom_mux_output => rom_mux_output);
+  
+  process (clk)
+    begin
+         if(rising_edge(clk) and Enable = '1') then
+             if (pixel_row >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_row < CONV_STD_LOGIC_VECTOR(256,10)
+	     and pixel_col >= CONV_STD_LOGIC_VECTOR(224,10) and pixel_col < CONV_STD_LOGIC_VECTOR(256,10)) then 
+             character_address <= "000011";
+             cr_out <= '1';
+          end if; 
+          if( pixel_row >=  CONV_STD_LOGIC_VECTOR(256,10) and pixel_row <  CONV_STD_LOGIC_VECTOR(288,10) 
+	   and pixel_col >=  CONV_STD_LOGIC_VECTOR(224,10) and pixel_col <  CONV_STD_LOGIC_VECTOR(256,10)) then
+              character_address <="010010"; -- R
+              cr_out <= '1';
+           end if;
+          end if; 
+      
+  end process;   
+
+end architecture;  
   

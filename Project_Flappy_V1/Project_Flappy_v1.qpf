@@ -18,13 +18,13 @@
 #
 # Quartus Prime
 # Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-# Date created = 14:15:00  May 11, 2023
+# Date created = 23:32:05  May 27, 2023
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "18.1"
-DATE = "14:15:00  May 11, 2023"
+DATE = "23:32:05  May 27, 2023"
 
 # Revisions
 
-PROJECT_REVISION = "Project_Flappy_v1"
+PROJECT_REVISION = "Project_Flappy_V1"

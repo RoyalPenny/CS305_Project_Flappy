@@ -4,12 +4,12 @@
 library IEEE;
 use IEEE.std_logic_1164.all;   
 
-entity BCD_to_SevenSeg is
+entity BCD_to_7Seg is
      port (BCD_digit : in std_logic_vector(3 downto 0);
            SevenSeg_out : out std_logic_vector(6 downto 0));
 end entity;
 
-architecture arc1 of BCD_to_SevenSeg  is
+architecture arc1 of BCD_to_7Seg  is
 begin
      SevenSeg_out   <=  "1111001"  when BCD_digit = "0001"  else		-- 1
 						"0100100"  when BCD_digit = "0010"  else		-- 2
