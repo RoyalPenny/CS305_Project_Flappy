@@ -35,7 +35,7 @@ mouse_data <> mouse:mouse_design.mouse_data
 mouse_clk <> mouse:mouse_design.mouse_clk
 
 
-|Project_Flappy_V1|MOUSE:mouse_design
+|Project_Flappy_V1|mouse:mouse_design
 clock_25Mhz => MOUSE_CLK_FILTER.CLK
 clock_25Mhz => filter[0].CLK
 clock_25Mhz => filter[1].CLK
@@ -1203,7 +1203,7 @@ blue <= sprite_printer:sprite_design.blue_out
 over <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|life_counter:lives|SPRITE_PRINTER:sprite_design
+|Project_Flappy_V1|life_counter:lives|sprite_printer:sprite_design
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -1415,7 +1415,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|life_counter:lives|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM
+|Project_Flappy_V1|life_counter:lives|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -1432,7 +1432,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|life_counter:lives|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|life_counter:lives|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -1482,7 +1482,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|life_counter:lives|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|life_counter:lives|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -2012,7 +2012,7 @@ Green_out <= Green_out.DB_MAX_OUTPUT_PORT_TYPE
 Blue_out <= Blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:S
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:S
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -2224,7 +2224,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:S|char_rom:SPRITE_ROM
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:S|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -2241,7 +2241,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:S|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:S|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -2291,7 +2291,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:S|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:S|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -2382,7 +2382,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:C
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:C
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -2594,7 +2594,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:C|char_rom:SPRITE_ROM
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:C|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -2611,7 +2611,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:C|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:C|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -2661,7 +2661,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:C|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:C|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -2752,7 +2752,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:O
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:O
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -2964,7 +2964,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:O|char_rom:SPRITE_ROM
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:O|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -2981,7 +2981,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:O|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:O|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -3031,7 +3031,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:O|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:O|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -3122,7 +3122,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:R
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:R
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -3334,7 +3334,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:R|char_rom:SPRITE_ROM
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:R|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -3351,7 +3351,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:R|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:R|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -3401,7 +3401,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:R|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:R|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -3492,7 +3492,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:E
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:E
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -3704,7 +3704,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:E|char_rom:SPRITE_ROM
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:E|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -3721,7 +3721,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:E|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:E|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -3771,7 +3771,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:E|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:E|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -3862,7 +3862,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:Tenth_digit
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:Tenth_digit
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -4074,7 +4074,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:Tenth_digit|char_rom:SPRITE_ROM
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:Tenth_digit|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -4091,7 +4091,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:Tenth_digit|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:Tenth_digit|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -4141,7 +4141,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:Tenth_digit|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:Tenth_digit|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4232,7 +4232,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:First_digit
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:First_digit
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -4444,7 +4444,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:First_digit|char_rom:SPRITE_ROM
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:First_digit|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -4461,7 +4461,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:First_digit|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:First_digit|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -4511,7 +4511,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|Score_Counter:score|SPRITE_PRINTER:First_digit|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|Score_Counter:score|sprite_printer:First_digit|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4602,7 +4602,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|Project_Flappy_V1|SPRITE_PRINTER:sprite_design
+|Project_Flappy_V1|sprite_printer:sprite_design
 pixel_row[0] => LessThan0.IN10
 pixel_row[0] => LessThan1.IN17
 pixel_row[0] => Mux5.IN10
@@ -4814,7 +4814,7 @@ green_out <= green_out.DB_MAX_OUTPUT_PORT_TYPE
 blue_out <= blue_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM
+|Project_Flappy_V1|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -4831,7 +4831,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -4881,7 +4881,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|SPRITE_PRINTER:sprite_design|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|sprite_printer:sprite_design|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -5157,7 +5157,7 @@ CLK => character_address[5].CLK
 welcome_out <= welcome_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|welcome:welcome_text|char_rom:SPRITE_ROM
+|Project_Flappy_V1|welcome:welcome_text|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -5174,7 +5174,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|welcome:welcome_text|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|welcome:welcome_text|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -5224,7 +5224,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|welcome:welcome_text|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|welcome:welcome_text|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -5582,7 +5582,7 @@ CLK => Two_Digit_Counter:digit_rom.clk
 game_end_out <= game_end_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|game_end:end_text|char_rom:SPRITE_ROM
+|Project_Flappy_V1|game_end:end_text|CHAR_ROM:SPRITE_ROM
 character_address[0] => altsyncram:altsyncram_component.address_a[3]
 character_address[1] => altsyncram:altsyncram_component.address_a[4]
 character_address[2] => altsyncram:altsyncram_component.address_a[5]
@@ -5599,7 +5599,7 @@ clock => altsyncram:altsyncram_component.clock0
 rom_mux_output <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project_Flappy_V1|game_end:end_text|char_rom:SPRITE_ROM|altsyncram:altsyncram_component
+|Project_Flappy_V1|game_end:end_text|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -5649,7 +5649,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Project_Flappy_V1|game_end:end_text|char_rom:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+|Project_Flappy_V1|game_end:end_text|CHAR_ROM:SPRITE_ROM|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
