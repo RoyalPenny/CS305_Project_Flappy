@@ -8,7 +8,7 @@ Entity Pipes_V2 is
 		(clk, horiz_sync, enable, reset: IN std_logic;
 		      pipe_h : IN std_logic_vector(9 downto 0);
           pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
-          initial : IN std_logic_vector(10 DOWNTO 0);
+          initial : IN std_logic_vector(10 DOWNTO 0); -- Starting position for each 3 pipes
 		  red, green, blue, pipe_state, count		: OUT std_logic);		
 end Pipes_V2;
 
@@ -28,20 +28,20 @@ Architecture behaviour of Pipes_V2 is
   function update_xy (x_pos : std_logic_vector(10 DOWNTO 0); 
                       y_pos : std_logic_vector(9 DOWNTO 0); 
                       pipe_h : std_logic_vector(9 DOWNTO 0)) return xy_pos is
-                      
-      variable xy : xy_pos;
+                
+    variable xy : xy_pos;
     begin
-      if(x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then
+      if(x_pos = CONV_STD_LOGIC_VECTOR(0,11)) then  -- When it reach the left bound, goes back to right bound
 	      xy.x_pos := CONV_STD_LOGIC_VECTOR(760,11);	
 	      
-	      if(pipe_h > CONV_STD_LOGIC_VECTOR(336,10)) then
+	      if(pipe_h > CONV_STD_LOGIC_VECTOR(336,10)) then -- When it generated an impossible to pass wall (0-->480), then make it at center.
 	        xy.y_pos := CONV_STD_LOGIC_VECTOR(336,10);
 	      else 
 	        xy.y_pos := pipe_h;
 	      end if;
 	       
 	    else
-	      xy.x_pos := x_pos - '1';
+	      xy.x_pos := x_pos - '1'; --Propagate to left 1 px
 	      xy.y_pos := y_pos;      
 	    end if;
 	    
@@ -51,7 +51,7 @@ Architecture behaviour of Pipes_V2 is
   
   begin
     width <= CONV_STD_LOGIC_VECTOR(80,10);
-    count <= '1' when pipe_1_x_pos = conv_std_logic_vector(311, 10) else
+    count <= '1' when pipe_1_x_pos = conv_std_logic_vector(311, 10) else -- When pipe passes the ball (or bird) will be used as trigger for score_counter
     '0';
   
     pipe_1_on <= '1' when ( ('0' & pipe_1_x_pos <= '0' & pixel_column + width) and ('0' & pixel_column <= '0' & pipe_1_x_pos) 	-- x_pos - size <= pixel_column <= x_pos + size
@@ -76,9 +76,7 @@ Architecture behaviour of Pipes_V2 is
     
     variable pipe_xy : xy_pos;
     	
-    begin
-	   -- Move ball once every vertical sync
-	         
+    begin 
 	     if (rising_edge(horiz_sync)) then
 	       
 	       if(reset = '1') then
