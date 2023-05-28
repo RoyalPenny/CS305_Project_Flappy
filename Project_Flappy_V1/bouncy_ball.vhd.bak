@@ -44,20 +44,12 @@ Move_Ball: process (vert_sync)
 begin
 	-- Move ball once every vertical sync
 	 
-<<<<<<< HEAD
-	 if (rising_edge(vert_sync) and enable = '1') then		
-	   if(pb1 = '0' and rst = '1') then
-	     dir <= '0';
-	   else
-	     dir <= '1';
-=======
 	 if (rising_edge(vert_sync)) then
 	   
 	   if (reset = '1') then
 	     m_ground_strike <= '1';
 	     ball_y_motion <= CONV_STD_LOGIC_VECTOR(0,10);
-	     ball_y_pos <= CONV_STD_LOGIC_VECTOR(0,10);
->>>>>>> 9ffec4533396de8eec6f9408587c868e6520b0c5
+	     ball_y_pos <= CONV_STD_LOGIC_VECTOR(236,10);
 	   end if;
 	     
 	   if (enable = '1') then	 		
@@ -79,7 +71,7 @@ begin
 		
 		
 		    if(ball_y_pos + ball_y_motion + CONV_STD_LOGIC_VECTOR(8,10) > CONV_STD_LOGIC_VECTOR(479,10) and dir = '1') then
-	         ball_y_motion <= CONV_STD_LOGIC_VECTOR(479,10) - CONV_STD_LOGIC_VECTOR(8,10) - ball_y_pos;
+	         ball_y_motion <= CONV_STD_LOGIC_VECTOR(479,10) - CONV_STD_LOGIC_VECTOR(16,10) - ball_y_pos;
 	         m_rst <= '0';
 	         m_ground_strike <= '0';
 			   
@@ -90,19 +82,12 @@ begin
 		
 		    ball_y_pos <= ball_y_pos + ball_y_motion;
 		
-<<<<<<< HEAD
-		  if(m_rst = '0') then
-		    ball_y_motion <= CONV_STD_LOGIC_VECTOR(0,10);
-		    m_rst <= '1';
-	   end if;
-=======
 		    if(m_rst = '0') then
 		      ball_y_motion <= CONV_STD_LOGIC_VECTOR(0,10);
 		      m_rst <= '1';
 	      end if;
 	    end if;
 	    ground_strike <= m_ground_strike;
->>>>>>> 9ffec4533396de8eec6f9408587c868e6520b0c5
 		end if;
 end process Move_Ball;
 

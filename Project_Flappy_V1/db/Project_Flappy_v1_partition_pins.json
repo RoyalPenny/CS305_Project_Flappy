@@ -88,6 +88,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "mode_switch",
+					"strict" : false
+				},
+				{
 					"name" : "pb3",
 					"strict" : false
 				},
@@ -97,10 +101,6 @@
 				},
 				{
 					"name" : "CLK",
-					"strict" : false
-				},
-				{
-					"name" : "mode_switch",
 					"strict" : false
 				}
 			]

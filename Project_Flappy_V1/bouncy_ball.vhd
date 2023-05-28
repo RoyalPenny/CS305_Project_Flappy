@@ -33,7 +33,6 @@ ball_on <= '1' when ( ('0' & ball_x_pos <= '0' & pixel_column + size) and ('0' &
 ball_state <= ball_on when (pixel_column > conv_std_logic_vector(311, 10) and pixel_column < conv_std_logic_vector(329, 10)) else
               '0';
 
-
 -- Colours for pixel data on video signal
 -- Changing the background and ball colour by pushbuttons
 Red <= '1';
