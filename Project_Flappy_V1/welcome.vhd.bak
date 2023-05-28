@@ -26,7 +26,7 @@ architecture a1 of welcome is
 begin
   SPRITE_ROM:CHAR_ROM port map (character_address, font_row, font_col,  clk, rom_mux_output=>cr_out);
   
-  process (clk)
+  process (clk,Enable)
     begin
          if(rising_edge(clk) and Enable = '1') then
              if (pixel_row >= CONV_STD_LOGIC_VECTOR(160,10) and pixel_row < CONV_STD_LOGIC_VECTOR(192,10)

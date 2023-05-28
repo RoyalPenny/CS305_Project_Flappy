@@ -8,12 +8,13 @@ Entity Pipes_V2 is
 		(clk, horiz_sync, enable, reset: IN std_logic;
 		      pipe_h : IN std_logic_vector(9 downto 0);
           pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
-          initial : IN std_logic_vector(10 DOWNTO 0);
 <<<<<<< HEAD
+          initial : IN std_logic_vector(10 DOWNTO 0); -- Starting position for each 3 pipes
 		  red, green, blue, pipe_state, count		: OUT std_logic);		
 =======
+          initial : IN std_logic_vector(10 DOWNTO 0);
           speed : IN std_logic_vector(8 downto 0);
-		  red, green, blue, pipe_state, count, initalized	: OUT std_logic);		
+		  red, green, blue, pipe_state, count, initialized	: OUT std_logic);		
 >>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
 end Pipes_V2;
 
