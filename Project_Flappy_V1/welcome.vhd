@@ -10,7 +10,7 @@ entity welcome is
         welcome_out: out std_logic);
 end entity welcome;
 
-architecture a1 of welcome is 
+architecture behaviour of welcome is 
   signal font_row : std_logic_vector(2 downto 0) := "000"; --row 0 is the top row
   signal font_col : std_logic_vector(2 downto 0) := "000"; --col 0 is the far right col
   signal cr_out : std_logic;

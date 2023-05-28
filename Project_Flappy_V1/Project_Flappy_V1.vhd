@@ -13,7 +13,7 @@ end entity Project_Flappy_V1;
 architecture game of Project_Flappy_V1 is
     --signal init
     --resolution 640x480
-    signal t_game_end_out, t_welcome_out, t_ball_red, t_ball_green, t_ball_blue,
+    signal t_ball_red, t_ball_green, t_ball_blue,
            t_pipe_1_red, t_pipe_1_green, t_pipe_1_blue,
            t_pipe_2_red, t_pipe_2_green, t_pipe_2_blue,
            t_pipe_3_red, t_pipe_3_green, t_pipe_3_blue,
@@ -24,6 +24,9 @@ architecture game of Project_Flappy_V1 is
            t_red, t_green, t_blue, t_reset, t_reset_latch, t_pipe_ball_reset,
            t_clkDiv, t_vert_sync_out, t_horiz_sync_out, t_ground_strike,
            t_mouse_data, t_mouse_clk, t_left_button, t_right_button,
+           t_finish_r, t_finish_g, t_finish_b,
+           t_start_r, t_start_g, t_start_b,
+           t_welcome_out,
            t_end : STD_LOGIC;
     signal t_pipe_1_on, t_pipe_2_on, t_pipe_3_on, t_bouncy_ball_on,
            t_count, t_count_1, t_count_2, t_count_3  : STD_LOGIC := '0';
@@ -37,17 +40,6 @@ architecture game of Project_Flappy_V1 is
     signal t_pipe_initial_1: std_logic_vector(10 downto 0) :=  conv_std_logic_vector(226, 11);
     signal t_pipe_initial_2: std_logic_vector(10 downto 0) :=  conv_std_logic_vector(452, 11);
     signal t_pipe_initial_3: std_logic_vector(10 downto 0) :=  conv_std_logic_vector(678, 11);
-    
-    -- Below for Sprite printer out   
-    signal t_sprite_anchor_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(8, 10);
-    signal t_sprite_anchor_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(600, 10); 
-    signal t_sprite_red : std_logic := '0';
-    signal t_sprite_green : std_logic := '1';
-    signal t_sprite_blue : std_logic := '1';     
-    signal t_sprite_multiplier : integer range 1 to 4 := 3;               
-    signal t_sprite_address : std_logic_vector (5 downto 0) := "111010";  
-    signal t_sprite_enable: std_logic := '1';                               
-    signal t_sprite_red_out, t_sprite_green_out, t_sprite_blue_out : std_logic;   
 
     component VGA_SYNC is
 	   PORT(	clock_25Mhz, red, green, blue		: IN	STD_LOGIC;
@@ -101,15 +93,6 @@ architecture game of Project_Flappy_V1 is
 		      speed : OUT std_logic_vector(8 downto 0)
 	         );	
     end component; 
-		 
-		component sprite_printer is
-       port(pixel_row, pixel_col, anchor_row, anchor_col : in std_logic_vector(9 downto 0);
-       sprite_red, sprite_green, sprite_blue : in std_logic;
-       multiplier : in integer range 1 to 4;
-       address : in std_logic_vector (5 downto 0);
-       enable, clk : in std_logic;
-       red_out, green_out, blue_out : out std_logic);
-    end component;
     
     component Two_Digit_Counter is
       port (clk, Init, Enable : in std_logic;
@@ -117,17 +100,17 @@ architecture game of Project_Flappy_V1 is
           display1, display2 : out std_logic_vector(6 downto 0));
     end component;
 
-
-    component welcome is
-      port (pixel_row, pixel_col : in std_logic_vector(9 downto 0);
-        Enable, CLK : in std_logic;
-        welcome_out: out std_logic);
+    component start_page is
+      port(pixel_row, pixel_col : in std_logic_vector(9 downto 0);
+	       Clk, enable  : in std_logic;
+         Red_out, Green_out, Blue_out : out std_logic);
     end component;
+    
+    component game_over is
+      port(pixel_row, pixel_col : in std_logic_vector(9 downto 0);
+	       Clk, enable  : in std_logic;
+         Red_out, Green_out, Blue_out : out std_logic);
 
-    component game_end is
-      port (pixel_row, pixel_col : in std_logic_vector(9 downto 0);
-        Enable, CLK : in std_logic;
-        game_end_out: out std_logic);
     end component;
     
     component life_counter is
@@ -157,9 +140,9 @@ architecture game of Project_Flappy_V1 is
     vert_sync_out <= t_vert_sync_out;
     horiz_sync_out <= t_horiz_sync_out;
     
-    t_red <= t_ball_red and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and (t_mouse_red or t_enable) and t_lives_red and t_score_red; -- and t_sprite_red_out;
-    t_green <= t_ball_green and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and (t_mouse_green or t_enable) and t_lives_green and t_score_green; -- and t_sprite_green_out;
-    t_blue <= t_ball_blue and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and (t_mouse_blue or t_enable) and t_lives_blue and t_score_blue; -- and t_sprite_blue_out;
+    t_red <= (t_ball_red or t_end) and t_pipe_1_red and t_pipe_2_red and t_pipe_3_red and (t_mouse_red or t_enable) and t_lives_red and t_score_red and t_finish_r and t_start_r; -- and t_sprite_red_out;
+    t_green <= (t_ball_green or t_end) and t_pipe_1_green and t_pipe_2_green and t_pipe_3_green and (t_mouse_green or t_enable) and t_lives_green and t_score_green and t_finish_g and t_start_g; -- and t_sprite_green_out;
+    t_blue <= (t_ball_blue or t_end) and t_pipe_1_blue and t_pipe_2_blue and t_pipe_3_blue and (t_mouse_blue or t_enable) and t_lives_blue and t_score_blue and t_finish_b and t_start_b; -- and t_sprite_blue_out;
     
     t_count <= t_count_1 or t_count_2 or t_count_3;
     
@@ -219,14 +202,8 @@ architecture game of Project_Flappy_V1 is
 	  
 	  score: Score_Counter port map(t_pixel_row, t_pixel_column, t_tenth_out, t_first_out, t_clkDiv, t_score_red, t_score_green, t_score_blue);
 	  
-	  sprite_design: sprite_printer port map(t_pixel_row, t_pixel_column, 
-                                           t_sprite_anchor_row, t_sprite_anchor_col,
-                                           t_sprite_red, t_sprite_green, t_sprite_blue,
-                                           t_sprite_multiplier, t_sprite_address,
-                                           t_sprite_enable, t_clkDiv,                           
-                                           t_sprite_red_out, t_sprite_green_out, t_sprite_blue_out);   
-
-            welcome_text: welcome port map(t_pixel_row,t_pixel_column,t_enable,t_clkDiv,t_welcome_out);
-            end_text: game_end port map(t_pixel_row,t_pixel_column,t_enable,t_clkDiv,t_game_end_out);
-	     
+	  start: start_page port map(t_pixel_row, t_pixel_column, t_clkDiv, t_reset_latch, t_start_r, t_start_g, t_start_b);
+	    
+	  finish: game_over port map(t_pixel_row, t_pixel_column, t_clkDiv, t_end, t_finish_r, t_finish_g, t_finish_b);
+	  
   end architecture;
