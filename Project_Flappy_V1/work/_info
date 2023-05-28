@@ -5,3990 +5,3990 @@ cModel Technology
 Z0 dC:\Users\Caleb Yang\Desktop\Course Material\Year 3\COMPSYS305\Project_Flappy\CS305_Project_Flappy\VGA_Testing
 !s11e MIXED_VERSIONS
 <<<<<<< HEAD
-Z1 OV;C;10.1d;51
-32
-Z2 !s108 1684913232.761000
-Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 o-work work -O0
-Z6 tExplicit 1
-Z7 =======
-Z8 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd|
-32
-Z9 !s108 1685186304.251000
-Z10 !s108 1683771458.226000
-Z11 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
-Z12 w1684103304
-Z13 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd
-Z14 dC:\Users\Caleb Yang\Desktop\Course Material\Year 3\COMPSYS305\Project_Flappy\CS305_Project_Flappy\VGA_Testing
-!i10b 1
+Z1 dC:\Users\Caleb Yang\Desktop\Course Material\Year 3\COMPSYS305\Project_Flappy\CS305_Project_Flappy\VGA_Testing
 <<<<<<< HEAD
-Z15 w1684913044
-Z16 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-Z17 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z18 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z19 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z20 dC:\Users\dngus\OneDrive\Documents\GitHub\CS305_Project_Flappy\Project_Flappy_V1
-Z21 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd
-Z22 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd
-l0
-L6
-Z23 V>T;7RSJGbLThKT4[C:;9T0
+Z2 =======
+Z3 !s108 1683771457.480000
+Z4 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd|
+Z5 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd|
 R1
-32
-Z24 !s108 1684913230.061000
-Z25 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd|
-Z26 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd|
-R5
+R2
+Z6 !s108 1684103527.447000
+Z7 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd|
+Z8 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd|
+R2
+Z9 !s108 1683771469.120000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd|
+Z11 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd|
+R1
+Z12 !s108 1684103517.121000
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd|
+Z14 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd|
+<<<<<<< HEAD
 R6
-Z27 !s100 SIXUFbb172Ub;UFERUC591
-!i10b 1
-Aa1
+Z15 !s108 1683771458.226000
+Z16 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
+Z17 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
+R9
+R1
+<<<<<<< HEAD
+R2
+R15
 R16
 R17
-R18
-R19
-Z28 DEx4 work 18 test_score_counter 0 22 >T;7RSJGbLThKT4[C:;9T0
-l22
-L9
-Z29 VYgAhkV9blESh6Tk?=Lj5N0
 R1
+<<<<<<< HEAD
+Z18 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd
+Z19 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd
+R2
+Z20 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd
+Z21 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd
+R17
+R1
+<<<<<<< HEAD
+Z22 w1683767951
+R2
+Z23 w1682558977
+R17
+R1
+<<<<<<< HEAD
+Z24 DEx4 work 13 test_vga_sync 0 22 6T_^B1ZiD9gGH@fBmO[XQ0
+l72
+L10
+Z25 VM751dX37=i;3=[VSgT9Fh1
+Z26 !s100 TP]4b@F;BVzghjWdGzT?73
+Z27 OV;C;10.1d;51
 32
+Z28 !s108 1684103528.137000
+Z29 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd|
+Z30 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd|
+R2
 R24
+l72
+L10
 R25
+R27
+32
 R26
-R5
-R6
-Z30 !s100 ?c82_fl9RT22E?f3D`OAL0
-!i10b 1
-<<<<<<< HEAD
-R1
-32
-R5
-R6
-R7
-R8
-32
-R12
-R13
-R14
-<<<<<<< HEAD
-R1
-32
-Z31 !s108 1684740536.587000
-Z32 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd|
-Z33 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd|
-R5
-R6
-R14
-Z34 !s100 ;_f^SaK:g@YYm1=jN=hB70
-!i10b 1
-<<<<<<< HEAD
-R1
-32
-Z35 !s108 1684913220.323000
-Z36 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd|
-Z37 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd|
-R5
-R6
-R14
-Z38 !s100 LR1zXO_gX2RNWIghI4?EN2
-!i10b 1
-<<<<<<< HEAD
-R16
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd|
+Z32 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd|
 R17
-R18
-R19
-Z39 DEx4 work 5 mouse 0 22 z?T_ghe6jzTZjP;9RX:I^1
-l44
-L18
-Z40 VYnK^Jd9cBgUAYc_cPi]oA1
-Z41 !s100 747ZknDDV[UmC2lK^FK<I2
 R1
-32
-Z42 !s108 1684914901.861000
-Z43 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd|
-Z44 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd|
-R5
-R6
-R14
 !i10b 1
 <<<<<<< HEAD
-R1
-32
-Z45 !s108 1683496001.280000
-Z46 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test.vhd|
-Z47 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test.vhd|
-R5
-R6
-R14
-Z48 !s100 KdjA0af70b6T_fNP=GKOo0
-!i10b 1
-<<<<<<< HEAD
-Z49 w1683767950
-R16
+R28
+R29
+R30
+R2
+R31
+R32
 R17
-R18
-R19
-R20
-Z50 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd
-Z51 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd
-l0
+R1
+Z33 !s108 1683771167.171000
+!i10b 1
+<<<<<<< HEAD
+Z34 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd
+Z35 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd
+R2
+Z36 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd
+Z37 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd
+R17
+R1
+<<<<<<< HEAD
+Z38 w1683770554
+R2
+R22
+R17
+R1
+<<<<<<< HEAD
+Z39 !s108 1684101657.331000
+Z40 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd|
+Z41 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd|
+R2
+Z42 !s108 1683771167.926000
+Z43 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd|
+Z44 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd|
+R17
+R1
+<<<<<<< HEAD
+R39
+R40
+R41
+R2
+R42
+R43
+R44
+R17
+R1
+<<<<<<< HEAD
+Z45 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd
+Z46 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd
+R2
+Z47 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd
+Z48 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd
+R17
+R1
+<<<<<<< HEAD
+R17
+R1
+Aa1
+Z49 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z50 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z51 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z52 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z53 DEx4 work 19 test_sprite_printer 0 22 _gz4;cUE=z<TUFSj9D1c03
+l28
 L9
-Z52 V?^=h<aLNZ9S]N@?iCn`zi2
-Z53 !s108 1684740536.348000
-R1
+Z54 VBQzLd8nMAJjFcZALc=^Rk1
+R27
 32
-Z54 !s108 1684913215.239000
-Z55 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd|
-Z56 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd|
-R5
-R6
+Z55 !s108 1684103310.294000
+Z56 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
+Z57 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
+Z58 o-work work -O0
+Z59 tExplicit 1
+Z60 !s100 g0;]Pk`M:d48Az7K2QL^V1
 !i10b 1
-Asyn
-R16
-R17
-R18
-R19
-Z57 !s110 1684969157
-l49
-L20
-Z58 !s108 1684969157.000000
-Z59 !s90 -reportprogress|300|-work|work|C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
-R1
-32
-R54
+<<<<<<< HEAD
 R55
 R56
-R5
-R6
-!i10b 1
-<<<<<<< HEAD
+R57
+R2
+R17
 R1
-32
-Z60 !s108 1684913213.802000
-Z61 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd|
-Z62 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd|
-R5
-R6
-R7
-R14
 <<<<<<< HEAD
+Z61 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd
+Z62 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd
+R2
+Z63 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd
+Z64 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd
+R17
 R1
-32
-R14
 <<<<<<< HEAD
+Z65 w1684103304
+R2
+Z66 w1683764127
+R17
+R1
+<<<<<<< HEAD
+R2
+Z67 !s108 1683771465.927000
+Z68 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
+Z69 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
+R17
+R1
+Z70 !s108 1684103523.059000
+Z71 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
+Z72 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
+<<<<<<< HEAD
+Z73 w1684102917
+R2
+Z74 w1683770721
+R17
+R1
+<<<<<<< HEAD
+R2
+Z75 !s108 1683771465.023000
+Z76 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
+Z77 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
+R17
+R1
+Z78 !s108 1684103522.342000
+Z79 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
+Z80 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
+<<<<<<< HEAD
+R2
+Z81 !s108 1683771462.746000
+Z82 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd|
+Z83 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd|
+R17
+R1
+Z84 !s108 1684103521.552000
+Z85 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd|
+Z86 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd|
+<<<<<<< HEAD
+R2
+R17
+Z87 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd|
+Z88 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd|
+R1
+Z89 !s108 1684103520.803000
+Z90 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd|
+Z91 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd|
+Z92 !s108 1683771461.806000
+<<<<<<< HEAD
+R2
+Z93 !s108 1683771460.820000
+Z94 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd|
+Z95 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd|
+R17
+R1
+Z96 !s108 1684103520.470000
+Z97 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd|
+Z98 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd|
+<<<<<<< HEAD
+R2
+Z99 !s108 1683771460.037000
+Z100 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd|
+Z101 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd|
+R17
+R1
+Z102 !s108 1684103519.751000
+Z103 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd|
+Z104 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd|
+<<<<<<< HEAD
+R2
+Z105 !s108 1683771459.021000
+Z106 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd|
+Z107 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd|
+R17
+R1
+Z108 !s108 1684103519.007000
+Z109 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd|
+Z110 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd|
+<<<<<<< HEAD
+R2
+R15
 R16
 R17
-R18
-R19
-Z63 dC:\Users\Caleb Yang\Desktop\Course Material\Year 3\COMPSYS305\Project_Flappy\CS305_Project_Flappy\Project_Flappy_V1
-Z64 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
-Z65 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
-l0
-L6
-Z66 VQ^:>I1PjWW5OBOB:HUS`82
-R1
-32
-<<<<<<< HEAD
-R1
-32
-R5
-R6
-R7
-R8
-32
-R12
-R13
-R14
-<<<<<<< HEAD
-R8
-32
-Z67 !s108 1684740536.103000
-Z68 !s108 1683771462.746000
-R32
-R12
-R13
-Z69 !s100 S6gIS2hTob3hPn[QBBNlh1
-R7
 R17
-32
-R67
-Z70 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd
-Z71 !s108 1684101657.331000
-R18
-R19
-R69
-Z72 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
-R14
-!i10b 1
+R1
 <<<<<<< HEAD
+R1
+<<<<<<< HEAD
+R6
+R105
+R106
+R107
+R9
+R109
+R110
+R1
+R108
+<<<<<<< HEAD
+R6
+R99
+R100
+R101
+R9
+R103
+R104
+R1
+R102
+<<<<<<< HEAD
+R6
+R93
+R94
+R95
+R9
+R97
+R98
+R1
+R96
+<<<<<<< HEAD
+R6
+R9
+R90
+R91
+R1
+R87
+R88
+R89
+R92
+<<<<<<< HEAD
+R6
+R81
+R82
+R83
+R9
+R1
+R84
+R85
+R86
+<<<<<<< HEAD
+R6
+R75
+R76
+R77
+R9
+R79
+R80
+R1
+R78
+<<<<<<< HEAD
+R73
+R6
+R74
+R9
+R1
+<<<<<<< HEAD
+R6
 R67
 R68
-R32
-R7
-R67
-R70
+R69
+R9
 R71
-R18
-R19
 R72
-R14
-!i10b 1
-Atest
-Z73 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
-Z74 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
+R1
+R70
 <<<<<<< HEAD
-w1684375573
-Z75 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
-Z76 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
-Z77 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
-Z78 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
+R65
+R6
+R66
+R9
+R1
+<<<<<<< HEAD
+R61
+R62
+R6
 R63
-R33
-Z79 !s108 1683771465.023000
-R7
-Z80 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd|
-Z81 !s108 1684103527.447000
-Z82 !s108 1683771469.120000
-Z83 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
-Z84 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
-Z85 !s108 1683771168.670000
+R64
+R9
+R1
 <<<<<<< HEAD
-Z86 !s110 1684965032
-R7
-Z87 !s108 1684740536.187000
-R83
-R84
-R18
-R19
-R72
-R14
-<<<<<<< HEAD
-R86
-R7
-R87
-R83
-R84
-R18
-R19
-R72
-R14
-<<<<<<< HEAD
-Z88 !s108 1684828701.274000
-Z89 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd|
-Z90 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd|
-R12
-R13
-R30
-R72
-R14
-!i10b 1
-<<<<<<< HEAD
-R88
-R89
-R90
-R12
-R13
-R7
-R88
-R89
-R90
-R18
-R19
-R72
-R14
-<<<<<<< HEAD
-Z91 w1684828599
-R76
-R75
-R77
-R78
-R63
-Z92 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd
-Z93 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd
-R7
-8C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
-R74
-R73
-R12
-R13
-Z94 !s90 -reportprogress|300|-work|work|C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
-R92
-R93
-<<<<<<< HEAD
-R7
-Z95 !s108 1684828692.946000
-R33
-R79
-R18
-R19
-R72
-Z96 !s100 4jlB4h@MBU1`<T6><fR890
-R14
-!s110 1684969160
-<<<<<<< HEAD
+R55
+R56
 R57
-R7
-R95
-R33
-R79
-R18
-R19
-R72
-R14
+R6
+R9
+R1
 <<<<<<< HEAD
+R9
+R1
+Aa1
+R49
+R50
+R51
+R52
+R53
+l28
+L9
+R54
+R27
+32
+R55
+R56
 R57
 R58
 R59
-Z97 !s107 C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
-R7
-R53
-Z98 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd|
-R68
-R18
-R19
-R72
-R14
-!i10b 1
-!i113 0
+R60
 !i10b 1
 <<<<<<< HEAD
-Z99 w1684960460
-Z100 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-R3
-R4
-Z101 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-Z102 dC:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1
+R45
+R46
+R6
+R47
+R48
+R9
+R1
+<<<<<<< HEAD
+R39
+R40
+R41
+R6
+R42
+R43
+R44
+R9
+R1
+<<<<<<< HEAD
+R39
+R40
+R41
+R6
+R42
+R43
+R44
+R9
+R1
+<<<<<<< HEAD
+R38
+R6
+R22
+R9
+R1
+<<<<<<< HEAD
+R34
+R35
+R6
+R36
+R37
+R9
+R1
+<<<<<<< HEAD
+R28
+R29
+R30
+R6
+R31
+R32
+R9
+R1
+R33
+!i10b 1
+<<<<<<< HEAD
+R24
+l72
+L10
+R25
+R26
+R27
+32
+R28
+R29
+R30
+R6
+R24
+l72
+L10
+R25
+R27
+32
+R26
+R31
+R32
+R9
+R1
+!i10b 1
+<<<<<<< HEAD
+R22
+R6
+R23
+R9
+R1
+<<<<<<< HEAD
+R18
+R19
+R6
+R20
+R21
+R9
+R1
+<<<<<<< HEAD
+R6
+R7
+R8
+R6
+R9
+R10
+R11
+R9
+R1
+<<<<<<< HEAD
+R6
+R7
+R8
+R6
+R9
+R10
+R11
+R9
+R1
+<<<<<<< HEAD
+Z111 o-work work
+Z112 tExplicit 1 CvgOpt 0
+R2
+R51
+R52
+R17
+R1
+!i113 0
+!s100 _2ZL^PFR_n[T1`[gfARJ^3
+!i10b 1
+<<<<<<< HEAD
+R111
+R112
+R2
+R51
+R52
+R17
+R1
+!i113 0
+!s100 Zknoamo1QMak?7X]H]@Vc0
+!i10b 1
+<<<<<<< HEAD
+Z113 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd|
+R2
+R113
+R17
+R1
+<<<<<<< HEAD
+Z114 w1684960460
+Z115 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z116 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z117 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z118 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z119 dC:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1
 8C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd
 FC:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd
 l0
 L6 1
 V1IW:4YAI:1Yoc@7XS43=33
-R7
-Z103 w1683177588
-R74
-R73
-R12
-R13
-R94
-Z104 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd
-Z105 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd
+R2
+Z120 w1683177588
+R71
+R72
+R65
+R61
+Z121 !s90 -reportprogress|300|-work|work|C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
+Z122 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd
+Z123 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd
 l0
 L6
-Z106 VFjblQCmUi8[]S?JE[hXgY1
+Z124 VFjblQCmUi8[]S?JE[hXgY1
 8C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd
-R17
+R50
 32
-R53
-R98
-R68
-R18
-R19
+Z125 !s108 1684740536.348000
+R91
+R81
+R51
+R52
 !i122 13
 !s100 Q3_CzP8kU6@h2UK]AiSgY3
 !i10b 1
 Abehaviour
-R74
-R73
-R12
-R13
+R71
+R72
+R65
+R61
 FC:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd
 l22
 L13
 <<<<<<< HEAD
-Z107 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd|
-R7
-R107
-R72
-R14
-<<<<<<< HEAD
-Z108 o-work work
-Z109 tExplicit 1 CvgOpt 0
-R7
-R18
-R19
-R72
-R14
-!i113 0
-!s100 Zknoamo1QMak?7X]H]@Vc0
-!i10b 1
-<<<<<<< HEAD
-R108
-R109
-R7
-R18
-R19
-R72
-R14
-!i113 0
-!s100 _2ZL^PFR_n[T1`[gfARJ^3
-!i10b 1
-<<<<<<< HEAD
-R81
-Z110 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd|
-Z111 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd|
-R81
-R82
-Z112 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd|
-Z113 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd|
-R82
-R14
-<<<<<<< HEAD
-R81
-R110
-R111
-R81
-R82
-R112
-R113
-R82
-R14
-<<<<<<< HEAD
-Z114 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd
-Z115 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd
-R81
-Z116 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd
-Z117 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/vga_sync.vhd
-R82
-R14
-<<<<<<< HEAD
-Z118 w1683767951
-R81
-Z119 w1682558977
-R82
-R14
-<<<<<<< HEAD
-Z120 DEx4 work 13 test_vga_sync 0 22 6T_^B1ZiD9gGH@fBmO[XQ0
-l72
-L10
-Z121 VM751dX37=i;3=[VSgT9Fh1
-Z122 !s100 TP]4b@F;BVzghjWdGzT?73
-R1
-32
-Z123 !s108 1684103528.137000
-Z124 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd|
-Z125 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd|
-R81
-R120
-l72
-L10
-R121
-R1
-32
-R122
-Z126 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd|
-Z127 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd|
-R82
-R14
-!i10b 1
-<<<<<<< HEAD
-R123
-R124
+Z126 !s110 1684969157
+Z127 !s108 1684969157.000000
+Z128 !s90 -reportprogress|300|-work|work|C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
+Z129 !s107 C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd|
+R2
 R125
+R91
 R81
+R51
+R52
+R17
+R1
+!i10b 1
+!i113 0
+!i10b 1
+<<<<<<< HEAD
 R126
-R127
-R82
-R14
-Z128 !s108 1683771167.171000
-!i10b 1
-<<<<<<< HEAD
-Z129 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd
-Z130 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd
-R81
-Z131 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd
-Z132 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_vga_sync.vhd
-R82
-R14
-<<<<<<< HEAD
-Z133 w1683770554
-R81
-R118
-R82
-R14
-<<<<<<< HEAD
-R71
-R80
-Z134 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd|
-R81
-Z135 !s108 1683771167.926000
-Z136 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd|
-Z137 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd|
-R82
-R14
-<<<<<<< HEAD
-R71
-R80
-R134
-R81
-R135
-R136
-R137
-R82
-R14
-<<<<<<< HEAD
-Z138 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd
-R70
-R81
-Z139 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd
-Z140 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_test_vga_sync.vhd
-R82
-R14
-<<<<<<< HEAD
-R82
-R14
-Aa1
-R16
-R17
-R18
-R19
-Z141 DEx4 work 19 test_sprite_printer 0 22 _gz4;cUE=z<TUFSj9D1c03
-l28
-L9
-Z142 VBQzLd8nMAJjFcZALc=^Rk1
-R1
-32
-Z143 !s108 1684103310.294000
-Z144 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
-Z145 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
-R5
-R6
-Z146 !s100 g0;]Pk`M:d48Az7K2QL^V1
-!i10b 1
-<<<<<<< HEAD
-R143
-R144
-R145
-R81
-R82
-R14
-<<<<<<< HEAD
-R13
-Z147 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd
-R81
-Z148 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd
-Z149 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd
-R82
-R14
-<<<<<<< HEAD
-R12
-R81
-Z150 w1683764127
-R82
-R14
-<<<<<<< HEAD
-R81
-Z151 !s108 1683771465.927000
-Z152 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
-Z153 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
-R82
-R74
-R73
-R14
-Z154 !s108 1684103523.059000
-<<<<<<< HEAD
-Z155 w1684102917
-R81
-Z156 w1683770721
-R82
-R14
-<<<<<<< HEAD
-R81
-R79
-R76
+R2
+Z130 !s108 1684828692.946000
+R83
 R75
-R82
-R77
-R78
-R14
-Z157 !s108 1684103522.342000
-<<<<<<< HEAD
-R81
-R68
-R32
-R33
-R82
-R14
-Z158 !s108 1684103521.552000
-Z159 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd|
-Z160 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd|
-<<<<<<< HEAD
-R81
-R82
-Z161 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd|
-R98
-R14
-Z162 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd|
-Z163 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd|
-Z164 !s108 1684103520.803000
-Z165 !s108 1683771461.806000
-<<<<<<< HEAD
-R81
-Z166 !s108 1683771460.820000
-Z167 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd|
-Z168 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd|
-R82
-Z169 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd|
-Z170 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd|
-R14
-Z171 !s108 1684103520.470000
-<<<<<<< HEAD
-R81
-Z172 !s108 1683771460.037000
-Z173 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd|
-R8
-R82
-R55
-R56
-R14
-Z174 !s108 1684103519.751000
-<<<<<<< HEAD
-R81
-Z175 !s108 1683771459.021000
-Z176 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd|
-Z177 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd|
-R82
-R61
-R62
-R14
-Z178 !s108 1684103519.007000
-<<<<<<< HEAD
-R14
-<<<<<<< HEAD
-R7
-R10
-R11
-R72
-R72
-R14
-<<<<<<< HEAD
-R7
-R175
-R176
-R177
-R72
-R14
-R178
-R61
-R62
-<<<<<<< HEAD
-R7
-R172
-R173
-R8
-R72
-R14
-R174
-R55
-R56
-<<<<<<< HEAD
-R7
-R166
-R167
-R168
-R72
-R14
-R171
-R169
-R170
-<<<<<<< HEAD
-R7
-R72
-R162
-R163
-R14
-R164
-R161
-R98
-R165
-<<<<<<< HEAD
-R7
-R68
-R32
-R33
-R72
-R14
-R158
-R159
-R160
-<<<<<<< HEAD
-R7
-R79
-R76
-R75
-R72
-R14
-R157
-R77
-R78
-<<<<<<< HEAD
-R155
-R7
-R156
-R72
-R14
-<<<<<<< HEAD
-R7
-R151
-R152
-R153
-R72
-R14
-R154
-R74
-R73
-<<<<<<< HEAD
-R12
-R7
-R150
-R72
-R14
-<<<<<<< HEAD
-R13
-R147
-R7
-R148
-R149
-R72
-R14
-<<<<<<< HEAD
-R143
-R144
-R145
-R7
-R72
-R14
-<<<<<<< HEAD
-R72
-R14
-Aa1
-R16
+R51
+R52
 R17
-R18
-R19
-R141
-l28
-L9
-R142
 R1
-32
-R143
-R144
-R145
-R5
-R6
-R146
-!i10b 1
 <<<<<<< HEAD
-R138
-R70
-R7
-R139
-R140
-R72
-R14
-<<<<<<< HEAD
-R71
-R80
-R134
-R7
-R135
-R136
-R137
-R72
-R14
-<<<<<<< HEAD
-R71
-R80
-R134
-R7
-R135
-R136
-R137
-R72
-R14
-<<<<<<< HEAD
-R133
-R7
-R118
-R72
-R14
-<<<<<<< HEAD
-R129
+R2
 R130
-R7
-R131
-R132
-R72
-R14
+R83
+R75
+R51
+R52
+R17
+Z131 !s100 4jlB4h@MBU1`<T6><fR890
+R1
+!s110 1684969160
 <<<<<<< HEAD
-R123
-R124
-R125
-R7
-R126
-R127
+Z132 w1684828599
+R76
+R77
+R79
+R80
+Z133 dC:\Users\Caleb Yang\Desktop\Course Material\Year 3\COMPSYS305\Project_Flappy\CS305_Project_Flappy\Project_Flappy_V1
+Z134 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd
+Z135 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd
+R2
+8C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
+R71
 R72
-R14
+R65
+R61
+R121
+R134
+R135
+<<<<<<< HEAD
+Z136 !s108 1684828701.274000
+Z137 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd|
+Z138 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd|
+R65
+R61
+R2
+R136
+R137
+R138
+R51
+R52
+R17
+R1
+<<<<<<< HEAD
+R136
+R137
+R138
+R65
+R61
+Z139 !s100 ?c82_fl9RT22E?f3D`OAL0
+R17
+R1
+!i10b 1
+<<<<<<< HEAD
+Z140 !s110 1684965032
+R2
+Z141 !s108 1684740536.187000
+Z142 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
+Z143 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
+R51
+R52
+R17
+R1
+<<<<<<< HEAD
+R140
+R2
+R141
+R142
+R143
+R51
+R52
+R17
+R1
+<<<<<<< HEAD
+w1684375573
+R77
+R76
+R79
+R80
+R133
+R83
+R75
+R2
+R40
+R6
+R9
+R142
+R143
+Z144 !s108 1683771168.670000
+<<<<<<< HEAD
+Z145 !s108 1684740536.103000
+R81
+R82
+R2
+R145
+R46
+R39
+R51
+R52
+R17
+R1
+!i10b 1
+Atest
+R72
+R71
+<<<<<<< HEAD
+R101
+32
+R145
+R81
+R82
+R65
+R61
+Z146 !s100 S6gIS2hTob3hPn[QBBNlh1
+R2
+R50
+32
+R145
+R46
+R39
+R51
+R52
+R146
+R17
+R1
+!i10b 1
+<<<<<<< HEAD
+R27
+32
+R58
+R59
+R2
+R101
+32
+R65
+R61
+R1
+<<<<<<< HEAD
+R49
+R50
+R51
+R52
+R133
+Z147 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
+Z148 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
+l0
+L6
+Z149 VQ^:>I1PjWW5OBOB:HUS`82
+R27
+32
+<<<<<<< HEAD
+R27
+32
+R1
+<<<<<<< HEAD
+R27
+32
+Z150 !s108 1684913213.802000
+R109
+R110
+R58
+R59
+R2
+R1
+<<<<<<< HEAD
+Z151 w1683767950
+R49
+R50
+R51
+R52
+Z152 dC:\Users\dngus\OneDrive\Documents\GitHub\CS305_Project_Flappy\Project_Flappy_V1
+Z153 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd
+Z154 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd
+l0
+L9
+Z155 V?^=h<aLNZ9S]N@?iCn`zi2
+R125
+R27
+32
+Z156 !s108 1684913215.239000
+R103
+R104
+R58
+R59
+!i10b 1
+Asyn
+R49
+R50
+R51
+R52
+R126
+l49
+L20
+R127
 R128
+R27
+32
+R156
+R103
+R104
+R58
+R59
 !i10b 1
 <<<<<<< HEAD
-R120
-l72
-L10
-R121
-R122
-R1
+R27
 32
-R123
-R124
-R125
-R7
-R120
-l72
-L10
-R121
+Z157 !s108 1683496001.280000
+Z158 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test.vhd|
+Z159 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test.vhd|
+R58
+R59
 R1
-32
-R122
-R126
-R127
-R72
-R14
+Z160 !s100 KdjA0af70b6T_fNP=GKOo0
 !i10b 1
 <<<<<<< HEAD
-R118
-R7
-R119
-R72
-R14
+R49
+R50
+R51
+R52
+Z161 DEx4 work 5 mouse 0 22 z?T_ghe6jzTZjP;9RX:I^1
+l44
+L18
+Z162 VYnK^Jd9cBgUAYc_cPi]oA1
+Z163 !s100 747ZknDDV[UmC2lK^FK<I2
+R27
+32
+Z164 !s108 1684914901.861000
+Z165 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd|
+Z166 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd|
+R58
+R59
+R1
+!i10b 1
 <<<<<<< HEAD
-R114
-R115
-R7
+R27
+32
+Z167 !s108 1684913220.323000
+Z168 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd|
+Z169 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd|
+R58
+R59
+R1
+Z170 !s100 LR1zXO_gX2RNWIghI4?EN2
+!i10b 1
+<<<<<<< HEAD
+R27
+32
+Z171 !s108 1684740536.587000
+R82
+R83
+R58
+R59
+R1
+Z172 !s100 ;_f^SaK:g@YYm1=jN=hB70
+!i10b 1
+<<<<<<< HEAD
+R27
+32
+R58
+R59
+R2
+R101
+32
+R65
+R61
+R1
+<<<<<<< HEAD
+Z173 w1684913044
+R49
+R50
+R51
+R52
+R152
+Z174 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd
+Z175 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd
+l0
+L6
+Z176 V>T;7RSJGbLThKT4[C:;9T0
+R27
+32
+Z177 !s108 1684913230.061000
+Z178 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd|
+Z179 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_score_counter.vhd|
+R58
+R59
+Z180 !s100 SIXUFbb172Ub;UFERUC591
+!i10b 1
+Aa1
+R49
+R50
+R51
+R52
+Z181 DEx4 work 18 test_score_counter 0 22 >T;7RSJGbLThKT4[C:;9T0
+l22
+L9
+Z182 VYgAhkV9blESh6Tk?=Lj5N0
+R27
+32
+R177
+R178
+R179
+R58
+R59
+R139
+!i10b 1
+<<<<<<< HEAD
+R27
+32
+Z183 !s108 1684913232.761000
 R116
 R117
-R72
-R14
-<<<<<<< HEAD
-R7
-R10
-R11
-R72
-R14
-<<<<<<< HEAD
-R81
-R10
-R11
-R72
-R82
-R14
-<<<<<<< HEAD
-R7
-Z179 !s108 1683771457.480000
-Z180 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd|
-Z181 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd|
-R14
-R7
-R81
-R110
-R111
-R7
-R82
-R112
-R113
-R14
-Z182 !s108 1684103517.121000
-Z183 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd|
-Z184 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd|
-<<<<<<< HEAD
-R14
+R58
+R59
+R2
+R101
+32
+Z184 !s108 1685186304.251000
+R15
+R16
+R65
+R61
+R1
+!i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R14
+R58
+R59
+R9
+R1
 Z185 !s100 aDMM_OShGooVd9`=d1_ao1
 !i10b 1
 Abehavior
-R76
-R75
-R77
-R78
+R49
+R50
+R51
+R52
 Z186 DEx4 work 4 ball 0 22 ;9P?DhB]fgC4`<Ygo;[=83
 l20
 L14
 Z187 V?Z>KH9_>;hJ@m^CFBFY_g1
-R8
+R27
 32
-R179
-R180
-R181
+R7
+R8
+R2
+R58
+R59
 Z188 !s100 H^e34DT3mfSI=7?DlNg253
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
+R58
+R59
+R9
 Z189 !s100 O5oGY1:bKa5VcIdj`@:e@3
-R14
+R1
 !i10b 1
 Aarc1
-R77
-R78
+R51
+R52
 Z190 DEx4 work 15 bcd_to_sevenseg 0 22 _La796I8XHe^PeNhWl[NZ0
 l13
 L12
 Z191 VkjM4K=oMf=F_<ZJe@V0Kd3
-R8
+R27
 32
-R123
-R124
-R125
+R15
+R16
+R17
+R58
+R59
 Z192 !s100 ^h;O@=WdL]zM<<b<Y:X`^0
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R14
+R58
+R59
+R9
+R1
 Z193 !s100 [el<^Hmo]kJMEO?=M@RL<2
 !i10b 1
 Abehavior
 Z194 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
-R75
-R77
-R78
+R50
+R51
+R52
 Z195 DEx4 work 11 bouncy_ball 0 22 KRO6i_3]BP?_DNha1:E=`2
 l23
 L14
 Z196 V460a6eMF0<1;bchH[I<KR2
-R8
+R27
 32
-R136
-R137
-R118
+R105
+R106
+R107
+R58
+R59
 Z197 !s100 kJ[FGR1;D<H@jKn?IO88b3
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
+R58
+R59
+R9
 Z198 !s100 8BTe6g2GzRlieT`CE33Ub1
-R14
+R1
 !i10b 1
 Asyn
-R76
-R75
-R77
-R78
+R49
+R50
+R51
+R52
 Z199 DEx4 work 8 char_rom 0 22 ?^=h<aLNZ9S]N@?iCn`zi2
 l49
 L20
 Z200 V`WP@T=aTU;SF_<ZCRJ[Y:2
-R8
+R27
 32
-R80
-R134
-R135
+R99
+R100
+R101
+R58
+R59
 Z201 !s100 T?kBoHZao@A_Sd@:b0D5d2
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
+R58
+R59
+R9
 Z202 !s100 3kH_G=mTf[I;]WQS3I3Jd2
-R14
+R1
 !i10b 1
 Abehaviour
-R75
-R76
-R77
-R78
+R50
+R49
+R51
+R52
 Z203 DEx4 work 3 div 0 22 2WJ:Ld:]=`S>=?l0[<>Gn0
 l13
 L10
 Z204 VP>hX1?9o6iV][QX^_F[ze2
-R8
+R27
 32
-R138
-R70
-R71
+R93
+R94
+R95
+R58
+R59
 Z205 !s100 9YlQHAEhX[nUnCWo3jhQV3
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R72
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R14
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-Z206 !s100 EzPbFIbmV;hg7RF`7Uc]00
-R14
-!i10b 1
-Aa
-R16
-R17
-R18
-R19
-Z207 DEx4 work 8 vga_sync 0 22 kN^=iinheN=5blnU=NdTQ2
-l18
-L13
-Z208 V<jBc2V4IlU[>`k4Ed_O:T3
+R9
 R1
-32
-Z209 !s100 SM_WFWFDa5a`@cjMV4dVQ1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-l0
-L7
-Z210 VkN^=iinheN=5blnU=NdTQ2
+R58
+R59
+R9
 R1
-32
-R82
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R16
-R17
-R18
-R19
-R63
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R109
-R14
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R14
-Z211 !s100 kDf>@]=5VmMGiz>=QUGlL3
-!i10b 1
-Atest
-R17
-R16
-R18
-R19
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-l0
-L5
-Z212 V6T_^B1ZiD9gGH@fBmO[XQ0
-R1
-32
-R82
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R17
-R16
-R18
-R19
-R63
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R14
-Z213 !s100 M][eHZ:fmki9W5UnmSXQf1
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-Z214 !s100 V8[RJWXfVH_a7U0<WXfOB1
-R14
-!i10b 1
-Atest
-R17
-R16
-R18
-R19
-Z215 DEx4 work 18 test_test_vga_sync 0 22 om`HH3^L9>:PlA1<8F0EI0
-l17
-L8
-Z216 V_[ToUDIVVH[3oef<Dh2@W3
-R1
-32
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-l0
-L5
-Z217 Vom`HH3^L9>:PlA1<8F0EI0
-R1
-32
-R82
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R17
-R16
-R18
-R19
-R63
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-Z218 !s100 [bG3e=^j<YTb835[Ji1Y52
-R14
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-l0
-L6
-Z219 V_gz4;cUE=z<TUFSj9D1c03
-R1
-32
-R82
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R16
-R17
-R18
-R19
-R63
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-Z220 !s100 F7nfz4zzIY>380n[>3k940
-R14
-!i10b 1
-Aa
-R16
-R17
-R18
-R19
-Z221 DEx4 work 14 sprite_printer 0 22 Q^:>I1PjWW5OBOB:HUS`82
-l35
-L22
-Z222 V45RBZ1z:mnem7?WM]iB:m1
-R1
-32
-R151
-R152
-R153
-R5
-R6
-Z223 !s100 9`eZj0kO1_c2D^KbYLc^=2
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-Z224 !s100 lLDW>>TYKV:fB>S=YeMbK1
-R14
+Z206 !s100 2lAY``]b6m4[3_Q[@OgRY2
 !i10b 1
 Abehaviour
-R76
-R75
-R77
-R78
-Z225 DEx4 work 9 psudo_gen 0 22 FjblQCmUi8[]S?JE[hXgY1
-l22
-L13
-Z226 VcYc_fHG0VM7VhGG@8kM8P2
-R8
-32
-R18
-R19
-R141
-Z227 !s100 f=LiW:lJk_D16g6ZXZI=J3
-!i10b 1
-Anum
-Z228 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
-R76
-R75
-R77
-R78
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R76
-R75
-R77
-R78
-R63
-R64
-R65
-l0
-L6
-R66
-R8
-32
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R220
-R14
-!i10b 1
-Aa
-R76
-R75
-R77
-R78
-R221
-l35
-L22
-R222
-R8
-32
-R145
-R16
-R17
-R223
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R76
-R75
-R77
-R78
-R63
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-l0
-L6
-R219
-R8
-32
-R72
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R218
-R14
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R75
-R76
-R77
-R78
-R63
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-l0
-L5
-R217
-R8
-32
-R72
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R214
-R14
-!i10b 1
-Atest
-R75
-R76
-R77
-R78
-R215
-l17
-L8
-R216
-R8
-32
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R14
-R213
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R75
-R76
-R77
-R78
-R63
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-l0
-L5
-R212
-R8
-32
-R72
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R14
-R211
-!i10b 1
-Atest
-R75
-R76
-R77
-R78
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R173
-R14
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R76
-R75
-R77
-R78
-R63
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-l0
-L7
-R210
-R8
-32
-R72
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R206
-R14
-!i10b 1
-Aa
-R76
-R75
-R77
-R78
-R207
-l18
-L13
-R208
-R8
-32
-R209
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R12
-R13
-R72
-R14
-!i10b 1
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R224
-R14
-!i10b 1
-Abehaviour
-R16
-R17
-R18
-R19
-R225
-l22
-L13
-R226
-R1
-32
-R79
-R76
-R75
-R5
-R6
-R227
-!i10b 1
-Anum
-R228
-R16
-R17
-R18
-R19
-R7
-R7
-R179
-R180
-R181
-R72
-R182
-R183
-R184
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R14
-Z229 !s100 2lAY``]b6m4[3_Q[@OgRY2
-!i10b 1
-Abehaviour
-R16
-R17
-R18
-R19
-Z230 DEx4 work 5 pipes 0 22 Q3WLOlFVUQegda8[AgY:^2
+R49
+R50
+R51
+R52
+Z207 DEx4 work 5 pipes 0 22 Q3WLOlFVUQegda8[AgY:^2
 l54
 L14
-Z231 V_VG==T]HX4:6fMWfUcKZf0
-R1
+Z208 V_VG==T]HX4:6fMWfUcKZf0
+R27
 32
-R68
-R32
-R33
-R5
-R6
-Z232 !s100 [fHUD>5Mh84KaAYlAC6;[2
+R81
+R82
+R83
+R58
+R59
+Z209 !s100 [fHUD>5Mh84KaAYlAC6;[2
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R82
-R14
->>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R202
-R14
+R58
+R59
+R9
+Z210 !s100 lLDW>>TYKV:fB>S=YeMbK1
+R1
 !i10b 1
 Abehaviour
+R49
+R50
+R51
+R52
+Z211 DEx4 work 9 psudo_gen 0 22 FjblQCmUi8[]S?JE[hXgY1
+l22
+L13
+Z212 VcYc_fHG0VM7VhGG@8kM8P2
+R27
+32
+R75
+R76
+R77
+R58
+R59
+Z213 !s100 f=LiW:lJk_D16g6ZXZI=J3
+!i10b 1
+Anum
+Z214 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R49
+R50
+R51
+R52
+R2
+R2
+R3
+R4
+R5
 R17
-R16
-R18
-R19
+R12
+R13
+R14
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+R1
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+Z215 !s100 EzPbFIbmV;hg7RF`7Uc]00
+R1
+!i10b 1
+Aa
+R76
+R77
+R79
+R80
+Z216 DEx4 work 8 vga_sync 0 22 kN^=iinheN=5blnU=NdTQ2
+l18
+L13
+Z217 V<jBc2V4IlU[>`k4Ed_O:T3
+R101
+32
+Z218 !s100 SM_WFWFDa5a`@cjMV4dVQ1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+l0
+L7
+Z219 VkN^=iinheN=5blnU=NdTQ2
+R101
+32
+R17
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R76
+R77
+R79
+R80
+R133
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+R100
+R1
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+R1
+Z220 !s100 kDf>@]=5VmMGiz>=QUGlL3
+!i10b 1
+Atest
+R77
+R76
+R79
+R80
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+l0
+L5
+Z221 V6T_^B1ZiD9gGH@fBmO[XQ0
+R101
+32
+R17
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R77
+R76
+R79
+R80
+R133
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+R1
+Z222 !s100 M][eHZ:fmki9W5UnmSXQf1
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+Z223 !s100 V8[RJWXfVH_a7U0<WXfOB1
+R1
+!i10b 1
+Atest
+R77
+R76
+R79
+R80
+Z224 DEx4 work 18 test_test_vga_sync 0 22 om`HH3^L9>:PlA1<8F0EI0
+l17
+L8
+Z225 V_[ToUDIVVH[3oef<Dh2@W3
+R101
+32
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+l0
+L5
+Z226 Vom`HH3^L9>:PlA1<8F0EI0
+R101
+32
+R17
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R77
+R76
+R79
+R80
+R133
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+Z227 !s100 [bG3e=^j<YTb835[Ji1Y52
+R1
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+l0
+L6
+Z228 V_gz4;cUE=z<TUFSj9D1c03
+R101
+32
+R17
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R76
+R77
+R79
+R80
+R133
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+Z229 !s100 F7nfz4zzIY>380n[>3k940
+R1
+!i10b 1
+Aa
+R76
+R77
+R79
+R80
+Z230 DEx4 work 14 sprite_printer 0 22 Q^:>I1PjWW5OBOB:HUS`82
+l35
+L22
+Z231 V45RBZ1z:mnem7?WM]iB:m1
+R101
+32
+R57
+R49
+R50
+Z232 !s100 9`eZj0kO1_c2D^KbYLc^=2
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R76
+R77
+R79
+R80
+R133
+R147
+R148
+l0
+L6
+R149
+R101
+32
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+R210
+R1
+!i10b 1
+Abehaviour
+R76
+R77
+R79
+R80
+R211
+l22
+L13
+R212
+R101
+32
+R51
+R52
+R53
+R213
+!i10b 1
+Anum
+R214
+R76
+R77
+R79
+R80
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R58
+R59
+R9
+R229
+R1
+!i10b 1
+Aa
+R49
+R50
+R51
+R52
+R230
+l35
+L22
+R231
+R27
+32
+R67
+R68
+R69
+R58
+R59
+R232
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R49
+R50
+R51
+R52
+R133
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+l0
+L6
+R228
+R27
+32
+R9
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R58
+R59
+R9
+R227
+R1
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R50
+R49
+R51
+R52
+R133
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+l0
+L5
+R226
+R27
+32
+R9
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R58
+R59
+R9
+R223
+R1
+!i10b 1
+Atest
+R50
+R49
+R51
+R52
+R224
+l17
+L8
+R225
+R27
+32
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R58
+R59
+R9
+R1
+R222
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R50
+R49
+R51
+R52
+R133
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+l0
+L5
+R221
+R27
+32
+R9
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R58
+R59
+R9
+R1
+R220
+!i10b 1
+Atest
+R50
+R49
+R51
+R52
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R58
+R59
+R9
+R112
+R1
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R49
+R50
+R51
+R52
+R133
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+l0
+L7
+R219
+R27
+32
+R9
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R58
+R59
+R9
+R215
+R1
+!i10b 1
+Aa
+R49
+R50
+R51
+R52
+R216
+l18
+L13
+R217
+R27
+32
+R218
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R58
+R59
+R9
+R1
+!i10b 1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R17
+R1
+>>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
+R65
+R61
+R17
+R202
+R1
+!i10b 1
+Abehaviour
+R77
+R76
+R79
+R80
 R203
 l13
 L10
 R204
-R1
+R101
 32
-R166
-R167
-R168
-R5
-R6
+R45
+R46
+R39
 R205
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
+R65
+R61
+R17
 R198
-R14
+R1
 !i10b 1
 Asyn
-R16
-R17
-R18
-R19
+R76
+R77
+R79
+R80
 R199
 l49
 L20
 R200
-R1
+R101
 32
-R172
-R173
-R8
-R5
-R6
+R40
+R41
+R42
 R201
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R14
+R65
+R61
+R17
+R1
 R193
 !i10b 1
 Abehavior
 R194
-R17
-R18
-R19
+R77
+R79
+R80
 R195
 l23
 L14
 R196
-R1
+R101
 32
-R175
-R176
-R177
-R5
-R6
+R43
+R44
+R22
 R197
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
+R65
+R61
+R17
 R189
-R14
+R1
 !i10b 1
 Aarc1
-R18
-R19
+R79
+R80
 R190
 l13
 L12
 R191
-R1
+R101
 32
-R10
-R11
-R72
-R5
-R6
+R28
+R29
+R30
 R192
 !i10b 1
 >>>>>>> 1367c30b8da422090bf5fb00cff04ccd0bc61ae3
-R5
-R6
-R82
-R14
+R65
+R61
+R17
+R1
 R185
 !i10b 1
 Abehavior
-R16
-R17
-R18
-R19
+R76
+R77
+R79
+R80
 R186
 l20
 L14
 R187
-R1
+R101
 32
-R110
-R111
-R7
+R3
+R4
 R5
-R6
 R188
 !i10b 1
 >>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-R14
-!i10b 1
->>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-R207
-l18
-L13
-R208
-R209
-R14
->>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-R14
-!s100 lz?m5NAzi^JczheeRKlnR2
-!i10b 1
-!s108 1683761581.293000
-!s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/balls.vhd|
-!s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/balls.vhd|
->>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/balls.vhd
-FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/balls.vhd
-l0
-L5
-VgA:E6]VDd>i0d_D<O?z=K3
-R14
->>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-DEx4 work 5 pipes 0 22 3j2EZER1Tb<fiNf9J9^FX2
-l54
-L14
-V799M]D^2C<[zF8bameA=e1
-R14
->>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-DEx4 work 10 move_mouse 0 22 0[HePCh`FYOSYz[EI>S=J2
-l21
-L14
-VCWDlezMMQ_74n6nVG^ECK2
-R14
+R1
 >>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
 R1
-32
-R42
-R43
-R44
-R5
-R6
-R14
-!s100 ]XHZZI:ABX]SP9GBRlUIc2
-!i10b 1
-Abehavior
+!s108 1684103518.278000
+!s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
+!s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
 >>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-DEx4 work 7 counter 0 22 4IESDk6]PJlcd<HA=HMHa3
-l14
-L11
-VZUeaMLIdeMfh7Qm3hjjlD3
-R14
->>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-R8
-32
-Z233 !s108 1685186307.196000
-R137
-R118
-R12
-R13
-R14
-!s100 a>l3Rm7MWXLC07A7BVbzT1
-!i10b 1
->>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-DEx4 work 11 bouncy_ball 0 22 KTaz7N;BZMlhL9iK1go[@1
-l23
-L14
-Va7ETC1OOAn^g2E9N<T3lY1
-R14
->>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd
-FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd
-l0
-L7
-V;9P?DhB]fgC4`<Ygo;[=83
-R14
+DEx4 work 9 psudo_gen 0 22 Qz=4z;A3_GD]MzIGfJVGF2
+l15
+L13
+VEX><bon1;IUWP1Aen3`j[1
+R1
 >>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
 w1683163529
 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/Psudo_Gen.vhd
 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/Psudo_Gen.vhd
-R14
+R1
 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/Psudo_Gen.vhd|
 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/Psudo_Gen.vhd|
 !s108 1683163529.840000
 !s100 ]PnkDX`CSf]SMzRX@;hjl0
 !i10b 1
 >>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-DEx4 work 9 psudo_gen 0 22 Qz=4z;A3_GD]MzIGfJVGF2
-l15
-L13
-VEX><bon1;IUWP1Aen3`j[1
-R14
+8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd
+FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/ball.vhd
+l0
+L7
+V;9P?DhB]fgC4`<Ygo;[=83
+R1
 >>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-R14
-!s108 1684103518.278000
-!s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
-!s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd|
+DEx4 work 11 bouncy_ball 0 22 KTaz7N;BZMlhL9iK1go[@1
+l23
+L14
+Va7ETC1OOAn^g2E9N<T3lY1
+R1
 >>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
-R14
->>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R72
-R14
+R101
+32
+Z233 !s108 1685186307.196000
+R44
+R22
+R65
+R61
+R1
+!s100 a>l3Rm7MWXLC07A7BVbzT1
 !i10b 1
->>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R12
-R13
-R72
-R14
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
+DEx4 work 7 counter 0 22 4IESDk6]PJlcd<HA=HMHa3
+l14
+L11
+VZUeaMLIdeMfh7Qm3hjjlD3
+R1
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
+R27
+32
+R164
+R165
+R166
+R58
+R59
+R1
+!s100 ]XHZZI:ABX]SP9GBRlUIc2
 !i10b 1
-Atest
-R75
-R76
-R77
-R78
-R215
-l17
-L8
-Z234 V:`iP4aI7cRhH1iLYP^olP1
->>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
+Abehavior
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
+DEx4 work 10 move_mouse 0 22 0[HePCh`FYOSYz[EI>S=J2
+l21
+L14
+VCWDlezMMQ_74n6nVG^ECK2
+R1
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
+DEx4 work 5 pipes 0 22 3j2EZER1Tb<fiNf9J9^FX2
+l54
+L14
+V799M]D^2C<[zF8bameA=e1
+R1
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
+8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/balls.vhd
+FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/balls.vhd
 l0
 L5
+VgA:E6]VDd>i0d_D<O?z=K3
+R1
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
+R1
+!s100 lz?m5NAzi^JczheeRKlnR2
+!i10b 1
+!s108 1683761581.293000
+!s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/balls.vhd|
+!s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/balls.vhd|
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
+R216
+l18
+L13
 R217
-R214
-R8
-32
-R72
-R14
->>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-Z235 !s108 1684965032.000000
-Z236 !s90 -reportprogress|300|-work|work|C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
-Z237 !s107 C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
-R108
-R109
-R72
-R14
+R218
+R1
+>>>>>>> 281bd6f55091d3d475f5294eabb3856ca546ba4a
+R1
 !i10b 1
-!i113 0
 >>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R235
-R236
-R237
-R108
-R109
-R72
-R14
-!i10b 1
-!i113 0
-Aa1
-R100
-R3
-R4
-R101
-DEx4 work 19 test_sprite_printer 0 22 7U^aDahGGFDWl1A8Q;OnC0
-l28
-L9 57
-V^PchH0iN<90GM[08^]fzL3
-Z238 OE;C;2020.2;71
-32
-!i122 2
-!s100 MHY`]Sn0M9f::Oi7okG;=2
+R17
+R1
 >>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-l0
-L6 1
-V7U^aDahGGFDWl1A8Q;OnC0
-R238
-32
-R72
-R14
-!s100 [^ga0WRG@;Ng8jkP74=R_3
->>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R72
-R27
-R14
-!i10b 1
-Aa1
+R17
+R1
+Atest
 R76
-R75
 R77
-R78
-R28
+R79
+R80
+Z234 DEx4 work 17 project_flappy_v1 0 22 3;>GT1k@35<g:_X9z]@j?3
+l87
+L11
+Z235 VlJ`QgEkR[3XWHW<DhIKJM3
+R101
+32
+R65
+R61
+Z236 w1684739509
+Z237 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd|
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
+R133
+Z238 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd
+Z239 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd
+Z240 !s108 1684740559.329000
+Z241 !s100 VITZO?R:g>GUOaRUSc<kN3
+!i10b 1
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
+Z242 OE;C;2020.2;71
+32
+R17
+R1
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
+R111
+R112
+R17
+R1
+Abehaviour
+R115
+R116
+R117
+R118
+DEx4 work 9 psudo_gen 0 22 1IW:4YAI:1Yoc@7XS43=33
 l22
-L9
-R29
-R8
+L13 23
+V9N@7zPP110Ym@?7B]HTI11
+R242
 32
+!i122 13
+!s100 1j`1nEVzWgDMF3m01bGc>3
 >>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-l0
-L6
-R23
-R8
-32
-R72
-R14
+R127
+R128
+R129
+R111
+R112
+R17
+R1
+!i10b 1
+!i113 0
 >>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R108
-R109
-R72
-R14
+R111
+R112
+R17
+R1
 !s90 -reportprogress|300|-work|work|C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
 !s107 C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd|
 !s108 1684969160.000000
 !i10b 1
 !i113 0
 >>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R58
-R59
-R97
-R108
-R109
-R72
-R14
+l0
+L6
+R176
+R101
+32
+R17
+R1
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
+R17
+R180
+R1
+!i10b 1
+Aa1
+R76
+R77
+R79
+R80
+R181
+l22
+L9
+R182
+R101
+32
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
+l0
+L6 1
+V7U^aDahGGFDWl1A8Q;OnC0
+R242
+32
+R17
+R1
+!s100 [^ga0WRG@;Ng8jkP74=R_3
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
+Z243 !s108 1684965032.000000
+Z244 !s90 -reportprogress|300|-work|work|C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
+Z245 !s107 C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/test_sprite_printer.vhd|
+R111
+R112
+R17
+R1
+!i10b 1
+!i113 0
+Aa1
+R115
+R116
+R117
+R118
+DEx4 work 19 test_sprite_printer 0 22 7U^aDahGGFDWl1A8Q;OnC0
+l28
+L9 57
+V^PchH0iN<90GM[08^]fzL3
+R242
+32
+!i122 2
+!s100 MHY`]Sn0M9f::Oi7okG;=2
+>>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
+R243
+R244
+R245
+R111
+R112
+R17
+R1
 !i10b 1
 !i113 0
 >>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R108
-R109
-R72
-R14
-Abehaviour
-R100
-R3
-R4
+l0
+L5
+R226
+R223
 R101
-DEx4 work 9 psudo_gen 0 22 1IW:4YAI:1Yoc@7XS43=33
-l22
-L13 23
-V9N@7zPP110Ym@?7B]HTI11
-R238
 32
-!i122 13
-!s100 1j`1nEVzWgDMF3m01bGc>3
+R17
+R1
 >>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R238
-32
-R72
-R14
->>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R63
-Z239 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd
-Z240 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd
-Z241 !s108 1684740559.329000
-Z242 !s100 VITZO?R:g>GUOaRUSc<kN3
+R65
+R61
+R17
+R1
 !i10b 1
->>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R72
-R14
 Atest
-R76
-R75
 R77
-R78
-Z243 DEx4 work 17 project_flappy_v1 0 22 3;>GT1k@35<g:_X9z]@j?3
-l87
-L11
-Z244 VlJ`QgEkR[3XWHW<DhIKJM3
-R8
-32
-R12
-R13
-Z245 w1684739509
-Z246 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd|
+R76
+R79
+R80
+R224
+l17
+L8
+Z246 V:`iP4aI7cRhH1iLYP^olP1
 >>>>>>> b392f52789c724a8821a22f0f848685527bca3ca
-R72
-R14
+R17
+R1
+!i10b 1
 Eball
 Z247 w1682633345
-R76
-R75
-R77
-R78
-R63
-Eball
-R247
-R16
+R49
+R50
+R51
+R52
+R133
+R2
+R65
+R61
 R17
-R18
-R19
-R63
-R7
-R12
-R13
-R72
-R229
+R206
 !i10b 1
 Abehaviour
 R76
-R75
 R77
-R78
-R230
+R79
+R80
+R207
 l54
 L14
-R231
-R8
+R208
+R101
 32
-R142
-R1
-R5
-R12
-R232
+R54
+R27
+R58
+R65
+R209
 !i10b 1
+Eball
+R247
+R76
+R77
+R79
+R80
+R133
 Ebcd_to_7seg
 w1684918441
-R77
-R78
-R63
+R79
+R80
+R133
 Z248 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd
 Z249 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/BCD_to_7Seg.vhd
 l0
 L7
 VCac>VZ8mVgc[R:A]j]>Jk2
-R8
+R101
 32
 Z250 !s108 1685186307.339000
-R124
-R72
-R12
-R13
+R29
+R17
+R65
+R61
 !s100 FkQ_kH]gVhSj655_BWaQJ3
 !i10b 1
 Aarc1
-R77
-R78
+R79
+R80
 DEx4 work 11 bcd_to_7seg 0 22 Cac>VZ8mVgc[R:A]j]>Jk2
 l13
 L12
 V>O2c;2>LLDFW3gIkW11?>0
-R8
+R101
 32
 R250
-R124
-R72
-R12
-R13
+R29
+R17
+R65
+R61
 !s100 ln`na9iFFVfce5a@5C;7=3
 !i10b 1
 Ebcd_to_sevenseg
 Z251 w1683539520
-R77
-R78
-R63
+R51
+R52
+R133
 R248
 R249
 l0
 L7
 Z252 V_La796I8XHe^PeNhWl[NZ0
-R189
-R8
+R120
+R27
 32
-Z253 !s108 1684918361.311000
-R124
-R125
-R12
-R13
+Z253 !s108 1684740537.057000
+R16
+R17
+R58
+R59
 !i10b 1
 Aarc1
-R77
-R78
-R190
+R51
+R52
+R121
 l13
 L12
-R191
-R192
-R8
+R122
+R123
+R27
 32
 R253
-R124
-R125
-R12
-R13
+R16
+R17
+R58
+R59
 !i10b 1
 Ebcd_to_sevenseg
 R251
-R18
-R19
-R63
+R79
+R80
+R133
 R248
 R249
 l0
 L7
 R252
-R103
-R1
+R189
+R101
 32
-Z254 !s108 1684740537.057000
-R11
-R72
-R5
-R6
+Z254 !s108 1684918361.311000
+R29
+R30
+R65
+R61
 !i10b 1
 Aarc1
-R18
-R19
-R94
+R79
+R80
+R190
 l13
 L12
-R104
-R105
-R1
+R191
+R192
+R101
 32
 R254
-R11
-R72
-R5
-R6
+R29
+R30
+R65
+R61
 !i10b 1
 Ebouncy_ball
-Z255 w1684817032
-R194
-R75
-R77
-R78
-R63
-Z256 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd
-Z257 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd
+R173
+R124
+R50
+R51
+R52
+R152
+Z255 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd
+Z256 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd
 l0
 L7
-Z258 VKTaz7N;BZMlhL9iK1go[@1
-R8
+Z257 VKTaz7N;BZMlhL9iK1go[@1
+R27
+32
+R150
+R109
+R110
+R58
+R59
+Z258 !s100 >DboCm_C9@fO7XffZaC322
+!i10b 1
+Abehavior
+R124
+R50
+R51
+R52
+R2
+R101
+32
+Ebouncy_ball
+Z259 w1684817032
+R194
+R77
+R79
+R80
+R133
+Z260 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd
+Z261 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd
+l0
+L7
+R257
+R101
 32
 R233
-R137
-R118
-R12
-R13
-Z259 !s100 >DboCm_C9@fO7XffZaC322
+R44
+R22
+R65
+R61
+R258
 !i10b 1
 Abehavior
 R194
-R75
 R77
-R78
-Ebouncy_ball
-R15
-R106
-R17
-R18
-R19
-R20
-Z260 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd
-Z261 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/bouncy_ball.vhd
-l0
-L7
-R258
-R1
-32
-R60
-R61
-R62
-R5
-R6
-R259
-!i10b 1
-Abehavior
-R106
-R17
-R18
-R19
-R7
-R8
-32
+R79
+R80
 Echar_rom
-R14
+R1
 Ecoll_detect
 Z262 w1685184665
 R76
-R75
 R77
-R78
-R63
+R79
+R80
+R133
 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/coll_detect.vhd
 Z263 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/coll_detect.vhd
 l0
 L6
 V<G<ka=liDhzmi4e7Aa>eY3
-R8
+R101
 32
 Z264 !s108 1685186306.926000
 Z265 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/coll_detect.vhd|
 Z266 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/coll_detect.vhd|
-R12
-R13
+R65
+R61
 !s100 c;7b]afKETeB8>zjR8o=Y1
 !i10b 1
 Abehaviour
 R76
-R75
 R77
-R78
+R79
+R80
 DEx4 work 11 coll_detect 0 22 <G<ka=liDhzmi4e7Aa>eY3
 l17
 L13
 Vl[m46gD8K5C1jd4ZQK6?Y0
-R8
+R101
 32
 R264
 R265
 R266
-R12
-R13
+R65
+R61
 !s100 7mBMP5`cVXNc`>IIPTR5B2
 !i10b 1
 Ecounter
 Z267 w1683495999
-R75
-R76
-R77
-R78
-R72
+R50
+R49
+R51
+R52
+R9
 Z268 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test.vhd
 Z269 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/VGA_Testing/test.vhd
 l0
 L6
 Z270 V4IESDk6]PJlcd<HA=HMHa3
-R8
+R27
 32
-R45
-R46
-R47
-R12
-R13
-R14
+R157
+R158
+R159
+R58
+R59
+R1
 Z271 !s100 m70DX`JYIIf1X6iCJOMUg0
 !i10b 1
 Abehaviour
-R75
-R76
-R77
-R78
-Ecounter
-R267
-R17
-R16
-R18
-R19
-R82
-R268
-R269
-l0
-L6
-R270
-R1
-32
-R45
-R46
-R47
-R5
-R6
-R14
-R271
-!i10b 1
-Abehaviour
-R17
-R16
-R18
-R19
-R7
+R50
+R49
+R51
+R52
+R2
 R251
 R76
-R75
 R77
-R78
-R63
+R79
+R80
+R133
 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd
 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/char_rom.vhd
 l0
 L9
-R52
+R155
 R198
-R8
+R101
 32
 Z272 !s108 1685186307.051000
-R134
-R135
-R12
-R13
+R41
+R42
+R65
+R61
 !i10b 1
 Asyn
 R76
-R75
 R77
-R78
+R79
+R80
 R199
 l49
 L20
 R200
 R201
-R8
+R101
 32
 R272
-R134
-R135
-R12
-R13
+R41
+R42
+R65
+R61
 !i10b 1
+Ecounter
+R267
+R77
+R76
+R79
+R80
+R17
+R268
+R269
+l0
+L6
+R270
+R101
+32
+R157
+R158
+R159
+R65
+R61
+R1
+R271
+!i10b 1
+Abehaviour
+R77
+R76
+R79
+R80
 Edisp_over
 w1685238882
 R194
-R17
-R18
-R19
-R63
+R50
+R51
+R52
+R133
 Z273 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/game_over.vhd
 Z274 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/game_over.vhd
 l0
 L6
 V:m[0f4MZlJ852QOO4VU522
-R1
+R27
 32
 Z275 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/game_over.vhd|
 Z276 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/game_over.vhd|
-R5
-R6
+R58
+R59
 !s108 1685238882.705000
 !s100 kbU1MWAbmf[kPM4<05i@m0
 !i10b 1
 Abehaviour
 w1685239115
 R194
-R17
-R18
-R19
+R50
+R51
+R52
 DEx4 work 9 disp_over 0 22 :m[0f4MZlJ852QOO4VU522
 l77
 L13
 VeeYaQEcFadP@bR_bR<le@2
-R1
+R27
 32
 R275
 R276
-R5
-R6
+R58
+R59
 !s108 1685239115.543000
 !s100 CJco^5RFnlW[;]VZ6`=>E2
 !i10b 1
 Edisp_welcome
 Z277 w1685238768
 R194
-R17
-R18
-R19
-R63
+R50
+R51
+R52
+R133
 R273
 R274
 l0
 L6
 VBdPYRWb[Q:=_Q?UC[maU?0
-R1
+R27
 32
 Z278 !s108 1685238774.867000
 R275
 R276
-R5
-R6
+R58
+R59
 !s100 gR?EjdG[^lAdl]D=@DbIc2
 !i10b 1
 Abehaviour
 R194
-R17
-R18
-R19
+R50
+R51
+R52
 DEx4 work 12 disp_welcome 0 22 BdPYRWb[Q:=_Q?UC[maU?0
 l78
 L14
 V=[BeIg2_19k^PBhAYXPGD3
-R1
+R27
 32
 R278
 R275
 R276
-R5
-R6
+R58
+R59
 !s100 A@NNn[M`<KI`@PDb=lG=21
 !i10b 1
 Ediv
+R151
+R50
+R49
+R51
+R52
+R152
+Z279 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd
+Z280 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd
+l0
+L5
+Z281 V2WJ:Ld:]=`S>=?l0[<>Gn0
+R129
+R27
+32
+Z282 !s108 1684913216.804000
+R97
+R98
+R58
+R59
+!i10b 1
+Abehaviour
+R50
+R49
+R51
+R52
+R130
+l13
+L10
+R131
+R132
+R27
+32
+R282
+R97
+R98
+R58
+R59
+!i10b 1
+Ediv
 w1682633380
-R75
-R76
 R77
-R78
-R63
+R76
+R79
+R80
+R133
 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd
 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd
 l0
 L5
-Z279 V2WJ:Ld:]=`S>=?l0[<>Gn0
-R45
-R8
-32
-Z280 !s108 1685186306.764000
-R70
-R71
-R12
-R13
-!i10b 1
-Abehaviour
-R75
-R76
-R77
-R78
-R46
-l13
-L10
-R47
-Z281 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd
-R8
-32
-R280
-R70
-R71
-R12
-R13
-!i10b 1
-Ediv
-R49
-R17
-R16
-R18
-R19
-R20
 R281
-Z282 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Div.vhd
-l0
-L5
-R279
-R97
-R1
+R157
+R101
 32
-Z283 !s108 1684913216.804000
-R169
-R170
-R5
-R6
+Z283 !s108 1685186306.764000
+R46
+R39
+R65
+R61
 !i10b 1
 Abehaviour
-R17
-R16
-R18
-R19
-R95
+R77
+R76
+R79
+R80
+R158
 l13
 L10
-R96
-R91
-R1
+R159
+R279
+R101
 32
 R283
-R169
-R170
-R5
-R6
+R46
+R39
+R65
+R61
 !i10b 1
-Eflappyscore
-Z284 w1685184636
-R76
-R75
-R77
-R78
-R63
-8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd
-FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd
-l0
-L6
-Z285 VKAL78^gC[`R[mkOJzfJ943
-R8
-32
-R6
-R12
-R13
-R146
-Z286 !s100 PjF8g>Q550K<[W;z?GPi11
-!i10b 1
-!s108 1685185292.058000
 Eflappyscore
 w1684817931
-R16
-R17
-R18
-R19
-R20
+R49
+R50
+R51
+R52
+R152
 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd
 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd
 l0
 L6
-R285
-R1
+Z284 VKAL78^gC[`R[mkOJzfJ943
+R27
 32
-R161
-R5
-R6
-R98
-R286
+R90
+R58
+R59
+R91
+Z285 !s100 PjF8g>Q550K<[W;z?GPi11
 !i10b 1
 !s108 1684913217.510000
-Efour_bit_counter
-R262
-R75
+Eflappyscore
+Z286 w1685184636
 R76
 R77
-R78
-R63
-8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd
-Z287 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd
+R79
+R80
+R133
+8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd
+FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/FlappyScore.vhd
 l0
-L5
-VIgNbe::8]fDkS>87UozCL0
-R8
+L6
+R284
+R101
 32
-Z288 !s108 1685186306.635000
-Z289 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd|
-Z290 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd|
-R12
-R13
-!s100 MI0m9Mgi3>PZazQaYoaMY2
+R59
+R65
+R61
+R60
+R285
 !i10b 1
-Abehaviour
-R75
-R76
-R77
-R78
-DEx4 work 16 four_bit_counter 0 22 IgNbe::8]fDkS>87UozCL0
-l15
-L11
-VHA>YW9PV30WIUnJXkG>;@0
-R8
-32
-R288
-R289
-R290
-R12
-R13
-!s100 47`B>`Xlk:AQ_7`HY><gA1
-!i10b 1
+!s108 1685185292.058000
 Efour_bit_counter
-R15
-R17
-R16
-R18
-R19
-R20
-Z291 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd
-Z292 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd
+R173
+R50
+R49
+R51
+R52
+R152
+Z287 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd
+Z288 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd
 l0
 L5
 Vni<cOQL_nLY6XK3d9?8L91
-R1
+R27
 32
-Z293 !s108 1684913218.567000
-Z294 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd|
-Z295 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd|
-R5
-R6
+Z289 !s108 1684913218.567000
+Z290 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd|
+Z291 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd|
+R58
+R59
 !s100 [=G65=BU6NCnS<V22^zi:1
 !i10b 1
 Abehaviour
-R17
-R16
-R18
-R19
+R50
+R49
+R51
+R52
 DEx4 work 16 four_bit_counter 0 22 ni<cOQL_nLY6XK3d9?8L91
 l13
 L11
 V_4g@<:eBYlMeNol?:mdTM0
-R1
+R27
+32
+R289
+R290
+R291
+R58
+R59
+!s100 <V0e337WjZBaNYBg]GG5X2
+!i10b 1
+Efour_bit_counter
+R262
+R77
+R76
+R79
+R80
+R133
+8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd
+Z292 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd
+l0
+L5
+VIgNbe::8]fDkS>87UozCL0
+R101
+32
+Z293 !s108 1685186306.635000
+Z294 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd|
+Z295 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Four_bit_Counter.vhd|
+R65
+R61
+!s100 MI0m9Mgi3>PZazQaYoaMY2
+!i10b 1
+Abehaviour
+R77
+R76
+R79
+R80
+DEx4 work 16 four_bit_counter 0 22 IgNbe::8]fDkS>87UozCL0
+l15
+L11
+VHA>YW9PV30WIUnJXkG>;@0
+R101
 32
 R293
 R294
 R295
-R5
-R6
-!s100 <V0e337WjZBaNYBg]GG5X2
+R65
+R61
+!s100 47`B>`Xlk:AQ_7`HY><gA1
 !i10b 1
 Egame_end
-R284
+R286
 R76
-R75
 R77
-R78
-R63
+R79
+R80
+R133
 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/game_end.vhd
 Z296 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/game_end.vhd
 l0
 L7
 VSIj^H1AU_EC9327CJVTNH3
-R8
+R101
 32
 Z297 !s108 1685186306.382000
 Z298 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/game_end.vhd|
 Z299 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/game_end.vhd|
-R12
-R13
+R65
+R61
 !s100 ]S`d_Th4=`KF:M99iK3KM2
 !i10b 1
 Aa1
 R76
-R75
 R77
-R78
+R79
+R80
 DEx4 work 8 game_end 0 22 SIj^H1AU_EC9327CJVTNH3
 l35
 L13
 VFY4058ig7[_3bbJO>EG`n3
-R8
+R101
 32
 R297
 R298
 R299
-R12
-R13
+R65
+R61
 !s100 mKY;O`ghXCL_zW^8[UNY@0
 !i10b 1
 Egame_over
 Z300 w1685261156
 R194
-R17
-R18
-R19
-R63
+R50
+R51
+R52
+R133
 Z301 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/start_page.vhd
 Z302 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/start_page.vhd
 l0
 L6
 VHVLDm[Q0zWA?DM_bQR3PA2
-R1
+R27
 32
 Z303 !s108 1685261156.383000
 Z304 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/start_page.vhd|
 Z305 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/start_page.vhd|
-R5
-R6
+R58
+R59
 !s100 [zeOQf@Kl0klI5mVfBP;_0
 !i10b 1
 Abehaviour
 R194
-R17
-R18
-R19
+R50
+R51
+R52
 DEx4 work 9 game_over 0 22 HVLDm[Q0zWA?DM_bQR3PA2
 l87
 L13
 V5zXj2mI^li84LhC7iNDBk1
-R1
+R27
 32
 R303
 R304
 R305
-R5
-R6
+R58
+R59
 !s100 [K`aU7Y:00=D47U_VPC[<3
 !i10b 1
 Elife_counter
 R262
 R76
-R75
 R77
-R78
-R63
+R79
+R80
+R133
 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/life_counter.vhd
 Z306 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/life_counter.vhd
 l0
 L6
 VTFXWX5eE@82kj2kMlzE<O0
-R8
+R101
 32
 Z307 !s108 1685186306.258000
 Z308 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/life_counter.vhd|
 Z309 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/life_counter.vhd|
-R12
-R13
+R65
+R61
 !s100 FV5K=g7z0NVP]:CHBdBeS3
 !i10b 1
 Abehaviour
 R76
-R75
 R77
-R78
+R79
+R80
 DEx4 work 12 life_counter 0 22 TFXWX5eE@82kj2kMlzE<O0
 l43
 L14
 VgV^BGDLOPhOD5=g:Wg9FM0
-R8
+R101
 32
 R307
 R308
 R309
-R12
-R13
+R65
+R61
 !s100 2nVND2ekmTL<BH5Oh;NUT0
 !i10b 1
 Emouse
-w1617181975
-R76
-R75
-R77
-R78
-R63
-8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd
-FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd
-l0
-L9
-Z310 Vz?T_ghe6jzTZjP;9RX:I^1
-R8
-32
-Z311 !s108 1685186306.063000
-Z312 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd|
-Z313 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd|
-R12
-R13
-Emouse
-R15
-R16
-R17
-R18
-R19
-R20
+R173
+R49
+R50
+R51
+R52
+R152
 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd
 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd
 l0
 L9
-R310
-R7
-R8
+Z310 Vz?T_ghe6jzTZjP;9RX:I^1
+R2
+R101
 32
-R45
-R46
-R47
-R12
-R13
-R48
+R157
+R158
+R159
+R65
+R61
+R160
 !i10b 1
-Emove_mouse
-Z314 w1684825153
-R293
-R75
-R77
-R78
-R63
-Z315 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd
-Z316 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd
-l0
-L7
-Z317 V0[HePCh`FYOSYz[EI>S=J2
-R8
-32
-Z318 !s108 1685186305.925000
-Z319 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd|
-Z320 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd|
-R12
-R13
-Z321 !s100 P>4c:fi5^gE_RRPKQ]oAf2
-!i10b 1
-Abehavior
-R293
-R75
-R77
-R78
-Emove_mouse
-R15
-R106
-R17
-R18
-R19
-R20
-Z322 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd
-Z323 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd
-l0
-L7
-R317
-R1
-32
-R35
-R36
-R37
-R5
-R6
-R321
-!i10b 1
-Abehavior
-R106
-R17
-R18
-R19
-R7
+Emouse
+w1617181975
 R76
-R75
 R77
-R78
-R39
+R79
+R80
+R133
+8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd
+FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd
+l0
+L9
+R310
+R101
+32
+Z311 !s108 1685186306.063000
+Z312 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd|
+Z313 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/mouse.vhd|
+R65
+R61
+Emove_mouse
+R173
+R124
+R50
+R51
+R52
+R152
+Z314 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd
+Z315 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd
+l0
+L7
+Z316 V0[HePCh`FYOSYz[EI>S=J2
+R27
+32
+R167
+R168
+R169
+R58
+R59
+Z317 !s100 P>4c:fi5^gE_RRPKQ]oAf2
+!i10b 1
+Abehavior
+R124
+R50
+R51
+R52
+R2
+R76
+R77
+R79
+R80
+R161
 l44
 L18
-R40
-R8
+R162
+R101
 32
 R311
 R312
 R313
-R12
-R13
-R41
+R65
+R61
+R163
 !i10b 1
-Epipe_difficulty
-Z324 w1685184634
-R76
-R75
+Emove_mouse
+Z318 w1684825153
+R289
 R77
-R78
-R63
-Z325 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd
-Z326 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd
+R79
+R80
+R133
+Z319 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd
+Z320 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd
 l0
-L6
-Z327 VoS6@NlHB4U^POo2jI7b<A1
-Z328 !s100 8[[T?RSglMW51PTz4kWg>1
-R8
+L7
+R316
+R101
 32
-Z329 !s108 1685186257.004000
-Z330 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd|
-Z331 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd|
-R12
-R13
+Z321 !s108 1685186305.925000
+Z322 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd|
+Z323 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/move_mouse.vhd|
+R65
+R61
+R317
 !i10b 1
-Abehaviour
-R76
-R75
+Abehavior
+R289
 R77
-R78
-Z332 DEx4 work 15 pipe_difficulty 0 22 oS6@NlHB4U^POo2jI7b<A1
-l20
-L13
-Z333 VWM2@AEzgH260FA1_BajEe1
-Z334 !s100 _RS]IKO4;LBzP^fzLhM@k2
-R8
-32
-R329
-R330
-R331
-R12
-R13
-!i10b 1
+R79
+R80
 Epipe_difficulty
-R324
-R76
-R75
-R77
-R78
-R63
-R325
-R326
-l0
-L6
-R327
-R328
-R8
-32
-Z335 !s108 1685186305.689000
-R330
-R331
-R12
-R13
-!i10b 1
-Abehaviour
-R76
-R75
-R77
-R78
-R332
-l20
-L13
-R333
-R334
-R8
-32
-R335
-R330
-R331
-R12
-R13
-!i10b 1
-Epipe_difficulty
-R15
-R16
-R17
-R18
-R19
-R20
-Z336 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd
-Z337 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd
+R173
+R49
+R50
+R51
+R52
+R152
+Z324 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd
+Z325 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd
 l0
 L6
 VjelJQC5Ka1E;8maQ<0D@]1
-R1
+R27
 32
-Z338 !s108 1684913221.377000
-Z339 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd|
-Z340 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd|
-R5
-R6
+Z326 !s108 1684913221.377000
+Z327 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd|
+Z328 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd|
+R58
+R59
 !s100 QO>]SCo>ZW=^NjU[d^?n01
 !i10b 1
 Abehaviour
-R16
-R17
-R18
-R19
+R49
+R50
+R51
+R52
 DEx4 work 15 pipe_difficulty 0 22 jelJQC5Ka1E;8maQ<0D@]1
 l19
 L13
 V1KH5]?mmjA877oGPfQVI72
-R1
+R27
 32
-R338
-R339
-R340
-R5
-R6
+R326
+R327
+R328
+R58
+R59
 !s100 BRU2a=JbEVm<=g64UeR1Q1
 !i10b 1
-Epipes
-R284
+Epipe_difficulty
+Z329 w1685184634
 R76
-R75
 R77
-R78
-R63
+R79
+R80
+R133
+Z330 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd
+Z331 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd
+l0
+L6
+Z332 VoS6@NlHB4U^POo2jI7b<A1
+Z333 !s100 8[[T?RSglMW51PTz4kWg>1
+R101
+32
+Z334 !s108 1685186305.689000
+Z335 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd|
+Z336 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipe_difficulty.vhd|
+R65
+R61
+!i10b 1
+Abehaviour
+R76
+R77
+R79
+R80
+Z337 DEx4 work 15 pipe_difficulty 0 22 oS6@NlHB4U^POo2jI7b<A1
+l20
+L13
+Z338 VWM2@AEzgH260FA1_BajEe1
+Z339 !s100 _RS]IKO4;LBzP^fzLhM@k2
+R101
+32
+R334
+R335
+R336
+R65
+R61
+!i10b 1
+Epipe_difficulty
+R329
+R76
+R77
+R79
+R80
+R133
+R330
+R331
+l0
+L6
+R332
+R333
+R101
+32
+Z340 !s108 1685186257.004000
+R335
+R336
+R65
+R61
+!i10b 1
+Abehaviour
+R76
+R77
+R79
+R80
+R337
+l20
+L13
+R338
+R339
+R101
+32
+R340
+R335
+R336
+R65
+R61
+!i10b 1
+Epipes
+w1684718641
+R49
+R50
+R51
+R52
+R133
 Z341 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd
 Z342 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Pipes.vhd
 l0
 L6
 Z343 V3j2EZER1Tb<fiNf9J9^FX2
-R8
+R27
 32
-Z344 !s108 1685185291.147000
-R1
-R5
-R12
-R13
-Z345 !s100 a:e4BL<KoPhFCANe^H;`E2
+R171
+R82
+R83
+R58
+R59
+Z344 !s100 a:e4BL<KoPhFCANe^H;`E2
 !i10b 1
 Abehaviour
-R76
-R75
-R77
-R78
+R49
+R50
+R51
+R52
+R2
+R101
+32
+R321
+R322
+R323
+R65
+R61
+R170
+!i10b 1
 Epipes
-w1684718641
-R16
-R17
-R18
-R19
-R63
+R286
+R76
+R77
+R79
+R80
+R133
 R341
 R342
 l0
 L6
 R343
-R1
+R101
 32
-R31
-R32
-R33
-R5
-R6
-R345
+Z345 !s108 1685185291.147000
+R27
+R58
+R65
+R61
+R344
 !i10b 1
 Abehaviour
-R16
-R17
-R18
-R19
-R7
-R8
-32
-R318
-R319
-R320
-R12
-R13
-R38
-!i10b 1
+R76
+R77
+R79
+R80
 Epipes_v2
-Z346 w1685239447
-R16
-R17
-R18
-R19
-R63
-Z347 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd
-Z348 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd
-l0
-L6
-VgiFDeQn?IbGXWAcM_ChNe0
-R1
-32
-Z349 !s108 1685239463.002000
-Z350 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd|
-Z351 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd|
-R5
-R6
-!s100 4;EJZEf5D:BM29;gllC1f3
-!i10b 1
-Abehaviour
-R16
-R17
-R18
-R19
-DEx4 work 8 pipes_v2 0 22 giFDeQn?IbGXWAcM_ChNe0
-l54
-L17
-VCoS;^GNe[n=0o0:0gY;_m1
-R1
-32
-R349
-R350
-R351
-R5
-R6
-!s100 l[OD<BDa`DE>o9X;Z_`^N1
-!i10b 1
-Epipes_v2
-R15
-R16
-R17
-R18
-R19
-R20
-Z352 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd
-Z353 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd
+R173
+R49
+R50
+R51
+R52
+R152
+Z346 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd
+Z347 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd
 l0
 L6
 VA@Zk=LbDi7h4o1JoXG4n:0
-R1
+R27
 32
-Z354 !s108 1684913226.276000
-Z355 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd|
-Z356 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd|
-R5
-R6
+Z348 !s108 1684913226.276000
+Z349 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd|
+Z350 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd|
+R58
+R59
 !s100 JnY?KZ4e8SRDlK^LB<1Yo1
 !i10b 1
 Abehaviour
-R16
-R17
-R18
-R19
+R49
+R50
+R51
+R52
 DEx4 work 8 pipes_v2 0 22 A@Zk=LbDi7h4o1JoXG4n:0
 l52
 L15
 VjUGa1@@Pk5Q0N>@z`nCXC2
-R1
+R27
+32
+R348
+R349
+R350
+R58
+R59
+!s100 ji`UXTd];7mM;^j;[7X=Q0
+!i10b 1
+Epipes_v2
+Z351 w1685239447
+R49
+R50
+R51
+R52
+R133
+Z352 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd
+Z353 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd
+l0
+L6
+VgiFDeQn?IbGXWAcM_ChNe0
+R27
+32
+Z354 !s108 1685239463.002000
+Z355 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd|
+Z356 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/pipes_V2.vhd|
+R58
+R59
+!s100 4;EJZEf5D:BM29;gllC1f3
+!i10b 1
+Abehaviour
+R49
+R50
+R51
+R52
+DEx4 work 8 pipes_v2 0 22 giFDeQn?IbGXWAcM_ChNe0
+l54
+L17
+VCoS;^GNe[n=0o0:0gY;_m1
+R27
 32
 R354
 R355
 R356
-R5
-R6
-!s100 ji`UXTd];7mM;^j;[7X=Q0
+R58
+R59
+!s100 l[OD<BDa`DE>o9X;Z_`^N1
 !i10b 1
 Eproject_flappy_v1
-Z357 w1685261421
-R16
-R17
-R18
-R19
-R63
-R240
+Z357 w1685261474
+R49
+R50
+R51
+R52
+R133
 R239
+R238
 l0
 L6
 Z358 V0CB;^PGVoUOISWK8d:22l1
 Z359 !s100 [bd>b;iNKo@<blTEWjilY3
-R1
+R27
 32
-Z360 !s108 1685261421.932000
-R246
-R107
-R5
-R6
+Z360 !s108 1685261734.568000
+R237
+R113
+R58
+R59
 !i10b 1
 Agame
-R16
-R17
-R18
-R19
+R49
+R50
+R51
+R52
 Z361 DEx4 work 17 project_flappy_v1 0 22 0CB;^PGVoUOISWK8d:22l1
 l138
 L13
-VUQFa];8IbEobYP^n11>7J3
-R1
+VF_Nib><cWY7H`odM6`:SH1
+R27
 32
 R360
-R246
-R107
-R5
-R6
-!s100 Eh:1B54[PalE@aM?>2j6l2
+R237
+R113
+R58
+R59
+!s100 ENgIUoRn7BGLTNNi5LF=92
+!i10b 1
+Atest
+R49
+R50
+R51
+R52
+R234
+l87
+L11
+R235
+R27
+32
+R58
+R59
+R236
+R237
+R113
+R240
+R241
 !i10b 1
 Eproject_flappy_v1
 w1685184876
 R76
-R75
 R77
-R78
-R63
-R44
-R43
+R79
+R80
+R133
+R166
+R165
 l0
 L6
 R358
 R359
-R8
+R101
 32
 Z362 !s108 1685186305.336000
-R42
-R107
-R12
-R13
+R164
+R113
+R65
+R61
 !i10b 1
 Agame
 R76
-R75
 R77
-R78
+R79
+R80
 R361
 l155
 L13
 VT5D=jz>J^ZR:m:Io0h5FN1
-R8
+R101
 32
 R362
-R42
-R107
-R12
+R164
+R113
+R65
 !s100 SQD<ieeZ_^;6j]:bA__F03
 !i10b 1
 Eproject_flappy_v1
-Z363 w1685261474
-R16
-R17
-R18
-R19
-R63
-R240
+Z363 w1685261421
+R49
+R50
+R51
+R52
+R133
 R239
+R238
 l0
 L6
 R358
 R359
-R1
+R27
 32
-Z364 !s108 1685261734.568000
-R246
-R107
-R5
-R6
+Z364 !s108 1685261421.932000
+R237
+R113
+R58
+R59
 !i10b 1
 Agame
-R16
-R17
-R18
-R19
+R49
+R50
+R51
+R52
 R361
 l138
 L13
-VF_Nib><cWY7H`odM6`:SH1
-R1
+VUQFa];8IbEobYP^n11>7J3
+R27
 32
 R364
-R246
-R107
-R5
-R6
-!s100 ENgIUoRn7BGLTNNi5LF=92
-!i10b 1
-Atest
-R16
-R17
-R18
-R19
-R243
-l87
-L11
-R244
-R1
-32
-R5
-R6
-R245
-R246
-R107
-R241
-R242
+R237
+R113
+R58
+R59
+!s100 Eh:1B54[PalE@aM?>2j6l2
 !i10b 1
 Epsudo_gen
-R103
-R76
-R75
-R77
-R78
-R63
-R104
-R105
-l0
-L6
-R106
-R51
-R8
-32
-Z365 !s108 1685186305.098000
-R19
-R141
-R12
-R13
-!i10b 1
-Abehaviour
-R76
-R75
-R77
-R78
-R54
-l22
-L13
-R267
-R268
-R8
-32
-R365
-R19
-R141
-R12
-R13
-!i10b 1
-Epsudo_gen
+R151
 R49
-R16
-R17
-R18
-R19
-R20
+R50
+R51
+R52
+R152
 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd
 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Psudo_Gen.vhd
 l0
 L6
-R106
-R63
-R1
+R124
+R133
+R27
 32
-Z366 !s108 1684913227.988000
-R77
-R78
-R5
-R6
+Z365 !s108 1684913227.988000
+R79
+R80
+R58
+R59
 !i10b 1
 Abehaviour
-R16
-R17
-R18
-R19
-R92
+R49
+R50
+R51
+R52
+R134
 l22
 L13
-R93
-R88
-R1
+R135
+R136
+R27
+32
+R365
+R79
+R80
+R58
+R59
+!i10b 1
+Epsudo_gen
+R120
+R76
+R77
+R79
+R80
+R133
+R122
+R123
+l0
+L6
+R124
+R154
+R101
+32
+Z366 !s108 1685186305.098000
+R52
+R53
+R65
+R61
+!i10b 1
+Abehaviour
+R76
+R77
+R79
+R80
+R156
+l22
+L13
+R267
+R268
+R101
 32
 R366
-R77
-R78
-R5
-R6
-!i10b 1
-Escore_counter
-Z367 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd|
-R293
-R75
-R77
-R78
-R63
-Z368 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Score_Counter.vhd
-Z369 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Score_Counter.vhd
-l0
-L6
-Z370 V<:bNe:d1<KWHdCBTdK_Ji1
-Z371 !s100 ;W`IIIbmcK4P7WK[]=JZ@1
-R8
-32
-Z372 !s108 1685186256.510000
-Z373 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Score_Counter.vhd|
-Z374 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Score_Counter.vhd|
-R12
-R13
-!i10b 1
-Aa1
-R293
-R75
-R77
-R78
-Z375 DEx4 work 13 score_counter 0 22 <:bNe:d1<KWHdCBTdK_Ji1
-l68
-L14
-Z376 V;52eQ_T95gZg[Hg>kU[2a1
-Z377 !s100 QRfmDB4o7TgQXa7KndnX03
-R8
-32
-R372
-R373
-R374
-R13
-!i10b 1
-Escore_counter
-R367
-R293
-R75
-R77
-R78
-R63
-R368
-R369
-l0
-L6
-R370
-R371
-R8
-32
-Z378 !s108 1685186304.972000
-R373
-R374
-R12
-R13
-!i10b 1
-Aa1
-R293
-R75
-R77
-R78
-R375
-l68
-L14
-R376
-R377
-R8
-32
-R378
-R373
-R374
-R13
+R52
+R53
+R65
+R61
 !i10b 1
 Escore_counter
 R262
 R194
-R17
-R18
-R19
-R63
-R368
-R369
+R50
+R51
+R52
+R133
+Z367 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Score_Counter.vhd
+Z368 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Score_Counter.vhd
 l0
 L6
-R370
-R371
-R1
+Z369 V<:bNe:d1<KWHdCBTdK_Ji1
+Z370 !s100 ;W`IIIbmcK4P7WK[]=JZ@1
+R27
 32
-Z379 !s108 1685240795.339000
-R373
-R374
-R5
-R6
+Z371 !s108 1685240795.339000
+Z372 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Score_Counter.vhd|
+Z373 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Score_Counter.vhd|
+R58
+R59
 !i10b 1
 Aa1
 R194
-R17
-R18
-R19
-R375
+R50
+R51
+R52
+Z374 DEx4 work 13 score_counter 0 22 <:bNe:d1<KWHdCBTdK_Ji1
 l68
 L14
+Z375 V;52eQ_T95gZg[Hg>kU[2a1
+Z376 !s100 QRfmDB4o7TgQXa7KndnX03
+R27
+32
+R371
+R372
+R373
+R58
+R59
+!i10b 1
+Escore_counter
+Z377 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Project_Flappy_V1.vhd|
+R289
+R77
+R79
+R80
+R133
+R367
+R368
+l0
+L6
+R369
+R370
+R101
+32
+Z378 !s108 1685186304.972000
+R372
+R373
+R65
+R61
+!i10b 1
+Aa1
+R289
+R77
+R79
+R80
+R374
+l68
+L14
+R375
 R376
+R101
+32
+R378
+R372
+R373
+R61
+!i10b 1
+Escore_counter
 R377
-R1
+R289
+R77
+R79
+R80
+R133
+R367
+R368
+l0
+L6
+R369
+R370
+R101
+32
+Z379 !s108 1685186256.510000
+R372
+R373
+R65
+R61
+!i10b 1
+Aa1
+R289
+R77
+R79
+R80
+R374
+l68
+L14
+R375
+R376
+R101
 32
 R379
+R372
 R373
-R374
-R5
-R6
+R61
 !i10b 1
 Esprite_printer
-Z380 w1684378131
-R76
-R75
-R77
-R78
-R63
-R60
+Z380 w1684575095
 R49
+R50
+R51
+R52
+R152
+Z381 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
+Z382 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
 l0
 L6
-R50
-R260
-R8
+R149
+R229
+R27
 32
-Z381 !s108 1685186304.852000
-R16
-R17
-R12
-R13
+Z383 !s108 1684913229.377000
+R71
+R72
+R58
+R59
 !i10b 1
 Aa
-R76
-R75
-R77
-R78
-R261
-l35
-L22
-Z382 VlQYA5?mRnlKEE1jh;ASQX1
-R96
-R8
-32
-R381
-R16
-R17
-R12
-R13
-!i10b 1
-Esprite_printer
-R380
-R76
-R75
-R77
-R78
-R63
-R60
 R49
-l0
-L6
 R50
-R260
-R8
-32
-Z383 !s108 1685186256.389000
-R16
-R17
-R12
-R13
-!i10b 1
-Aa
-R76
-R75
-R77
-R78
-R261
+R51
+R52
+R230
 l35
 L22
-R382
-R96
-R8
+Z384 VlQYA5?mRnlKEE1jh;ASQX1
+R27
 32
 R383
-R16
-R17
-R12
-R13
+R71
+R72
+R58
+R59
+R131
 !i10b 1
 Esprite_printer
-Z384 w1684575095
-R16
-R17
-R18
-R19
-R20
-Z385 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
-Z386 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/sprite_printer.vhd
+Z385 w1684378131
+R76
+R77
+R79
+R80
+R133
+R150
+R151
 l0
 L6
-R66
-R220
-R1
+R153
+R255
+R101
 32
-Z387 !s108 1684913229.377000
-R74
-R73
-R5
-R6
+Z386 !s108 1685186256.389000
+R49
+R50
+R65
+R61
 !i10b 1
 Aa
-R16
-R17
-R18
-R19
-R221
+R76
+R77
+R79
+R80
+R256
 l35
 L22
-R382
-R1
+R384
+R131
+R101
+32
+R386
+R49
+R50
+R65
+R61
+!i10b 1
+Esprite_printer
+R385
+R76
+R77
+R79
+R80
+R133
+R150
+R151
+l0
+L6
+R153
+R255
+R101
+32
+Z387 !s108 1685186304.852000
+R49
+R50
+R65
+R61
+!i10b 1
+Aa
+R76
+R77
+R79
+R80
+R256
+l35
+L22
+R384
+R131
+R101
 32
 R387
-R74
-R73
-R5
-R6
-R96
+R49
+R50
+R65
+R61
 !i10b 1
 Estart_page
-Z388 w1685278585
+Z388 w1685279176
 R194
-R17
-R18
-R19
-R20
+R50
+R51
+R52
+R152
 Z389 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/start_page.vhd
 Z390 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/start_page.vhd
 l0
 L6
 VNF9W>icjA09c@Y5m_hI]F1
 !s100 5AP:agNL]QAA9zoW=o<A`3
-R1
+R27
 32
 !i10b 1
-Z391 !s108 1685278607.095000
+Z391 !s108 1685279193.633000
 Z392 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/start_page.vhd|
 Z393 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/start_page.vhd|
-R5
-R6
+R58
+R59
 Abehaviour
 R194
-R17
-R18
-R19
+R50
+R51
+R52
 Z394 DEx4 work 10 start_page 0 22 NF9W>icjA09c@Y5m_hI]F1
 l144
 L13
-V7c0>fHk82jGTPf<MaK0H_2
-!s100 hWzM3SZ0Q;WIN]z7I7BU40
-R1
+V81z>m57o5]<A=SI]CddZM2
+!s100 K2?NbNgSk8<LeGZTDIQjm1
+R27
 32
 !i10b 1
 R391
 R392
 R393
-R5
-R6
+R58
+R59
 Estates_game
 Z395 w1684969049
 Z396 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-R4
-R101
-R102
+R117
+R118
+R119
 Z397 8C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/states_game.vhd
 Z398 FC:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/states_game.vhd
 l0
 L5 1
 VT5B1GE^:4:0^61do<JFO_0
-R39
+R161
 32
 Z399 !s110 1684969161
 Z400 !s108 1684969161.000000
 Z401 !s90 -reportprogress|300|-work|work|C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/states_game.vhd|
 Z402 !s107 C:/Users/iros084/OneDrive - The University of Auckland/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/states_game.vhd|
-R108
-R109
+R111
+R112
 !i122 16
 !s100 N];cUia0XlzoP3IcFjCZ;1
 !i10b 1
 !i113 0
 Afsm
 R396
-R4
-R101
+R117
+R118
 DEx4 work 11 states_game 0 22 T5B1GE^:4:0^61do<JFO_0
 l22
 L17 76
 VE[T`446R`iajX0<4VlYha2
-R39
+R161
 32
 R399
 R400
 R401
 R402
-R108
-R109
+R111
+R112
 !i122 16
 !s100 >?WXkEmE_[dk:1RZH37JP0
 !i10b 1
 !i113 0
 Esuck_your_ball
 Z403 w1683761581
-R75
-R76
-R77
-R78
-R72
-R14
+R50
+R49
+R51
+R52
+R9
+R2
+R101
+32
+R345
+R27
+R58
+R65
+R61
+R1
+R172
+!i10b 1
 Esuck_your_ball
 R403
-R17
-R16
-R18
-R19
-R82
-R7
-R8
-32
-R344
-R1
-R5
-R12
-R13
-R14
-R34
-!i10b 1
-Etest_score_counter
-R14
-Etest_sprite_printer
-Z404 w1684112759
-R76
-R75
 R77
-R78
-R63
-R143
-R144
+R76
+R79
+R80
+R17
+R1
+Etest_score_counter
+R1
+Etest_sprite_printer
+R65
+R49
+R50
+R51
+R52
+R152
+R61
+R62
 l0
 L6
-R20
-R15
-R8
+R228
+R227
+R27
 32
-Z405 !s108 1685186256.044000
-R219
-R218
-R12
-R13
+Z404 !s108 1684913230.744000
+R56
+R57
+R58
+R59
 !i10b 1
 Aa1
-R76
-R75
-R77
-R78
-R151
+R49
+R50
+R51
+R52
+R53
 l28
 L9
-R152
-R147
-R8
+R54
+R60
+R27
 32
-R405
-R219
-R218
-R12
+R404
+R56
+R57
+R58
+R59
 !i10b 1
 Etest_sprite_printer
-R404
+Z405 w1684112759
 R76
-R75
 R77
-R78
-R63
-R143
-R144
+R79
+R80
+R133
+R55
+R56
 l0
 L6
-R20
-R15
-R8
+R152
+R173
+R101
 32
 Z406 !s108 1685186304.505000
-R219
-R218
-R12
-R13
+R228
+R227
+R65
+R61
 !i10b 1
 Aa1
 R76
-R75
 R77
-R78
-R151
+R79
+R80
+R67
 l28
 L9
-R152
-R147
-R8
+R68
+R62
+R101
 32
 R406
-R219
-R218
-R12
+R228
+R227
+R65
 !i10b 1
 Etest_sprite_printer
-R12
-R16
-R17
-R18
-R19
-R20
-R13
-R147
+R405
+R76
+R77
+R79
+R80
+R133
+R55
+R56
 l0
 L6
-R219
-R218
-R1
+R152
+R173
+R101
 32
-Z407 !s108 1684913230.744000
-R144
-R145
-R5
-R6
+Z407 !s108 1685186256.044000
+R228
+R227
+R65
+R61
 !i10b 1
 Aa1
-R16
-R17
-R18
-R19
-R141
+R76
+R77
+R79
+R80
+R67
 l28
 L9
-R142
-R146
-R1
+R68
+R62
+R101
 32
 R407
-R144
-R145
-R5
-R6
+R228
+R227
+R65
 !i10b 1
 Etest_test_vga_sync
-R177
-R7
-R72
-R219
-R218
-R214
-R14
-Etest_test_vga_sync
-R217
-R73
-R74
-R12
-R13
-R94
-R142
+R22
+R6
+R9
 R1
-R72
-R14
+R142
+R143
+R144
 Etest_test_vga_sync
-R217
-R75
-R76
-R77
-R78
-R63
-R33
-R79
+R380
+R50
+R49
+R51
+R52
+R152
+R45
+R46
 l0
 L5
-R254
-R248
-R8
+R226
+R223
+R27
 32
-Z408 !s108 1685185289.895000
-R68
-R32
-R12
-R13
+Z408 !s108 1684913231.414000
+R40
+R41
+R58
+R59
 !i10b 1
 Atest
-R75
-R76
+R50
+R49
+R51
+R52
+R224
+l17
+L8
+R246
+R27
+32
+R408
+R40
+R41
+R58
+R59
+R146
+!i10b 1
+Etest_test_vga_sync
+R226
 R77
-R78
+R76
+R79
+R80
+R133
+R83
+R75
+l0
+L5
+R253
+R248
+R101
+32
+Z409 !s108 1685185289.895000
+R81
+R82
+R65
+R61
+!i10b 1
+Atest
+R77
+R76
+R79
+R80
 R249
 l17
 L8
-R336
-R210
-R8
-32
-R408
-R68
-R32
-R13
-!i10b 1
-Etest_test_vga_sync
-R384
-R17
-R16
-R18
-R19
-R20
-R138
-R70
-l0
-L5
-R217
-R214
-R1
-32
-Z409 !s108 1684913231.414000
-R80
-R134
-R5
-R6
-!i10b 1
-Atest
-R17
-R16
-R18
-R19
-R215
-l17
-L8
-R234
-R1
+R324
+R219
+R101
 32
 R409
-R80
-R134
-R5
-R6
-R69
-!i10b 1
-Etest_test_vga_sync
-R118
 R81
 R82
-R14
-R83
-R84
-R85
-Etest_vga_sync
+R61
+!i10b 1
+Etest_test_vga_sync
+R226
 R72
-R14
-Etest_vga_sync
-R82
-R72
-R14
-Etest_vga_sync
-R82
-R14
-Etwo_digit_counter
-R367
-R75
-R76
-R77
-R78
-R63
-Z410 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd
-Z411 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd
-l0
-L5
-Z412 VF5z07_43CJ0g<zbja2N;E1
-Z413 !s100 VazEOdZ1TNlUcKcXffD[10
-R8
-32
-Z414 !s108 1685186304.378000
-Z415 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd|
-Z416 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd|
-R12
-R13
-!i10b 1
-Abehaviour
-R75
-R76
-R77
-R78
-Z417 DEx4 work 17 two_digit_counter 0 22 F5z07_43CJ0g<zbja2N;E1
-l31
-L12
-Z418 VZPJa;?i^IhCgX<`e6AXH61
-Z419 !s100 ]1EXO7ge^ZceU[dmNd[101
-R8
-32
-R414
-R415
-R416
-R13
-!i10b 1
-Etwo_digit_counter
-R367
-R75
-R76
-R77
-R78
-R63
-R410
-R411
-l0
-L5
-R412
-R413
-R8
-32
-Z420 !s108 1685186255.898000
-R415
-R416
-R12
-R13
-!i10b 1
-Abehaviour
-R75
-R76
-R77
-R78
-R417
-l31
-L12
-R418
-R419
-R8
-32
-R420
-R415
-R416
-R13
-!i10b 1
-Etwo_digit_counter
-R15
+R71
+R65
+R61
+R121
+R54
+R27
 R17
-R16
-R18
-R19
-R20
-Z421 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd
-Z422 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd
+R1
+Etest_test_vga_sync
+R107
+R2
+R17
+R228
+R227
+R223
+R1
+Etest_vga_sync
+R9
+R1
+Etest_vga_sync
+R9
+R17
+R1
+Etest_vga_sync
+R17
+R1
+Etwo_digit_counter
+R173
+R50
+R49
+R51
+R52
+R152
+Z410 8C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd
+Z411 FC:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd
 l0
 L5
 VB1>[Z`kkDkf2KSH^S_Enh0
-R1
+R27
 32
-Z423 !s108 1684913232.080000
-Z424 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd|
-Z425 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd|
-R5
-R6
+Z412 !s108 1684913232.080000
+Z413 !s90 -reportprogress|300|-work|work|C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd|
+Z414 !s107 C:/Users/dngus/OneDrive/Documents/GitHub/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd|
+R58
+R59
 !s100 AiNRHX3gElV7BeiYKG03=0
 !i10b 1
 Abehaviour
-R17
-R16
-R18
-R19
+R50
+R49
+R51
+R52
 DEx4 work 17 two_digit_counter 0 22 B1>[Z`kkDkf2KSH^S_Enh0
 l24
 L11
 VM37^zU90=L`R0U0@DFK[a2
-R1
+R27
 32
-R423
-R424
-R425
-R5
-R6
+R412
+R413
+R414
+R58
+R59
 !s100 3lnHW;@4G=TP^AKoRjN161
 !i10b 1
-Evga_sync
-R61
-R76
-R75
+Etwo_digit_counter
+R377
 R77
-R78
-R63
-R175
-R176
+R76
+R79
+R80
+R133
+Z415 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd
+Z416 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd
+l0
+L5
+Z417 VF5z07_43CJ0g<zbja2N;E1
+Z418 !s100 VazEOdZ1TNlUcKcXffD[10
+R101
+32
+Z419 !s108 1685186255.898000
+Z420 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd|
+Z421 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/Two_Digit_Counter.vhd|
+R65
+R61
+!i10b 1
+Abehaviour
+R77
+R76
+R79
+R80
+Z422 DEx4 work 17 two_digit_counter 0 22 F5z07_43CJ0g<zbja2N;E1
+l31
+L12
+Z423 VZPJa;?i^IhCgX<`e6AXH61
+Z424 !s100 ]1EXO7ge^ZceU[dmNd[101
+R101
+32
+R419
+R420
+R421
+R61
+!i10b 1
+Etwo_digit_counter
+R377
+R77
+R76
+R79
+R80
+R133
+R415
+R416
+l0
+L5
+R417
+R418
+R101
+32
+Z425 !s108 1685186304.378000
+R420
+R421
+R65
+R61
+!i10b 1
+Abehaviour
+R77
+R76
+R79
+R80
+R422
+l31
+L12
+R423
+R424
+R101
+32
+R425
+R420
+R421
+R61
+!i10b 1
+Evga_sync
+R22
+R49
+R50
+R51
+R52
+R152
+R113
+R114
 l0
 L7
-R251
-R206
-R8
+R219
+R215
+R27
 32
-Z426 !s108 1685186255.753000
-R10
-R11
-R12
-R13
+R183
+R116
+R117
+R58
+R59
 !i10b 1
 Aa
-R76
-R75
-R77
-R78
-R207
-l18
-L13
-R208
-R209
-R8
-32
-R426
-R10
-R11
-R12
-!i10b 1
-Evga_sync
-R61
-R76
-R75
-R77
-R78
-R63
-R175
-R176
-l0
-L7
-R251
-R206
-R8
-32
-R9
-R10
-R11
-R12
-R13
-!i10b 1
-Aa
-R76
-R75
-R77
-R78
-Evga_sync
-R118
-R16
-R17
-R18
-R19
-R20
-R107
-R99
-l0
-L7
-R210
-R206
-R1
-32
+R49
+R50
+R51
+R52
 R2
-R3
-R4
-R5
-R6
-!i10b 1
-Aa
-R16
-R17
-R18
-R19
-R7
-R91
+R132
 R76
-R75
 R77
-R78
-R63
-R92
-R93
+R79
+R80
+R133
+R134
+R135
 l0
 L6
-R40
-R41
-R8
+R162
+R163
+R101
 32
-Z427 !s108 1685185290.166000
-R89
-R63
-R12
-R13
+Z426 !s108 1685185290.166000
+R137
+R133
+R65
+R61
 !i10b 1
 Aa1
 R76
-R75
 R77
-R78
-R322
+R79
+R80
+R314
 l22
 L9
-R323
-R66
-R8
+R315
+R149
+R101
+32
+R426
+R137
+R133
+R65
+R61
+!i10b 1
+Evga_sync
+R109
+R76
+R77
+R79
+R80
+R133
+R105
+R106
+l0
+L7
+R251
+R215
+R101
+32
+R184
+R15
+R16
+R65
+R61
+!i10b 1
+Aa
+R76
+R77
+R79
+R80
+Evga_sync
+R109
+R76
+R77
+R79
+R80
+R133
+R105
+R106
+l0
+L7
+R251
+R215
+R101
+32
+Z427 !s108 1685186255.753000
+R15
+R16
+R65
+R61
+!i10b 1
+Aa
+R76
+R77
+R79
+R80
+R216
+l18
+L13
+R217
+R218
+R101
 32
 R427
-R89
-R63
-R12
-R13
+R15
+R16
+R65
 !i10b 1
 Ewelcome
 w1685184637
 R76
-R75
 R77
-R78
-R63
+R79
+R80
+R133
 8C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/welcome.vhd
 Z428 FC:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/welcome.vhd
 l0
 L7
 VocJ7o0GfMdd?21<jP`YB>0
-R8
+R101
 32
 Z429 !s108 1685186304.119000
 Z430 !s90 -reportprogress|300|-work|work|C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/welcome.vhd|
 Z431 !s107 C:/Users/Caleb Yang/Desktop/Course Material/Year 3/COMPSYS305/Project_Flappy/CS305_Project_Flappy/Project_Flappy_V1/welcome.vhd|
-R12
-R13
+R65
+R61
 !s100 ^hi38=6zUkR>mK8iD@3Gl0
 !i10b 1
 Aa1
 R76
-R75
 R77
-R78
+R79
+R80
 DEx4 work 7 welcome 0 22 ocJ7o0GfMdd?21<jP`YB>0
 l26
 L13
 Vlj>^40GEiblmm?KT7UeMk1
-R8
+R101
 32
 R429
 R430
 R431
-R12
-R13
+R65
+R61
 !s100 f2HO2gcW]^];1=SL38c<i1

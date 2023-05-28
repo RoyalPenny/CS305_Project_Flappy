@@ -74,21 +74,21 @@ signal play_y_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(360, 1
 
 -- T U T O R I A L
 signal tut_t_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(400, 10);
-signal tut_t_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(160, 10);
+signal tut_t_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(180, 10);
 signal tut_u_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(400, 10);
-signal tut_u_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(200,10);
+signal tut_u_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(220,10);
 signal tut_t1_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(400, 10);
-signal tut_t1_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(240, 10);
+signal tut_t1_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(260, 10);
 signal tut_o_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(400, 10);
-signal tut_o_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(280, 10);
+signal tut_o_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
 signal tut_r_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(400, 10);
-signal tut_r_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(320, 10);
+signal tut_r_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(340, 10);
 signal tut_i_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(400, 10);
-signal tut_i_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(360, 10);
+signal tut_i_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(380, 10);
 signal tut_a_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(400, 10);
-signal tut_a_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(400,10);
+signal tut_a_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(420,10);
 signal tut_l_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(400, 10);
-signal tut_l_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(440, 10);
+signal tut_l_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(460, 10);
 
 
 -- Flappy BIRD RGB
