@@ -40,25 +40,25 @@ signal tut_l_address : std_logic_vector(5 downto 0) := "000100";
 
 -- Signals for Sprite printing 
 -- F L A P P Y B I R D
-signal title_f_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(100, 10);
+signal title_f_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(120, 10);
 signal title_f_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(48, 10);
-signal title_l_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(100, 10);
+signal title_l_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(120, 10);
 signal title_l_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(144, 10);
-signal title_a_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(100, 10);
+signal title_a_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(120, 10);
 signal title_a_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(240, 10);
-signal title_p_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(100, 10);
+signal title_p_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(120, 10);
 signal title_p_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(335, 10);
-signal title_p1_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(100, 10);
+signal title_p1_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(120, 10);
 signal title_p1_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(432, 10);
-signal title_y_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(100, 10);
+signal title_y_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(120, 10);
 signal title_y_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(528, 10);
-signal title_b_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(164, 10);
+signal title_b_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(200, 10);
 signal title_b_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(144, 10);
-signal title_i_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(164, 10);
+signal title_i_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(200, 10);
 signal title_i_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(240, 10);
-signal title_r_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(164, 10);
+signal title_r_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(200, 10);
 signal title_r_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(335, 10);
-signal title_d_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(164, 10);
+signal title_d_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(200, 10);
 signal title_d_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(432, 10);
 
 -- P L A Y
@@ -128,7 +128,12 @@ Signal Font_RED : std_logic := '1';
 Signal Font_GREEN : std_logic := '1';
 Signal Font_BLUE : std_logic := '1';
 
+Signal select_RED : std_logic := '1';
+Signal select_GREEN : std_logic := '1';
+Signal select_BLUE : std_logic := '1';
+
 Signal Font_Multiplier : integer := 4;
+signal select_multiplier : integer := 3;
 
 component Sprite_Printer is	
   port(pixel_row, pixel_col, anchor_row, anchor_col : in std_logic_vector(9 downto 0);

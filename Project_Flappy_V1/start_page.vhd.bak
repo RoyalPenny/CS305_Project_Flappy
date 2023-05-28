@@ -31,7 +31,7 @@ signal play_y_address : std_logic_vector(5 downto 0) := "000100";
 
 signal tut_t_address : std_logic_vector(5 downto 0) := "000010";
 signal tut_u_address : std_logic_vector(5 downto 0) := "001001";
-signal tut_t 1_address : std_logic_vector(5 downto 0) := "010010";
+signal tut_t1_address : std_logic_vector(5 downto 0) := "010010";
 signal tut_o_address : std_logic_vector(5 downto 0) := "000100";
 signal tut_r_address : std_logic_vector(5 downto 0) := "000010";
 signal tut_i_address : std_logic_vector(5 downto 0) := "001001";
@@ -52,7 +52,7 @@ signal title_p1_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(100,
 signal title_p1_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(432, 10);
 signal title_y_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(100, 10);
 signal title_y_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(528, 10);
-signal title_b_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(164, 10);
+signal title_b_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(174, 10);
 signal title_b_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(144, 10);
 signal title_i_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(164, 10);
 signal title_i_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(240, 10);
@@ -128,7 +128,12 @@ Signal Font_RED : std_logic := '1';
 Signal Font_GREEN : std_logic := '1';
 Signal Font_BLUE : std_logic := '1';
 
+Signal select_RED : std_logic := '1';
+Signal select_GREEN : std_logic := '1';
+Signal select_BLUE : std_logic := '1';
+
 Signal Font_Multiplier : integer := 4;
+signal select_multiplier : integer := 3;
 
 component Sprite_Printer is	
   port(pixel_row, pixel_col, anchor_row, anchor_col : in std_logic_vector(9 downto 0);
