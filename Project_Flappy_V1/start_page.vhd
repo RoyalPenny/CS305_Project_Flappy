@@ -24,19 +24,19 @@ signal title_i_address : std_logic_vector(5 downto 0) := "001001";
 signal title_r_address : std_logic_vector(5 downto 0) := "010010";
 signal title_d_address : std_logic_vector(5 downto 0) := "000100";
 
-signal play_p_address : std_logic_vector(5 downto 0) := "000010";
-signal play_l_address : std_logic_vector(5 downto 0) := "001001";
-signal play_a_address : std_logic_vector(5 downto 0) := "010010";
-signal play_y_address : std_logic_vector(5 downto 0) := "000100";
+signal play_p_address : std_logic_vector(5 downto 0) := "010000";
+signal play_l_address : std_logic_vector(5 downto 0) := "001100";
+signal play_a_address : std_logic_vector(5 downto 0) := "000001";
+signal play_y_address : std_logic_vector(5 downto 0) := "011001";
 
-signal tut_t_address : std_logic_vector(5 downto 0) := "000010";
-signal tut_u_address : std_logic_vector(5 downto 0) := "001001";
-signal tut_t1_address : std_logic_vector(5 downto 0) := "010010";
-signal tut_o_address : std_logic_vector(5 downto 0) := "000100";
-signal tut_r_address : std_logic_vector(5 downto 0) := "000010";
+signal tut_t_address : std_logic_vector(5 downto 0) := "010100";
+signal tut_u_address : std_logic_vector(5 downto 0) := "010101";
+signal tut_t1_address : std_logic_vector(5 downto 0) := "010100";
+signal tut_o_address : std_logic_vector(5 downto 0) := "001111";
+signal tut_r_address : std_logic_vector(5 downto 0) := "010010";
 signal tut_i_address : std_logic_vector(5 downto 0) := "001001";
-signal tut_a_address : std_logic_vector(5 downto 0) := "010010";
-signal tut_l_address : std_logic_vector(5 downto 0) := "000100";
+signal tut_a_address : std_logic_vector(5 downto 0) := "000001";
+signal tut_l_address : std_logic_vector(5 downto 0) := "001100";
 
 -- Signals for Sprite printing 
 -- F L A P P Y B I R D
@@ -76,21 +76,21 @@ signal play_d_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(280, 1
 
 -- T U T O R I A L
 signal tut_t_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-signal tut_t_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(70, 10);
+signal tut_t_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(340, 10);
 signal tut_u_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-signal tut_u_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(120,10);
+signal tut_u_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(380,10);
 signal tut_t1_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-signal tut_t1_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(170, 10);
+signal tut_t1_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(420, 10);
 signal tut_o_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-signal tut_o_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(230, 10);
+signal tut_o_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(460, 10);
 signal tut_r_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-signal tut_r_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(280, 10);
+signal tut_r_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(500, 10);
 signal tut_i_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-signal tut_i_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(70, 10);
+signal tut_i_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(540, 10);
 signal tut_a_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-signal tut_a_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(120,10);
+signal tut_a_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(580,10);
 signal tut_l_row : std_logic_vector(9 downto 0) := conv_std_logic_vector(300, 10);
-signal tut_l_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(170, 10);
+signal tut_l_col : std_logic_vector(9 downto 0) := conv_std_logic_vector(620, 10);
 
 
 -- Flappy BIRD RGB
@@ -156,19 +156,19 @@ end component Sprite_printer;
 	  title_r: sprite_printer port map(pixel_row, pixel_col, title_r_row, title_r_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, title_r_address, enable, CLK, title_r_R_out, title_r_G_out, title_r_B_out);
 	  title_d: sprite_printer port map(pixel_row, pixel_col, title_d_row, title_d_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, title_d_address, enable, CLK, title_d_R_out, title_d_G_out, title_d_B_out);
 	 
-	  play_p: sprite_printer port map(pixel_row, pixel_col, play_p_row, play_p_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, play_p_address, enable, CLK, play_p_R_out, play_p_G_out, play_p_B_out);
-	  play_l: sprite_printer port map(pixel_row, pixel_col, play_l_row, play_l_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, play_l_address, enable, CLK, play_l_R_out, play_l_G_out, play_l_B_out);
-	  play_a: sprite_printer port map(pixel_row, pixel_col, play_a_row, play_a_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, play_a_address, enable, CLK, play_a_R_out, play_a_G_out, play_a_B_out);
-	  play_y: sprite_printer port map(pixel_row, pixel_col, play_y_row, play_y_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, play_y_address, enable, CLK, play_y_R_out, play_y_G_out, play_y_B_out);
+	  play_p: sprite_printer port map(pixel_row, pixel_col, play_p_row, play_p_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, play_p_address, enable, CLK, play_p_R_out, play_p_G_out, play_p_B_out);
+	  play_l: sprite_printer port map(pixel_row, pixel_col, play_l_row, play_l_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, play_l_address, enable, CLK, play_l_R_out, play_l_G_out, play_l_B_out);
+	  play_a: sprite_printer port map(pixel_row, pixel_col, play_a_row, play_a_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, play_a_address, enable, CLK, play_a_R_out, play_a_G_out, play_a_B_out);
+	  play_y: sprite_printer port map(pixel_row, pixel_col, play_y_row, play_y_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, play_y_address, enable, CLK, play_y_R_out, play_y_G_out, play_y_B_out);
 
-	  tut_t: sprite_printer port map(pixel_row, pixel_col, tut_t_row, tut_t_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, tut_t_address, enable, CLK, tut_t_R_out, tut_t_G_out, tut_t_B_out);
-	  tut_u: sprite_printer port map(pixel_row, pixel_col, tut_u_row, tut_u_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, tut_u_address, enable, CLK, tut_u_R_out, tut_u_G_out, tut_u_B_out);
-	  tut_t1: sprite_printer port map(pixel_row, pixel_col, tut_t1_row, tut_t1_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, tut_t1_address, enable, CLK, tut_t1_R_out, tut_t1_G_out, tut_t1_B_out);
-	  tut_o: sprite_printer port map(pixel_row, pixel_col, tut_o_row, tut_o_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, tut_o_address, enable, CLK, tut_o_R_out, tut_o_G_out, tut_o_B_out);
- 	  tut_r: sprite_printer port map(pixel_row, pixel_col, tut_r_row, tut_r_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, tut_r_address, enable, CLK, tut_r_R_out, tut_r_G_out, tut_r_B_out);
-	  tut_i: sprite_printer port map(pixel_row, pixel_col, tut_i_row, tut_i_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, tut_i_address, enable, CLK, tut_i_R_out, tut_i_G_out, tut_i_B_out);
-	  tut_a: sprite_printer port map(pixel_row, pixel_col, tut_a_row, tut_a_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, tut_a_address, enable, CLK, tut_a_R_out, tut_a_G_out, tut_a_B_out);
-	  tut_l: sprite_printer port map(pixel_row, pixel_col, tut_l_row, tut_l_col, Font_RED, Font_GREEN, Font_BLUE, Font_Multiplier, tut_l_address, enable, CLK, tut_l_R_out, tut_l_G_out, tut_l_B_out);
+	  tut_t: sprite_printer port map(pixel_row, pixel_col, tut_t_row, tut_t_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, tut_t_address, enable, CLK, tut_t_R_out, tut_t_G_out, tut_t_B_out);
+	  tut_u: sprite_printer port map(pixel_row, pixel_col, tut_u_row, tut_u_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, tut_u_address, enable, CLK, tut_u_R_out, tut_u_G_out, tut_u_B_out);
+	  tut_t1: sprite_printer port map(pixel_row, pixel_col, tut_t1_row, tut_t1_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, tut_t1_address, enable, CLK, tut_t1_R_out, tut_t1_G_out, tut_t1_B_out);
+	  tut_o: sprite_printer port map(pixel_row, pixel_col, tut_o_row, tut_o_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, tut_o_address, enable, CLK, tut_o_R_out, tut_o_G_out, tut_o_B_out);
+ 	  tut_r: sprite_printer port map(pixel_row, pixel_col, tut_r_row, tut_r_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, tut_r_address, enable, CLK, tut_r_R_out, tut_r_G_out, tut_r_B_out);
+	  tut_i: sprite_printer port map(pixel_row, pixel_col, tut_i_row, tut_i_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, tut_i_address, enable, CLK, tut_i_R_out, tut_i_G_out, tut_i_B_out);
+	  tut_a: sprite_printer port map(pixel_row, pixel_col, tut_a_row, tut_a_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, tut_a_address, enable, CLK, tut_a_R_out, tut_a_G_out, tut_a_B_out);
+	  tut_l: sprite_printer port map(pixel_row, pixel_col, tut_l_row, tut_l_col, Font_RED, Font_GREEN, Font_BLUE, select_Multiplier, tut_l_address, enable, CLK, tut_l_R_out, tut_l_G_out, tut_l_B_out);
  
 	  
 		Red_out <= title_f_R_out and title_l_R_out and title_a_R_out and title_p_R_out and title_p1_R_out and title_y_R_out and title_b_R_out and title_i_R_out and title_r_R_out and title_d_R_out and play_p_R_out and play_l_R_out and play_a_R_out and play_y_R_out and tut_t_R_out and tut_u_R_out and tut_t1_R_out and tut_o_R_out and tut_r_R_out and tut_i_R_out and tut_a_R_out and tut_l_R_out; 
